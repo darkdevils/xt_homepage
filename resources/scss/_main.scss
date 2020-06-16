@@ -6,6 +6,65 @@
   background: url("../images/" + $imgUrl +"." + $type) no-repeat;
 }
 
+@mixin text-bar($color,$beforeCor) {
+  &:before,&:after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    position: absolute;
+  }
+  &:before {
+    //background: #00C691;
+    background: $beforeCor;
+    width: 100%;
+  }
+  &:after {
+    background: $color;
+  }
+}
+
+@mixin animateType($transtionTime,$animationTime,$delay) {
+  &:before {
+    right: 0;
+    width: 0;
+    -webkit-transition: width $transtionTime ease-in-out;
+    transition: width $transtionTime ease-in-out;
+    transition-delay: $delay;
+  }
+  &:after {
+    -webkit-animation: typo01-after $animationTime ease-in-out;
+    animation-delay: $delay;
+  }
+}
+
+@-webkit-keyframes typo01-after {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  to {
+    right: 0;
+    width: 0;
+  }
+}
+@keyframes typo01-after {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  to {
+    right: 0;
+    width: 0;
+  }
+}
+
 .wrapper {
   .header {
     &.main {
@@ -138,7 +197,7 @@
         background-color: #fff;
         @include imageUrl(temp/temp_img01,jpg);
         background-position: left bottom;
-        background-size: contain;
+        background-size: 100%;
         #myVideo {
           position: absolute;
           left: 0;
@@ -168,6 +227,15 @@
       }
       #section2 {
         background: #000;
+        &.active {
+          .we-are01.active {
+            h2 {
+              .bigText {
+                @include animateType(1.1s,1s,0.5s);
+              }
+            }
+          }
+        }
         [class^="we-are"] {
           position: relative;
           &:after {
@@ -179,7 +247,7 @@
           &.we-are01 {
             .weAre-txt {
               background: url("../images/main/bg-we01.png") no-repeat right bottom;
-              span {
+              .smallText {
                 &:after {
                   background: #2e3bee;
                 }
@@ -189,7 +257,7 @@
           &.we-are02 {
             .weAre-txt {
               background: url("../images/main/bg-we02.png") no-repeat right bottom;
-              span {
+              .smallText {
                 &:after {
                   background: #00c691;
                 }
@@ -199,7 +267,7 @@
           &.we-are03 {
             .weAre-txt {
               background: url("../images/main/bg-we01.png") no-repeat right bottom;
-              span {
+              .smallText {
                 &:after {
                   background: #00c691;
                 }
@@ -209,7 +277,7 @@
           &.we-are04 {
             .weAre-txt {
               background: url("../images/main/bg-we02.png") no-repeat right bottom;
-              span {
+              .smallText {
                 &:after {
                   background: #00c691;
                 }
@@ -219,7 +287,7 @@
           &.we-are05 {
             .weAre-txt {
               background: url("../images/main/bg-we01.png") no-repeat right bottom;
-              span {
+              .smallText {
                 &:after {
                   background: #00c691;
                 }
@@ -229,9 +297,11 @@
           &.active {
             .weAre-txt {
               h2 {
-                span {
+                .bigText {
+                }
+                .smallText {
                   &:after {
-                    animation: proBar 3s 1s infinite alternate;
+                    animation: proBar 3s 1s alternate;
                   }
                 }
               }
@@ -253,12 +323,16 @@
               top: 32%;
               padding-left: 6.5104vw;
               display: block;
-              color: #fff;
-              font-size: 6.2500vw;
-              font-weight: 500;
               text-align: left;
               line-height: 1;
-              span {
+              .bigText {
+                display: inline-block;
+                color: #fff;
+                font-size: 6.2500vw;
+                font-weight: 500;
+                @include text-bar(#fff,#000);
+              }
+              .smallText {
                 position: relative;
                 display: inline-block;
                 color: #fff;
@@ -270,7 +344,7 @@
                 &:after {
                   content: "";
                   display: block;
-                  width: 0;
+                  width: 100%;
                   height: 3px;
                   position: absolute;
                   bottom: -3px;
@@ -744,12 +818,20 @@
   }
 }
 
-
 body[class*=fp-viewing-1-] {
-  .wrapper .header.main .xt-ci {
-    width: 180px;
-    transition: .5s ease;
+  .wrapper .header {
+    a div.side-open {
+      border-color: #fff;
+      span {
+        color: #fff;
+      }
+    }
+    &.main .xt-ci {
+      width: 180px;
+      transition: .5s ease;
+    }
   }
+
 }
 .fp-viewing-2 {
   .wrapper .header.txt-bk .xt-ci {
@@ -764,5 +846,25 @@ body[class*=fp-viewing-1-] {
 .fp-viewing-4 {
   .wrapper .header.txt-bk .xt-ci {
     width: 180px;
+  }
+}
+
+
+
+@mixin text-bar($color,$beforeCor) {
+  &:before,&:after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    position: absolute;
+  }
+  &:before {
+    //background: #00C691;
+    background: $beforeCor;
+    width: 100%;
+  }
+  &:after {
+    background: $color;
   }
 }

@@ -245,10 +245,11 @@ h1, h2, h3, h4, h5, h6, strong {
           transition-property: opacity;
           transition-duration: 0.4s;
           transition-delay: 0.4s;
+          transition: .5s ease;
           &.side-open {
             opacity: 1;
             @include solid-line(3px, #000);
-            span {
+            .smallText {
               display: block;
               color: #000;
               position: absolute;

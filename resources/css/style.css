@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@-webkit-keyframes typo01-after {
+  0% {
+    left: 0;
+    width: 0; }
+  50% {
+    width: 100%; }
+  to {
+    right: 0;
+    width: 0; } }
+
+@keyframes typo01-after {
+  0% {
+    left: 0;
+    width: 0; }
+  50% {
+    width: 100%; }
+  to {
+    right: 0;
+    width: 0; } }
+
 .wrapper .header.main .xt-ci {
   border: 3px solid #fff;
   background: url(../images/main/logo-white.png) no-repeat 0 0; }
@@ -94,7 +114,7 @@
     background-color: #fff;
     background: url("../images/temp/temp_img01.jpg") no-repeat;
     background-position: left bottom;
-    background-size: contain; }
+    background-size: 100%; }
     .wrapper .container .main-content #section1 #myVideo {
       position: absolute;
       left: 0;
@@ -120,6 +140,15 @@
         width: 53.8542vw; }
   .wrapper .container .main-content #section2 {
     background: #000; }
+    .wrapper .container .main-content #section2.active .we-are01.active h2 .bigText:before {
+      right: 0;
+      width: 0;
+      -webkit-transition: width 1.1s ease-in-out;
+      transition: width 1.1s ease-in-out;
+      transition-delay: 0.5s; }
+    .wrapper .container .main-content #section2.active .we-are01.active h2 .bigText:after {
+      -webkit-animation: typo01-after 1s ease-in-out;
+      animation-delay: 0.5s; }
     .wrapper .container .main-content #section2 [class^="we-are"] {
       position: relative; }
       .wrapper .container .main-content #section2 [class^="we-are"]:after {
@@ -129,26 +158,26 @@
         bottom: 0; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt {
         background: url("../images/main/bg-we01.png") no-repeat right bottom; }
-        .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt span:after {
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt .smallText:after {
           background: #2e3bee; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt {
         background: url("../images/main/bg-we02.png") no-repeat right bottom; }
-        .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt span:after {
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt .smallText:after {
           background: #00c691; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt {
         background: url("../images/main/bg-we01.png") no-repeat right bottom; }
-        .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt span:after {
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt .smallText:after {
           background: #00c691; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt {
         background: url("../images/main/bg-we02.png") no-repeat right bottom; }
-        .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt span:after {
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt .smallText:after {
           background: #00c691; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt {
         background: url("../images/main/bg-we01.png") no-repeat right bottom; }
-        .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt span:after {
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt .smallText:after {
           background: #00c691; }
-      .wrapper .container .main-content #section2 [class^="we-are"].active .weAre-txt h2 span:after {
-        animation: proBar 3s 1s infinite alternate; }
+      .wrapper .container .main-content #section2 [class^="we-are"].active .weAre-txt h2 .smallText:after {
+        animation: proBar 3s 1s alternate; }
 
 @keyframes proBar {
   0% {
@@ -163,12 +192,25 @@
           top: 32%;
           padding-left: 6.5104vw;
           display: block;
-          color: #fff;
-          font-size: 6.2500vw;
-          font-weight: 500;
           text-align: left;
           line-height: 1; }
-          .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 span {
+          .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .bigText {
+            display: inline-block;
+            color: #fff;
+            font-size: 6.2500vw;
+            font-weight: 500; }
+            .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .bigText:before, .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .bigText:after {
+              content: "";
+              top: 0;
+              bottom: 0;
+              display: inline-block;
+              position: absolute; }
+            .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .bigText:before {
+              background: #000;
+              width: 100%; }
+            .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .bigText:after {
+              background: #fff; }
+          .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .smallText {
             position: relative;
             display: inline-block;
             color: #fff;
@@ -177,10 +219,10 @@
             vertical-align: top;
             padding: 0.7813vw 0;
             border-bottom: 3px solid #fff; }
-            .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 span:after {
+            .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .smallText:after {
               content: "";
               display: block;
-              width: 0;
+              width: 100%;
               height: 3px;
               position: absolute;
               bottom: -3px;
@@ -546,6 +588,11 @@
     .main-content .swiper-wrapper .swiper-slide {
       height: 100% !important; }
 
+body[class*=fp-viewing-1-] .wrapper .header a div.side-open {
+  border-color: #fff; }
+  body[class*=fp-viewing-1-] .wrapper .header a div.side-open span {
+    color: #fff; }
+
 body[class*=fp-viewing-1-] .wrapper .header.main .xt-ci {
   width: 180px;
   transition: .5s ease; }
@@ -772,26 +819,27 @@ h1, h2, h3, h4, h5, h6, strong {
       left: 0;
       transition-property: opacity;
       transition-duration: 0.4s;
-      transition-delay: 0.4s; }
+      transition-delay: 0.4s;
+      transition: .5s ease; }
       .wrapper .header .hamburger a div.side-open {
         opacity: 1;
         border: 3px solid #000; }
-        .wrapper .header .hamburger a div.side-open span {
+        .wrapper .header .hamburger a div.side-open .smallText {
           display: block;
           color: #000;
           position: absolute;
           font-size: 13px;
           font-weight: 700; }
-          .wrapper .header .hamburger a div.side-open span.m {
+          .wrapper .header .hamburger a div.side-open .smallText.m {
             top: 3px;
             left: 7px; }
-          .wrapper .header .hamburger a div.side-open span.e {
+          .wrapper .header .hamburger a div.side-open .smallText.e {
             top: 3px;
             right: 7px; }
-          .wrapper .header .hamburger a div.side-open span.n {
+          .wrapper .header .hamburger a div.side-open .smallText.n {
             bottom: 3px;
             left: 7px; }
-          .wrapper .header .hamburger a div.side-open span.u {
+          .wrapper .header .hamburger a div.side-open .smallText.u {
             bottom: 3px;
             right: 7px; }
       .wrapper .header .hamburger a div.side-close {
