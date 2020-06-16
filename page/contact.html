@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../resources/css/style.css">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+  <title>Title</title>
+  <style>
+    html,body {overflow: initial;}
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header main">
+    <div class="skip-navi">
+      <a href="#container">본문 바로가기</a>
+      <a href="#gnb">메뉴 바로가기 test</a>
+    </div>
+    <header class="w-txt">
+      <div class="xt-ci">
+        <span>Contact XT</span>
+        <ul class="gnb-menu">
+          <li class="gnb-menu01">Who we are</li>
+          <li class="gnb-menu02">We make</li>
+          <li class="gnb-menu03">XTSIEN Life</li>
+          <li class="gnb-menu04">Contact XT</li>
+        </ul>
+      </div>
+      <div class="pdf-down">Start a project x Download pdf</div>
+      <div class="hamburger">
+        <a href="#">
+          <div class="side-open">
+            <span class="m">M</span>
+            <span class="e">E</span>
+            <span class="n">N</span>
+            <span class="u">U</span>
+          </div>
+          <div class="side-close">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+      <div class="nav">
+        <ul id="gnb">
+          <li><a href="main.html">XT</a></li>
+          <li><a href="work.html">Works</a></li>
+          <li><a href="life.html">XTSIEN Life</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="newsList.html">News</a></li>
+        </ul>
+        <div class="profile-down">
+          <a href="#">Download XT profile pdf</a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="contactContent">
+    <h1 data-aos="fade"><span>With XT</span></h1>
+    <div class="textWrap" data-aos="fade">
+      <span>엑스티와 함께 하는 것은</span><br>
+      <span>당신다움을 찾는</span><br>
+      <span>가장 빠른 길입니다</span>
+    </div>
+    <div class="address" data-aos="fade" data-aos-delay="60">
+      <span>서울특별시 관악구</span><br>
+      <span>남부순환로 1531 2층</span><br>
+      <span>(주)엑스티</span><br>
+      <div><span>T +82 2 853 6582 F +82 2 853 6582</span></div>
+    </div>
+    <div class="main-contact" data-aos="fade-up">
+      <video autoplay loop muted id="myVideo2">
+        <source src="../resources/mov/flowers.mp4" type="video/mp4">
+        <!--<source src="../mov/flowers.webm" type="video/webm">-->
+      </video>
+    </div>
+
+    <div class="linkSection">
+      <div class="box box--project" data-aos="fade-up">
+        <a href="#">
+          <span class="title">Project Request</span>
+          <div class="text">
+            <span>엑스티는 당신다움을 함께</span><br>
+            <span><i>탐험할 준비</i>가 되어 있어요</span>
+          </div>
+          <div class="photo"><img src="" alt=""></div>
+          <span class="rightBottom">프로젝트 문의하기 &gt;</span>
+          <span class="borTopBtm"></span>
+          <span class="borLeftRight"></span>
+        </a>
+      </div>
+      <div class="box box--career" data-aos="fade-up">
+        <a href="#">
+          <span class="title">Career</span>
+          <div class="text">
+            <span>엑스티는 당신다움을 함께</span><br>
+            <span><i>빛날 준비</i>가 되어 있어요</span>
+          </div>
+          <div class="photo"><img src="" alt=""></div>
+          <span class="rightBottom">채용 지원하기 &gt;</span>
+        </a>
+      </div>
+    </div>
+    <div class="mapWrap" data-aos="fade-up">
+      <div id='map' style='width: 100%; height: 900px;'>
+        <div class="addr">(주) 엑스티<br>서울특별시 관악구 남부순환로 1531 2층</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="copy">© 2020 XT Inc.Rights Reserved.</span>
+      <div class="contact">
+        <span>T +82 2 853 6582</span>
+        <span>F  +82 2 853 6582</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="btnTop">
+    <span class="t">T</span>
+    <div>
+      <span class="o">O</span>
+      <span class="p">P</span>
+    </div>
+  </a>
+</div>
+
+<script src="../resources/js/jquery-3.4.1.min.js"></script>
+<script src="../resources/js/aos.js"></script>
+<script src="../resources/js/scrolloverflow.js"></script>
+<script src="../resources/js/fullpage.js"></script>
+<script src="../resources/js/common.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+<script>
+  $(function(){
+
+    $('.contactContent').closest('body').addClass('blackType');
+    $(window).scroll(function(){
+        if( $(this).scrollTop() >= 100) {
+          $('.header .pdf-down').fadeOut();
+        } else {
+          $('.header .pdf-down').fadeIn();
+        }
+    });
+
+  });
+
+  mapboxgl.accessToken = 'pk.eyJ1Ijoia2ltamVvbmdod2FuIiwiYSI6ImNrYXIwMG93aTBlNHcyc3ByeDZqaGE0b2oifQ.Xmf4oYVnO_l-kR_Lb-odYQ';
+  var geojson = {
+    'type': 'FeatureCollection',
+    'features': [
+      {
+        'type': 'XT',
+        'properties': {
+          'iconSize': [107, 107]
+        },
+        'geometry': {
+          //'type': 'Point',
+          'coordinates': [126.920767, 37.483309]
+        }
+      }
+    ]
+  };
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/kimjeonghwan/ckar104n51bak1iqpkdfynzpt',
+    center: [126.920767, 37.483309],
+    zoom: 13.5,
+    pitch: 45,
+    bearing: 25,
+    container: 'map'
+  });
+  map.on('load', function() {
+    // Insert the layer beneath any symbol layer.
+    var layers = map.getStyle().layers;
+
+    var labelLayerId;
+    for (var i = 0; i < layers.length; i++) {
+      if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+        labelLayerId = layers[i].id;
+        break;
+      }
+    }
+    map.addLayer({
+      'id': '3d-buildings',
+      'source': 'composite',
+      'source-layer': 'building',
+      'filter': ['==', 'extrude', 'true'],
+      'type': 'fill-extrusion',
+      'minzoom': 14,
+      'paint': {
+        'fill-extrusion-color': '#303030',
+
+        // use an 'interpolate' expression to add a smooth transition effect to the
+        // buildings as the user zooms in
+        'fill-extrusion-height': [
+          "interpolate", ["linear"], ["zoom"],
+          15, 0,
+          22.05, ["get", "height"]
+        ],
+        'fill-extrusion-base': [
+          "interpolate", ["linear"], ["zoom"],
+          15, 0,
+          15.05, ["get", "min_height"]
+        ],
+        'fill-extrusion-opacity': .7
+      }
+    }, labelLayerId);
+  });
+
+  geojson.features.forEach(function(marker) {
+    // create a DOM element for the marker
+    var el = document.createElement('div');
+    el.className = 'marker';
+    /*el.style.backgroundImage =
+                'url(https://placekitten.com/g/' +
+                marker.properties.iconSize.join('/') +
+                '/)';*/
+    el.style.backgroundImage =
+      'url(../resources/images/common/xt_marker.png)';
+    el.style.width = marker.properties.iconSize[0] + 'px';
+    el.style.height = marker.properties.iconSize[1] + 'px';
+    console.log(el.style.backgroundImage);
+    /*el.addEventListener('click', function() {
+            window.alert(marker.properties.message);
+        });*/
+
+    // add marker to map
+    new mapboxgl.Marker(el)
+      .setLngLat(marker.geometry.coordinates)
+      .addTo(map);
+  });
+
+  // Cre
+
+  map.scrollZoom.disable();
+  map.addControl(new mapboxgl.NavigationControl());
+
+  AOS.init({
+    duration: 1000,
+    offset: 200,
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+@mixin text-bar($color,$beforeCor) {
+    &:before,&:after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        position: absolute;
+    }
+    &:before {
+        //background: #00C691;
+        background: $beforeCor;
+        width: 100%;
+    }
+    &:after {
+        background: $color;
+    }
+}
+@mixin animateType($transtionTime,$animationTime,$delay) {
+    &:before {
+        right: 0;
+        width: 0;
+        -webkit-transition: width $transtionTime ease-in-out;
+        transition: width $transtionTime ease-in-out;
+        transition-delay: $delay;
+    }
+    &:after {
+        -webkit-animation: typo01-after $animationTime ease-in-out;
+        animation-delay: $delay;
+    }
+}
+
+.xt-intro {
+    padding: 12.5000vw 0 0;
+    .intro-tit {
+        font-size: 0.9375vw;
+        padding-bottom: 2.6042vw;
+    }
+    .intro-visual {
+        position: relative;
+        overflow: hidden;
+        .visual-txt {
+            position: absolute;
+            top: 0;
+            left: 14.5833vw;
+            z-index: 1;
+            .greet {
+                font-size: 5.2083vw;
+                font-weight: 700;
+            }
+            .greet-txt {
+                span {
+                    font-size: 4.1667vw;
+                    font-weight: 300;
+                }
+            }
+        }
+        .visual-img {
+            position: relative;
+            padding-top: 18.2292vw;
+            width: 63.8021vw;
+            float: right;
+            .img {
+                width: 63.8021vw;
+                img {
+                    width: 100%;
+                }
+            }
+            .txt {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 24.8438vw;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .who {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 6.7708vw;
+        .who-img {
+            width: 25.1563vw;
+            img {
+                width: 100%;
+            }
+        }
+        .who-txt {
+            padding: 10.6771vw 0 0 8.2292vw;
+            strong {
+                display: block;
+                padding-bottom: 3.1250vw;
+                span {
+                    position: relative;
+                    font-size: 1.7708vw;
+                    font-weight: 700;
+                    line-height: 1.76em;
+                    @include text-bar(#FFE232,#fff);
+                }
+                &.aos-animate {
+                    span {
+                        @include animateType(1.1s,1s,0.5s);
+                    }
+                }
+            }
+            div {
+                padding-bottom: 3.6458vw;
+                span {
+                    position: relative;
+                    font-size: 1.1458vw;
+                    font-weight: 500;
+                    line-height: 2.27em;
+                    @include text-bar(#FFE232,#fff);
+                }
+                &.aos-animate {
+                    span {
+                        @include animateType(1.1s,1s,0.5s);
+                    }
+                }
+            }
+        }
+    }
+    .intro-slide {
+        padding-left: 14.5833vw;
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    &:nth-child(1) {
+                        width: 28.1250vw;
+                    }
+                    &:nth-child(2) {
+                        width: 25.3125vw;
+                    }
+                    &:nth-child(3) {
+                        width: 26.0417vw;
+                    }
+
+                }
+            }
+        }
+        &.history {
+            margin-bottom: 12.5000vw;
+            .swiper-slide {
+                &:nth-child(4) {
+                    width: 8.3333vw;
+                }
+                strong {
+                    display: block;
+                    font-size: 6.2500vw;
+                    font-weight: 500;
+                    line-height: 1em;
+                    padding-bottom: 1.5625vw;
+                }
+                p {
+                    font-size: 0.8333vw;
+                    line-height: 1.875em;
+                }
+            }
+        }
+        &.philosophy {
+            .swiper-slide {
+                &:nth-child(4) {
+                    width: 19.7917vw;
+                }
+                .philosophy-img {
+                    padding-bottom: 1.9792vw;
+                }
+                .philosophy-tit {
+                    display: block;
+                    font-size: 1.6667vw;
+                    font-weight: 700;
+                    padding-bottom: 0.5208vw;
+                    span {
+                        display: block;
+                        font-size: 0.8333vw;
+                        color: #ccc;
+                        font-weight: 400;
+                    }
+                }
+                .philosophy-txt {
+                    font-size: 0.7292vw;
+                    line-height: 1.85em;
+                }
+            }
+        }
+    }
+    .our-service {
+        padding: 12.7083vw 14.5833vw 0;
+        .service-kind {
+            display: flex;
+            justify-content: space-between;
+            > div {
+                width: 21.8750vw;
+                .service-img {
+                    width: 21.8750vw;
+                    padding-bottom: 1.5625vw;
+                    img {
+                        width: 100%;
+                    }
+                }
+                ul {
+                    li {
+                        font-size: 0.7292vw;
+                        line-height: 2.14em;
+                    }
+                }
+            }
+        }
+    }
+    .partner {
+        padding: 12.5000vw 14.5833vw 0;
+        display: flex;
+        justify-content: flex-start;
+        h2 {
+            padding-right: 15.1042vw;
+        }
+        ul {
+            width: 52.0833vw;
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 4.6875vw;
+                div {
+                    width: 9.9479vw;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .main-contact {
+        margin-top: 80px;
+        top: 0;
+        left: 0;
+    }
+}
+
+@-webkit-keyframes typoTxt {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    to {
+        right: 0;
+        width: 0;
+    }
+}
+@-webkit-keyframes typo01-after {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    to {
+        right: 0;
+        width: 0;
+    }
+}

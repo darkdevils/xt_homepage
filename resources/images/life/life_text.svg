@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="141" viewBox="0 0 210 141">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_1680" data-name="타원 1680" cx="38" cy="38" r="38" transform="translate(1496 1213)" fill="#00c691"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_4325" data-name="그룹 4325" transform="translate(-1549 -1129)">
+    <circle id="타원_1679" data-name="타원 1679" cx="38" cy="38" r="38" transform="translate(1549 1194)" fill="#fff"/>
+    <g id="그룹_4324" data-name="그룹 4324">
+      <text id="따로_또_같이" data-name="따로 
+   또 같이" transform="translate(1553 1183)" fill="#ffe232" font-size="50" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">따로</tspan><tspan y="0" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"> </tspan><tspan font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="65" xml:space="preserve">   </tspan><tspan y="65" font-family="MalgunGothicBold, Malgun Gothic" font-weight="400">또</tspan><tspan y="65"> </tspan><tspan y="65" font-family="MalgunGothicBold, Malgun Gothic" font-weight="400">같이</tspan></tspan></text>
+      <g id="마스크_그룹_199" data-name="마스크 그룹 199" transform="translate(53 -19)" clip-path="url(#clip-path)">
+        <text id="따로_또_같이-2" data-name="따로 
+   또 같이" transform="translate(1500 1202)" fill="#00c691" font-size="50" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">따로</tspan><tspan y="0" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"> </tspan><tspan font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="65" xml:space="preserve">   </tspan><tspan y="65" font-family="MalgunGothicBold, Malgun Gothic" font-weight="400">또</tspan><tspan y="65"> </tspan><tspan y="65" font-family="MalgunGothicBold, Malgun Gothic" font-weight="400">같이</tspan></tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
