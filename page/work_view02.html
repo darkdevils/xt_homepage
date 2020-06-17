@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <title>Title</title>
+    <style>
+        html
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="skip-navi">
+            <a href="#container">본문 바로가기</a>
+            <a href="#gnb">메뉴 바로가기 test</a>
+        </div>
+        <header class="w-txt">
+            <a href="#" class="btnPrev"><span>Prev</span></a>
+            <div class="hamburger">
+                <a href="#">
+                    <div class="side-open">
+                        <span class="m">M</span>
+                        <span class="e">E</span>
+                        <span class="n">N</span>
+                        <span class="u">U</span>
+                    </div>
+                    <div class="side-close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav">
+                <ul id="gnb">
+                    <li><a href="main.html">XT</a></li>
+                    <li><a href="work.html">Works</a></li>
+                    <li><a href="life.html">XTSIEN Life</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="newsList.html">News</a></li>
+                </ul>
+                <div class="profile-down">
+                    <a href="#">Download XT profile pdf</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="work__contentView">
+        <div class="work__contentView__visual"><img src="../resources/images/works/work_visual02.jpg" alt="HANWHA RESORTS"></div>
+        <div class="work__contentView__overview2">
+            <span class="title">OVERVIEW</span>
+            <p>한화리조트는  국내  서비스, 레저 업계를 선두해가며 성장하고 있는 한화호텔&리조트의 대표적인 브랜드입니다.<br>예약서비스를 중심으로 다양한 서비스로의 확장 가능한 생태계를 구축함을 목표로 하였습니다.</p>
+        </div>
+
+        <!-- Design Strategy -->
+        <div class="work__contentView__designStrategy">
+            <h2 class="title">Design Strategy</h2>
+            <p>한화리조트 브랜드의 아이덴티티 강화하고 다양한 콘텐츠를 효과적으로 노출하여<br>사용자의 접근성과 사용성을 강화하였습니다</p>
+            <div class="img">
+                <img src="../resources/images/works/work_design01.png" alt="">
+                <img src="../resources/images/works/work_design02.png" alt="">
+                <img src="../resources/images/works/work_design03.png" alt="">
+            </div>
+            <div class="imgList">
+                <img src="../resources/images/works/design_list01.png" alt="">
+                <img src="../resources/images/works/design_list02.png" alt="">
+                <img src="../resources/images/works/design_list03.png" alt="">
+                <img src="../resources/images/works/design_list04.png" alt="">
+                <img src="../resources/images/works/design_list05.png" alt="">
+            </div>
+        </div>
+        <!-- //Design Strategy -->
+
+        <!-- Home Layout -->
+        <div class="work__contentView__homeLayout">
+            <h2 class="title">Home Layout</h2>
+            <p>다양한 콘텐츠를 한 페이지에서 간편하게 볼수 있도록<br>화면 개선하였고 편안하고 신뢰감을 주는 컬러 사용과<br>쉬운 UI로 누구나 편리한 서비스 제공하고자 하였습니다.</p>
+            <div>
+                <img src="../resources/images/works/work_homplayout01.png" alt="">
+                <img src="../resources/images/works/work_homplayout02.png" alt="">
+            </div>
+        </div>
+        <!-- //Home Layout -->
+
+        <!-- Reservation service -->
+        <div class="work__contentView__reservation">
+            <div class="textContent">
+                <h2 class="title">Reservation service</h2>
+                <p>한화리조트 앱 메인 페이지의 예약기능을 통해서  쉽고 간편하게<br>리조트 서비스를 예약할 수 있습니다</p>
+                <div><img src="../resources/images/works/reservation01.png" alt=""></div>
+            </div>
+        </div>
+        <!-- //Reservation service -->
+
+
+        <div class="footer">
+            <span>&copy;2020 XT Inc.Rights Reserved.</span>
+            <span>T +82 2 853 6582  F  +82 2 853 6582</span>
+        </div>
+    </div>
+    <a href="#" class="btnTop">
+        <span class="t">T</span>
+        <div>
+            <span class="o">O</span>
+            <span class="p">P</span>
+        </div>
+    </a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="../resources/js/aos.js"></script>
+<script src="../resources/js/scrolloverflow.js"></script>
+<script src="../resources/js/fullpage.js"></script>
+<script src="../resources/js/swiper.js"></script>
+<script src="../resources/js/common.js"></script>
+<script>
+    $(function(){
+        $('.work__contentView').parents('html,body').css({overflow: 'auto'});
+        $('.work__contentView').closest('body').addClass('corWihte');
+        AOS.init({
+            duration: 1200,
+            offset: 120,
+        });
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+                mousewheelControl: true,
+            },
+        });
+        $(window).resize(function () {
+            $(".swiper-slide").css("width", $(window).width());
+        });
+        var slideIndex  = 1, sliding     = false;
+        var length = $("#section2 .slide").length;
+
+        $('#pagepiling').fullpage({
+            scrollingSpeed:500,
+            css3: true,
+            scrollOverflow: true,
+            onLeave: function(index, nextIndex, direction) {
+                if(index == 2 && !sliding) {
+                    if(direction == 'down' && slideIndex < length) {
+                        sliding = true;
+                        $.fn.fullpage.moveSlideRight();
+                        slideIndex++;
+                        return false;
+                    } else if(direction == 'up' && slideIndex > 1) {
+                        sliding = true;
+                        $.fn.fullpage.moveSlideLeft();
+                        slideIndex--;
+                        return false;
+                    }
+                } else if(sliding) {
+                    return false;
+                }
+            },
+            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+                sliding = false;
+            }
+        });
+
+        $('.btnTop').on('click',function(){
+            $('html, body').animate({scrollTop: '0'}, 600);
+        });
+    });
+</script>
+</body>
+</html>
+
