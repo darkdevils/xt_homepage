@@ -3639,7 +3639,7 @@ h1, h2, h3, h4, h5, h6, strong {
   z-index: 9999; }
   .wrapper .header .hamburger a {
     position: fixed;
-    top: 60px;
+    top: 43px;
     right: 60px;
     display: block;
     width: 42px;
@@ -6129,398 +6129,822 @@ body[class*=fp-viewing-1-] .wrapper .header.main .xt-ci {
   .corWihte .wrapper .header .hamburger a div.side-open span {
     color: #fff; }
 
-.corWihte .work__contentView__visual {
-  margin-bottom: 10.4167vw; }
-  .corWihte .work__contentView__visual img {
-    width: 100%; }
-
-.corWihte .work__contentView__overview {
-  display: flex;
-  width: 71.0938vw;
-  margin: 0 auto 9.0625vw; }
-  .corWihte .work__contentView__overview .leftText {
-    width: 49.1667vw; }
-    .corWihte .work__contentView__overview .leftText .title {
-      margin-bottom: 2.6042vw; }
-      .corWihte .work__contentView__overview .leftText .title span {
+.corWihte .work__contentView {
+  overflow: hidden; }
+  .corWihte .work__contentView__visual {
+    margin-bottom: 10.4167vw; }
+    .corWihte .work__contentView__visual img {
+      width: 100%; }
+  .corWihte .work__contentView__overview {
+    display: flex;
+    width: 71.0938vw;
+    margin: 0 auto 9.0625vw; }
+    .corWihte .work__contentView__overview .leftText {
+      width: 49.1667vw; }
+      .corWihte .work__contentView__overview .leftText .title {
+        margin-bottom: 2.6042vw; }
+        .corWihte .work__contentView__overview .leftText .title span {
+          font-size: 0.9375vw;
+          font-weight: 700; }
+      .corWihte .work__contentView__overview .leftText .text {
+        font-size: 2.0833vw;
+        font-weight: 700; }
+    .corWihte .work__contentView__overview .rightText {
+      width: 21.9792vw; }
+      .corWihte .work__contentView__overview .rightText dt {
+        font-size: 0.9375vw;
+        font-weight: 700;
+        margin-bottom: 9px; }
+      .corWihte .work__contentView__overview .rightText dd {
+        margin-bottom: 1.3542vw;
+        font-size: 0.7292vw;
+        line-height: 1.56vw; }
+  .corWihte .work__contentView__mission {
+    position: relative;
+    width: 100%;
+    background: url(../../resources/images/works/work_mission.jpg) no-repeat 0 0;
+    background-size: 100%;
+    margin-bottom: 9.8958vw; }
+    .corWihte .work__contentView__mission .missionContent {
+      position: relative;
+      width: 71.0938vw;
+      margin: 0 auto;
+      padding: 8.8542vw 0 0 0;
+      z-index: 1; }
+      .corWihte .work__contentView__mission .missionContent .title {
+        display: inline-block;
+        margin-bottom: 2.6042vw;
         font-size: 0.9375vw;
         font-weight: 700; }
-    .corWihte .work__contentView__overview .leftText .text {
-      font-size: 2.0833vw;
-      font-weight: 700; }
-  .corWihte .work__contentView__overview .rightText {
-    width: 21.9792vw; }
-    .corWihte .work__contentView__overview .rightText dt {
-      font-size: 0.9375vw;
-      font-weight: 700;
-      margin-bottom: 9px; }
-    .corWihte .work__contentView__overview .rightText dd {
-      margin-bottom: 1.3542vw;
-      font-size: 0.7292vw;
-      line-height: 1.56vw; }
-
-.corWihte .work__contentView__mission {
-  position: relative;
-  width: 100%;
-  background: url(../../resources/images/works/work_mission.jpg) no-repeat 0 0;
-  background-size: 100%;
-  margin-bottom: 9.8958vw; }
-  .corWihte .work__contentView__mission .missionContent {
+      .corWihte .work__contentView__mission .missionContent .text {
+        position: relative; }
+        .corWihte .work__contentView__mission .missionContent .text strong {
+          font-size: 2.6042vw;
+          font-weight: 700; }
+    .corWihte .work__contentView__mission:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 18.2292vw;
+      width: 50.8854vw;
+      height: 8.8542vw;
+      background: #fff;
+      z-index: 0; }
+  .corWihte .work__contentView__projectgoals {
     position: relative;
     width: 71.0938vw;
-    margin: 0 auto;
-    padding: 8.8542vw 0 0 0;
-    z-index: 1; }
-    .corWihte .work__contentView__mission .missionContent .title {
+    margin: 0 auto 10.4167vw;
+    display: flex; }
+    .corWihte .work__contentView__projectgoals .title {
+      font-size: 0.9375vw;
+      font-weight: 700;
       display: inline-block;
-      margin-bottom: 2.6042vw;
-      font-size: 0.9375vw;
-      font-weight: 700; }
-    .corWihte .work__contentView__mission .missionContent .text {
-      position: relative; }
-      .corWihte .work__contentView__mission .missionContent .text strong {
-        font-size: 2.6042vw;
-        font-weight: 700; }
-  .corWihte .work__contentView__mission:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 18.2292vw;
-    width: 50.8854vw;
-    height: 8.8542vw;
-    background: #fff;
-    z-index: 0; }
-
-.corWihte .work__contentView__projectgoals {
-  position: relative;
-  width: 71.0938vw;
-  margin: 0 auto 10.4167vw;
-  display: flex; }
-  .corWihte .work__contentView__projectgoals .title {
-    font-size: 0.9375vw;
-    font-weight: 700;
-    display: inline-block;
-    margin-right: 6.7708vw; }
-  .corWihte .work__contentView__projectgoals ol {
-    display: flex;
-    overflow: hidden;
-    flex: 1; }
-    .corWihte .work__contentView__projectgoals ol li {
+      margin-right: 6.7708vw; }
+    .corWihte .work__contentView__projectgoals ol {
       display: flex;
-      margin-left: 3.9583vw; }
-      .corWihte .work__contentView__projectgoals ol li .num {
-        font-size: 23px;
-        font-weight: 700;
-        color: #2771F1;
-        margin-right: 1.5625vw; }
-      .corWihte .work__contentView__projectgoals ol li div strong {
-        font-size: 1.5625vw;
-        font-weight: 700; }
-      .corWihte .work__contentView__projectgoals ol li div p {
-        margin-top: 1.0417vw;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.7em; }
-      .corWihte .work__contentView__projectgoals ol li:first-child {
-        margin: 0; }
-
-.corWihte .work__contentView__concept {
-  background: url(../../resources/images/works/work_concept.jpg) no-repeat;
-  background-size: 100%;
-  margin-bottom: 13.8889vw; }
-  .corWihte .work__contentView__concept .textContent {
-    display: flex;
-    position: relative;
-    width: 71.0938vw;
-    margin: 0 auto;
-    padding: 10.4167vw 0; }
-    .corWihte .work__contentView__concept .textContent .title {
-      font-size: 18px;
-      font-weight: 700;
-      color: #fff;
-      margin-right: 10.7292vw; }
-    .corWihte .work__contentView__concept .textContent > div {
+      overflow: hidden;
+      flex: 1; }
+      .corWihte .work__contentView__projectgoals ol li {
+        display: flex;
+        margin-left: 3.9583vw; }
+        .corWihte .work__contentView__projectgoals ol li .num {
+          font-size: 23px;
+          font-weight: 700;
+          color: #2771F1;
+          margin-right: 1.5625vw; }
+        .corWihte .work__contentView__projectgoals ol li div strong {
+          font-size: 1.5625vw;
+          font-weight: 700; }
+        .corWihte .work__contentView__projectgoals ol li div p {
+          margin-top: 1.0417vw;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.7em; }
+        .corWihte .work__contentView__projectgoals ol li:first-child {
+          margin: 0; }
+  .corWihte .work__contentView__concept {
+    background: url(../../resources/images/works/work_concept.jpg) no-repeat;
+    background-size: 100%;
+    margin-bottom: 13.8889vw; }
+    .corWihte .work__contentView__concept .textContent {
+      display: flex;
       position: relative;
-      top: -25px; }
-    .corWihte .work__contentView__concept .textContent strong {
-      font-size: 5.8333vw;
-      font-weight: 700;
-      color: #fff; }
-      .corWihte .work__contentView__concept .textContent strong span {
-        font-size: 5.8333vw;
-        font-weight: 700;
-        color: #2771F1; }
-
-.corWihte .work__contentView__componentSystem .text {
-  display: flex;
-  width: 71.0938vw;
-  margin: 0 auto 8.3333vw; }
-  .corWihte .work__contentView__componentSystem .text .title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-right: 4.4271vw; }
-  .corWihte .work__contentView__componentSystem .text p {
-    font-size: 14px; }
-
-.corWihte .work__contentView__componentSystem .colorList {
-  margin-bottom: 13.8889vw; }
-  .corWihte .work__contentView__componentSystem .colorList li img {
-    width: 100%; }
-  .corWihte .work__contentView__componentSystem .colorList li:nth-child(1) {
-    padding-right: 8.3333vw;
-    margin-bottom: 3.9063vw; }
-  .corWihte .work__contentView__componentSystem .colorList li:nth-child(2) {
-    padding-left: 8.3333vw; }
-
-.corWihte .work__contentView__componentSystem .textList {
-  width: 71.0938vw;
-  margin: 0 auto; }
-  .corWihte .work__contentView__componentSystem .textList li:nth-child(1) dt, .corWihte .work__contentView__componentSystem .textList li:nth-child(1) dd span {
-    font-weight: 300; }
-  .corWihte .work__contentView__componentSystem .textList li:nth-child(2) dt, .corWihte .work__contentView__componentSystem .textList li:nth-child(2) dd span {
-    font-weight: 500; }
-  .corWihte .work__contentView__componentSystem .textList li:nth-child(3) dt, .corWihte .work__contentView__componentSystem .textList li:nth-child(3) dd span {
-    font-weight: 700; }
-  .corWihte .work__contentView__componentSystem .textList dt {
-    font-size: 16px; }
-  .corWihte .work__contentView__componentSystem .textList dd {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.7778vw; }
-    .corWihte .work__contentView__componentSystem .textList dd span {
-      display: flex;
-      font-size: 2.831vw;
-      margin-left: 9.0278vw; }
-      .corWihte .work__contentView__componentSystem .textList dd span:nth-child(1) {
-        margin: 0; }
-
-.corWihte .work__contentView__product {
-  position: relative;
-  background: #EBEDF3; }
-  .corWihte .work__contentView__product .productContent {
-    display: flex;
-    position: relative;
-    width: 71.0938vw;
-    height: 42.7083vw;
-    margin: 0 auto;
-    padding: 6.2500vw 0 0;
-    overflow: hidden; }
-    .corWihte .work__contentView__product .productContent .text {
-      width: 24.1667vw;
-      padding: 0 2.0833vw 0 0; }
-      .corWihte .work__contentView__product .productContent .text strong {
-        display: inline-block;
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 0.5208vw; }
-      .corWihte .work__contentView__product .productContent .text span {
-        display: inline-block;
+      width: 71.0938vw;
+      margin: 0 auto;
+      padding: 10.4167vw 0; }
+      .corWihte .work__contentView__concept .textContent .title {
         font-size: 18px;
         font-weight: 700;
-        margin-bottom: 1.8229vw; }
-      .corWihte .work__contentView__product .productContent .text ul {
+        color: #fff;
+        margin-right: 10.7292vw; }
+      .corWihte .work__contentView__concept .textContent > div {
         position: relative;
-        height: 258px;
-        margin: 25px 0 0 -25px; }
-        .corWihte .work__contentView__product .productContent .text ul li {
-          position: absolute; }
-          .corWihte .work__contentView__product .productContent .text ul li:nth-child(2) {
-            top: 45px; }
-          .corWihte .work__contentView__product .productContent .text ul li:nth-child(3) {
-            top: 90px; }
-          .corWihte .work__contentView__product .productContent .text ul li:nth-child(4) {
-            top: 135px; }
-    .corWihte .work__contentView__product .productContent .imgWrap {
-      position: absolute;
-      width: 26.0417vw;
-      right: 19.1667vw;
-      margin-bottom: -8.1250vw; }
-      .corWihte .work__contentView__product .productContent .imgWrap .img01 {
-        position: relative; }
-        .corWihte .work__contentView__product .productContent .imgWrap .img01_02 {
-          position: absolute;
-          top: 15px;
-          left: -50px;
-          width: 120%; }
-      .corWihte .work__contentView__product .productContent .imgWrap img {
-        width: 100%;
-        position: relative; }
-  .corWihte .work__contentView__product .img02 {
-    position: absolute;
-    width: 20.2292vw;
-    right: 17.7292vw;
-    bottom: -11vw; }
-    .corWihte .work__contentView__product .img02 img {
-      width: 100%; }
-
-.corWihte .work__contentView__aquaLayout {
-  overflow: hidden; }
-  .corWihte .work__contentView__aquaLayout .aquaContent {
-    position: relative;
+        top: -25px; }
+      .corWihte .work__contentView__concept .textContent strong {
+        font-size: 5.8333vw;
+        font-weight: 700;
+        color: #fff; }
+        .corWihte .work__contentView__concept .textContent strong span {
+          font-size: 5.8333vw;
+          font-weight: 700;
+          color: #2771F1; }
+  .corWihte .work__contentView__componentSystem .text {
+    display: flex;
     width: 71.0938vw;
-    margin: 0 auto;
-    padding: 16.2500vw 0 0; }
-    .corWihte .work__contentView__aquaLayout .aquaContent .title {
-      display: inline-block;
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 1.3021vw; }
-  .corWihte .work__contentView__aquaLayout .aquaContentImg {
-    position: relative;
-    width: 83.3333vw;
-    margin: 0 auto 10.4167vw; }
-    .corWihte .work__contentView__aquaLayout .aquaContentImg img {
-      width: 100%; }
-  .corWihte .work__contentView__aquaLayout .contentType01 {
-    position: relative;
-    width: 71.0938vw;
-    margin: 0 auto 11.9792vw;
-    padding: 0 0 0 5.4688vw; }
-    .corWihte .work__contentView__aquaLayout .contentType01 strong {
-      display: inline-block;
-      font-size: 30px;
-      font-weight: 700; }
-    .corWihte .work__contentView__aquaLayout .contentType01 span {
-      display: block;
+    margin: 0 auto 8.3333vw; }
+    .corWihte .work__contentView__componentSystem .text .title {
       font-size: 18px;
       font-weight: 700;
-      margin: 0.6250vw 0 1.8229vw; }
-    .corWihte .work__contentView__aquaLayout .contentType01 p {
-      margin-bottom: 3.1667vw; }
-    .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap {
+      margin-right: 4.4271vw; }
+    .corWihte .work__contentView__componentSystem .text p {
+      font-size: 14px; }
+  .corWihte .work__contentView__componentSystem .colorList {
+    margin-bottom: 13.8889vw; }
+    .corWihte .work__contentView__componentSystem .colorList li img {
+      width: 100%; }
+    .corWihte .work__contentView__componentSystem .colorList li:nth-child(1) {
+      padding-right: 8.3333vw;
+      margin-bottom: 3.9063vw; }
+    .corWihte .work__contentView__componentSystem .colorList li:nth-child(2) {
+      padding-left: 8.3333vw; }
+  .corWihte .work__contentView__componentSystem .textList {
+    width: 71.0938vw;
+    margin: 0 auto; }
+    .corWihte .work__contentView__componentSystem .textList li:nth-child(1) dt, .corWihte .work__contentView__componentSystem .textList li:nth-child(1) dd span {
+      font-weight: 300; }
+    .corWihte .work__contentView__componentSystem .textList li:nth-child(2) dt, .corWihte .work__contentView__componentSystem .textList li:nth-child(2) dd span {
+      font-weight: 500; }
+    .corWihte .work__contentView__componentSystem .textList li:nth-child(3) dt, .corWihte .work__contentView__componentSystem .textList li:nth-child(3) dd span {
+      font-weight: 700; }
+    .corWihte .work__contentView__componentSystem .textList dt {
+      font-size: 16px; }
+    .corWihte .work__contentView__componentSystem .textList dd {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.7778vw; }
+      .corWihte .work__contentView__componentSystem .textList dd span {
+        display: flex;
+        font-size: 2.831vw;
+        margin-left: 9.0278vw; }
+        .corWihte .work__contentView__componentSystem .textList dd span:nth-child(1) {
+          margin: 0; }
+  .corWihte .work__contentView__product {
+    position: relative;
+    background: #EBEDF3; }
+    .corWihte .work__contentView__product .productContent {
       display: flex;
       position: relative;
-      height: 49vw; }
-      .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap .img01 {
+      width: 71.0938vw;
+      height: 42.7083vw;
+      margin: 0 auto;
+      padding: 6.2500vw 0 0;
+      overflow: hidden; }
+      .corWihte .work__contentView__product .productContent .text {
+        width: 24.1667vw;
+        padding: 0 2.0833vw 0 0; }
+        .corWihte .work__contentView__product .productContent .text strong {
+          display: inline-block;
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 0.5208vw; }
+        .corWihte .work__contentView__product .productContent .text span {
+          display: inline-block;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 1.8229vw; }
+        .corWihte .work__contentView__product .productContent .text ul {
+          position: relative;
+          height: 258px;
+          margin: 25px 0 0 -25px; }
+          .corWihte .work__contentView__product .productContent .text ul li {
+            position: absolute; }
+            .corWihte .work__contentView__product .productContent .text ul li:nth-child(2) {
+              top: 45px; }
+            .corWihte .work__contentView__product .productContent .text ul li:nth-child(3) {
+              top: 90px; }
+            .corWihte .work__contentView__product .productContent .text ul li:nth-child(4) {
+              top: 135px; }
+      .corWihte .work__contentView__product .productContent .imgWrap {
         position: absolute;
-        left: -8vw;
-        width: 41.6667vw; }
-      .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap .img02 {
-        position: absolute;
-        left: 25vw;
-        top: 7vw;
-        width: 24.3229vw; }
-      .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap .img03 {
-        position: absolute;
-        left: 42vw;
-        top: 2vw;
-        width: 24.3229vw; }
-      .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap img {
+        width: 26.0417vw;
+        right: 19.1667vw;
+        margin-bottom: -8.1250vw; }
+        .corWihte .work__contentView__product .productContent .imgWrap .img01 {
+          position: relative; }
+          .corWihte .work__contentView__product .productContent .imgWrap .img01_02 {
+            position: absolute;
+            top: 15px;
+            left: -50px;
+            width: 120%; }
+        .corWihte .work__contentView__product .productContent .imgWrap img {
+          max-width: 100%;
+          position: relative; }
+    .corWihte .work__contentView__product .img02 {
+      position: absolute;
+      width: 20.2292vw;
+      right: 17.7292vw;
+      bottom: -11vw; }
+      .corWihte .work__contentView__product .img02 img {
         width: 100%; }
-  .corWihte .work__contentView__aquaLayout .contentType02 {
-    overflow: hidden;
-    margin-bottom: 13.0208vw; }
-    .corWihte .work__contentView__aquaLayout .contentType02 > div {
+  .corWihte .work__contentView__aquaLayout {
+    overflow: hidden; }
+    .corWihte .work__contentView__aquaLayout .aquaContent {
       position: relative;
-      float: left;
-      width: 51%; }
-    .corWihte .work__contentView__aquaLayout .contentType02 strong {
-      display: inline-block;
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 0.6250vw; }
-    .corWihte .work__contentView__aquaLayout .contentType02 span {
-      display: block;
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 1.5625vw; }
-    .corWihte .work__contentView__aquaLayout .contentType02 img {
-      width: 100%; }
-    .corWihte .work__contentView__aquaLayout .contentType02 .leftImg {
-      margin-right: -1%;
-      padding: 6.8750vw 0 0;
-      z-index: 2; }
-    .corWihte .work__contentView__aquaLayout .contentType02 .rightImg {
-      margin-left: -1%;
-      z-index: 1; }
-      .corWihte .work__contentView__aquaLayout .contentType02 .rightImg .text {
-        margin-bottom: 6.7708vw;
-        padding: 0 0 0 2.7vw; }
-  .corWihte .work__contentView__aquaLayout .contentType03 {
-    margin-bottom: 12.5000vw; }
-    .corWihte .work__contentView__aquaLayout .contentType03__text {
-      width: 28.1354vw;
-      margin: 0 auto 6.2500vw; }
-      .corWihte .work__contentView__aquaLayout .contentType03__text strong {
+      width: 71.0938vw;
+      margin: 0 auto;
+      padding: 16.2500vw 0 0; }
+      .corWihte .work__contentView__aquaLayout .aquaContent .title {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 1.3021vw; }
+    .corWihte .work__contentView__aquaLayout .aquaContentImg {
+      position: relative;
+      width: 83.3333vw;
+      margin: 0 auto 10.4167vw; }
+      .corWihte .work__contentView__aquaLayout .aquaContentImg img {
+        width: 100%; }
+    .corWihte .work__contentView__aquaLayout .contentType01 {
+      position: relative;
+      width: 71.0938vw;
+      margin: 0 auto 11.9792vw;
+      padding: 0 0 0 5.4688vw; }
+      .corWihte .work__contentView__aquaLayout .contentType01 strong {
         display: inline-block;
         font-size: 30px;
         font-weight: 700; }
-      .corWihte .work__contentView__aquaLayout .contentType03__text span {
+      .corWihte .work__contentView__aquaLayout .contentType01 span {
         display: block;
         font-size: 18px;
         font-weight: 700;
         margin: 0.6250vw 0 1.8229vw; }
-    .corWihte .work__contentView__aquaLayout .contentType03 .imgWrap {
-      padding: 0 74px; }
-      .corWihte .work__contentView__aquaLayout .contentType03 .imgWrap img {
+      .corWihte .work__contentView__aquaLayout .contentType01 p {
+        margin-bottom: 3.1667vw; }
+      .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap {
+        display: flex;
+        position: relative;
+        height: 49vw; }
+        .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap .img01 {
+          position: absolute;
+          left: -8vw;
+          width: 41.6667vw; }
+        .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap .img02 {
+          position: absolute;
+          left: 25vw;
+          top: 7vw;
+          width: 24.3229vw; }
+        .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap .img03 {
+          position: absolute;
+          left: 42vw;
+          top: 2vw;
+          width: 24.3229vw; }
+        .corWihte .work__contentView__aquaLayout .contentType01 .imgWrap img {
+          width: 100%; }
+    .corWihte .work__contentView__aquaLayout .contentType02 {
+      overflow: hidden;
+      margin-bottom: 13.0208vw; }
+      .corWihte .work__contentView__aquaLayout .contentType02 > div {
+        position: relative;
+        float: left;
+        width: 51%; }
+      .corWihte .work__contentView__aquaLayout .contentType02 strong {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0.6250vw; }
+      .corWihte .work__contentView__aquaLayout .contentType02 span {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 1.5625vw; }
+      .corWihte .work__contentView__aquaLayout .contentType02 img {
         width: 100%; }
-  .corWihte .work__contentView__aquaLayout .contentType04 {
-    position: relative; }
-    .corWihte .work__contentView__aquaLayout .contentType04:after {
-      content: "";
+      .corWihte .work__contentView__aquaLayout .contentType02 .leftImg {
+        margin-right: -1%;
+        padding: 6.8750vw 0 0;
+        z-index: 2; }
+      .corWihte .work__contentView__aquaLayout .contentType02 .rightImg {
+        margin-left: -1%;
+        z-index: 1; }
+        .corWihte .work__contentView__aquaLayout .contentType02 .rightImg .text {
+          margin-bottom: 6.7708vw;
+          padding: 0 0 0 2.7vw; }
+    .corWihte .work__contentView__aquaLayout .contentType03 {
+      margin-bottom: 12.5000vw; }
+      .corWihte .work__contentView__aquaLayout .contentType03__text {
+        width: 28.1354vw;
+        margin: 0 auto 6.2500vw; }
+        .corWihte .work__contentView__aquaLayout .contentType03__text strong {
+          display: inline-block;
+          font-size: 30px;
+          font-weight: 700; }
+        .corWihte .work__contentView__aquaLayout .contentType03__text span {
+          display: block;
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0.6250vw 0 1.8229vw; }
+      .corWihte .work__contentView__aquaLayout .contentType03 .imgWrap {
+        padding: 0 74px; }
+        .corWihte .work__contentView__aquaLayout .contentType03 .imgWrap img {
+          max-width: 100%; }
+    .corWihte .work__contentView__aquaLayout .contentType04 {
+      position: relative; }
+      .corWihte .work__contentView__aquaLayout .contentType04:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 300%;
+        background: #EBEDF3;
+        transform: rotate(-63deg) translate(198%, 0);
+        z-index: -1; }
+      .corWihte .work__contentView__aquaLayout .contentType04:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        background: #EBEDF3;
+        z-index: -1; }
+      .corWihte .work__contentView__aquaLayout .contentType04__text {
+        padding: 0 0 0 14.4792vw; }
+      .corWihte .work__contentView__aquaLayout .contentType04 strong {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 700; }
+      .corWihte .work__contentView__aquaLayout .contentType04 span {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0.6250vw 0 1.8229vw; }
+      .corWihte .work__contentView__aquaLayout .contentType04 .imgType01 img {
+        width: 100%; }
+      .corWihte .work__contentView__aquaLayout .contentType04 .imgType02 img {
+        width: 100%; }
+  .corWihte .work__contentView__nextProject {
+    position: relative;
+    display: flex;
+    height: 13.3417vw;
+    justify-content: center; }
+    .corWihte .work__contentView__nextProject .title {
+      position: absolute;
+      left: 3.1250vw;
+      top: 2.6042vw;
+      font-size: 1.3021vw;
+      font-weight: 700;
+      color: #fff;
+      z-index: 2; }
+    .corWihte .work__contentView__nextProject strong {
+      align-self: center;
+      font-size: 1.8750vw;
+      font-weight: 700;
+      color: #fff;
+      z-index: 2; }
+    .corWihte .work__contentView__nextProject .img {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
-      height: 300%;
-      background: #EBEDF3;
-      transform: rotate(-63deg) translate(198%, 0);
-      z-index: -1; }
-    .corWihte .work__contentView__aquaLayout .contentType04:before {
+      width: 100%; }
+      .corWihte .work__contentView__nextProject .img img {
+        width: 100%; }
+  .corWihte .work__contentView__overview2 {
+    width: 71.0938vw;
+    margin: 0 auto 10.6771vw; }
+    .corWihte .work__contentView__overview2 .title {
+      float: left;
+      font-size: 20px;
+      font-weight: 500; }
+    .corWihte .work__contentView__overview2 p {
+      padding: 0 0 0 14.0625vw;
+      font-size: 18px;
+      color: #878787; }
+  .corWihte .work__contentView__designStrategy {
+    position: relative;
+    margin-bottom: 17.1354vw; }
+    .corWihte .work__contentView__designStrategy .titleWrap {
+      width: 71.0938vw;
+      margin: 0 auto 18.0729vw; }
+      .corWihte .work__contentView__designStrategy .titleWrap h2.title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 1.4063vw; }
+      .corWihte .work__contentView__designStrategy .titleWrap p {
+        font-size: 18px;
+        color: #878787;
+        margin-bottom: 8.3333vw; }
+    .corWihte .work__contentView__designStrategy .img {
+      display: flex; }
+      .corWihte .work__contentView__designStrategy .img span {
+        display: inline-block;
+        margin-right: 1.9271vw; }
+        .corWihte .work__contentView__designStrategy .img span:last-child {
+          margin: 0; }
+        .corWihte .work__contentView__designStrategy .img span img {
+          width: 100%; }
+    .corWihte .work__contentView__designStrategy .imgList {
+      display: flex;
+      margin: 0 -55px; }
+      .corWihte .work__contentView__designStrategy .imgList span {
+        display: inline-block;
+        padding: 7.8125vw 0 0; }
+        .corWihte .work__contentView__designStrategy .imgList span:nth-child(3) {
+          padding: 0; }
+      .corWihte .work__contentView__designStrategy .imgList img {
+        width: 100%; }
+  .corWihte .work__contentView__homeLayout {
+    position: relative;
+    width: 100%;
+    padding: 0 0 5.2083vw; }
+    .corWihte .work__contentView__homeLayout:after {
       content: "";
       position: absolute;
       left: 0;
-      top: 50%;
+      bottom: 0;
+      background: #56C9CF;
       width: 100%;
-      height: 100%;
-      background: #EBEDF3;
+      height: 34.8438vw;
       z-index: -1; }
-    .corWihte .work__contentView__aquaLayout .contentType04__text {
-      padding: 0 0 0 14.4792vw; }
-    .corWihte .work__contentView__aquaLayout .contentType04 strong {
-      display: inline-block;
-      font-size: 30px;
-      font-weight: 700; }
-    .corWihte .work__contentView__aquaLayout .contentType04 span {
+    .corWihte .work__contentView__homeLayout:before {
+      content: "";
+      position: absolute;
+      right: 16.8750vw;
+      bottom: -1.3542vw;
+      background: #C9CFEE;
+      width: 3.6458vw;
+      height: 3.6458vw;
+      border-radius: 100%; }
+    .corWihte .work__contentView__homeLayout .homeLayoutContent {
+      width: 71.0938vw;
+      margin: 0 auto; }
+      .corWihte .work__contentView__homeLayout .homeLayoutContent h2.title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 1.4063vw; }
+      .corWihte .work__contentView__homeLayout .homeLayoutContent p {
+        font-size: 18px;
+        color: #878787; }
+      .corWihte .work__contentView__homeLayout .homeLayoutContent .imgWrap {
+        display: flex;
+        padding: 0 0 0 6.9792vw;
+        position: relative; }
+        .corWihte .work__contentView__homeLayout .homeLayoutContent .imgWrap span:nth-child(1) {
+          position: relative;
+          padding: 13.5417vw 0 0;
+          z-index: 2; }
+        .corWihte .work__contentView__homeLayout .homeLayoutContent .imgWrap img {
+          max-width: 100%; }
+        .corWihte .work__contentView__homeLayout .homeLayoutContent .imgWrap:after {
+          content: "";
+          position: absolute;
+          right: -11.0729vw;
+          top: -4.4271vw;
+          background: url("../images/works/bg_homelayout01.png") no-repeat;
+          background-size: contain;
+          background-position: right top;
+          width: 22.1875vw;
+          height: 14.6875vw;
+          z-index: -1; }
+        .corWihte .work__contentView__homeLayout .homeLayoutContent .imgWrap:before {
+          content: "";
+          position: absolute;
+          left: 6.1042vw;
+          bottom: 0.7813vw;
+          background: url("../images/works/bg_homelayout02.png") no-repeat;
+          background-size: contain;
+          background-position: left top;
+          width: 5.8333vw;
+          height: 5.8333vw;
+          z-index: 0; }
+  .corWihte .work__contentView__reservation {
+    position: relative;
+    overflow: hidden;
+    padding: 10vw 0 11vw; }
+    .corWihte .work__contentView__reservation:after {
+      content: "";
+      position: absolute;
+      left: -8.5vw;
+      bottom: 0;
+      width: 17.7083vw;
+      height: 17.7083vw;
+      border-radius: 100%;
+      background: #FFE565;
+      opacity: .45; }
+    .corWihte .work__contentView__reservation .textContent {
+      position: relative;
+      width: 71.0938vw;
+      margin: 0 auto;
+      padding: 0 0 0 29.1667vw; }
+      .corWihte .work__contentView__reservation .textContent h2.title {
+        position: relative;
+        font-size: 40px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 1.4063vw; }
+        .corWihte .work__contentView__reservation .textContent h2.title:after {
+          content: "";
+          position: absolute;
+          left: -1.9271vw;
+          top: -1.1458vw;
+          width: 7.8125vw;
+          height: 7.8125vw;
+          background: #D1F6F8;
+          border-radius: 100%;
+          z-index: -1; }
+      .corWihte .work__contentView__reservation .textContent p {
+        font-size: 18px;
+        color: #878787; }
+    .corWihte .work__contentView__reservation .img img {
+      position: relative;
+      width: 100%;
+      transform: scale(1.3);
+      right: -9vw; }
+  .corWihte .work__contentView__storygram {
+    margin-bottom: 18.0729vw; }
+    .corWihte .work__contentView__storygram .storygramContent {
+      width: 71.0938vw;
+      margin: 0 auto; }
+      .corWihte .work__contentView__storygram .storygramContent h2.title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 1.4063vw; }
+      .corWihte .work__contentView__storygram .storygramContent p {
+        font-size: 18px;
+        color: #878787;
+        margin-bottom: 2.0833vw;
+        font-weight: 100; }
+      .corWihte .work__contentView__storygram .storygramContent .img {
+        width: 100%;
+        height: 59.8958vw;
+        padding: 0 10vw;
+        text-align: center;
+        background: url("../images/works/bg_circle.png") no-repeat;
+        background-position: center;
+        background-size: contain; }
+        .corWihte .work__contentView__storygram .storygramContent .img span {
+          position: relative;
+          float: left;
+          width: 50%; }
+          .corWihte .work__contentView__storygram .storygramContent .img span img {
+            width: 100%; }
+          .corWihte .work__contentView__storygram .storygramContent .img span:first-child {
+            top: 20%; }
+  .corWihte .work__contentView__Icongraphy {
+    background: #3BC4CB; }
+    .corWihte .work__contentView__Icongraphy .icongraphyContent {
+      width: 71.0938vw;
+      margin: 0 auto;
+      padding: 8.3333vw 8.5938vw 4.8957vw; }
+      .corWihte .work__contentView__Icongraphy .icongraphyContent h2.title {
+        margin-bottom: 3.6458vw;
+        font-size: 32px;
+        font-weight: 500;
+        color: #fff; }
+      .corWihte .work__contentView__Icongraphy .icongraphyContent span {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        color: #fff;
+        padding: 78px 0 0; }
+      .corWihte .work__contentView__Icongraphy .icongraphyContent .group {
+        display: flex;
+        margin-bottom: 3.4375vw;
+        margin-left: -2vw; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconHome {
+          background: url("../images/icon/icon_home.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconSetting {
+          background: url("../images/icon/icon_setting.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconReservation {
+          background: url("../images/icon/icon_reservation.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconMy {
+          background: url("../images/icon/icon_my.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconLocation {
+          background: url("../images/icon/icon_location.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconNotification {
+          background: url("../images/icon/icon_notification.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconResort {
+          background: url("../images/icon/icon_resort.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconBed {
+          background: url("../images/icon/icon_bed.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconPrice {
+          background: url("../images/icon/icon_price.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconGolf {
+          background: url("../images/icon/icon_golf.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconAquaPlanet {
+          background: url("../images/icon/icon_aquaplanet.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconRecycleBin {
+          background: url("../images/icon/icon_recyclebin.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconAddinfo {
+          background: url("../images/icon/icon_addinfo.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconWine {
+          background: url("../images/icon/icon_wine.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconSearch {
+          background: url("../images/icon/icon_search.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconImage {
+          background: url("../images/icon/icon_image.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconAppliances {
+          background: url("../images/icon/icon_appliances.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconTableware {
+          background: url("../images/icon/icon_tableware.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconFruit {
+          background: url("../images/icon/icon_fruit.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconCoupon {
+          background: url("../images/icon/icon_coupon.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconDocument {
+          background: url("../images/icon/icon_document.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconCamera {
+          background: url("../images/icon/icon_camera.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconOkay {
+          background: url("../images/icon/icon_okay.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconTravelBags {
+          background: url("../images/icon/icon_travelbags.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconTime {
+          background: url("../images/icon/icon_time.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconShoppingBasket {
+          background: url("../images/icon/icon_shoppingbasket.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconModify {
+          background: url("../images/icon/icon_modify.png") no-repeat;
+          background-position: center 35%; }
+        .corWihte .work__contentView__Icongraphy .icongraphyContent .group .iconEmail {
+          background: url("../images/icon/icon_email.png") no-repeat;
+          background-position: center 35%; }
+  .corWihte .work__contentView__resort {
+    position: relative;
+    padding: 0 0 10vw;
+    overflow: hidden; }
+    .corWihte .work__contentView__resort:after {
+      content: "";
+      position: absolute;
+      left: -75vw;
+      top: 37vw;
+      background: #DDEDEE;
+      width: 300%;
+      height: 300%;
+      z-index: -1;
+      transform: rotate(11deg); }
+    .corWihte .work__contentView__resort .resortContent {
+      position: relative;
+      width: 71.0938vw;
+      margin: 16.8750vw auto 0; }
+      .corWihte .work__contentView__resort .resortContent .titleWrap {
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .corWihte .work__contentView__resort .resortContent .titleWrap h2.title {
+          position: relative;
+          font-size: 40px;
+          font-weight: 700;
+          color: #000;
+          margin-bottom: 1.4063vw; }
+          .corWihte .work__contentView__resort .resortContent .titleWrap h2.title:after {
+            content: "";
+            position: absolute;
+            top: -0.2292vw;
+            left: -1.375vw;
+            width: 3.5417vw;
+            height: 3.5417vw;
+            border-radius: 100%;
+            background: #FFF4BC;
+            z-index: -1; }
+        .corWihte .work__contentView__resort .resortContent .titleWrap p {
+          font-size: 18px;
+          color: #878787; }
+      .corWihte .work__contentView__resort .resortContent .imgWrap {
+        display: flex; }
+        .corWihte .work__contentView__resort .resortContent .imgWrap div {
+          flex: 1;
+          padding-left: 5vw; }
+          .corWihte .work__contentView__resort .resortContent .imgWrap div:nth-child(1) {
+            flex: 1.4;
+            padding: 0; }
+          .corWihte .work__contentView__resort .resortContent .imgWrap div:nth-child(2) {
+            position: relative;
+            top: 18vw;
+            padding-left: 3.5vw; }
+          .corWihte .work__contentView__resort .resortContent .imgWrap div:nth-child(3) {
+            position: relative;
+            top: 38vw; }
+          .corWihte .work__contentView__resort .resortContent .imgWrap div img {
+            max-width: 100%; }
+  .corWihte .work__contentView__membershipService {
+    position: relative;
+    padding: 0 0 10.0208vw;
+    z-index: 2; }
+    .corWihte .work__contentView__membershipService:after {
+      content: "";
+      position: absolute;
+      left: -50%;
+      top: -9vw;
+      width: 200%;
+      height: 100%;
+      background: #fff;
+      transform: rotate(11deg);
+      z-index: -1; }
+    .corWihte .work__contentView__membershipService .titleWrap {
+      width: 71.0938vw;
+      margin: 0 auto; }
+      .corWihte .work__contentView__membershipService .titleWrap h2.title {
+        position: relative;
+        font-size: 40px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 1.4063vw; }
+      .corWihte .work__contentView__membershipService .titleWrap p {
+        font-size: 18px;
+        color: #878787; }
+    .corWihte .work__contentView__membershipService .membershipService_img01 {
+      margin: 3.1771vw 0 5.2083vw;
+      padding: 0 0 0 6.9271vw; }
+      .corWihte .work__contentView__membershipService .membershipService_img01 img {
+        max-width: 100%; }
+    .corWihte .work__contentView__membershipService .membershipService_img02 {
+      position: relative;
+      width: 71.0938vw;
+      margin: 0 auto;
+      text-align: center; }
+      .corWihte .work__contentView__membershipService .membershipService_img02:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -6vw;
+        width: 13.0208vw;
+        height: 13.0208vw;
+        background: #FFF4BC;
+        border-radius: 100%;
+        z-index: 0; }
+      .corWihte .work__contentView__membershipService .membershipService_img02 img {
+        position: relative;
+        max-width: 100%;
+        margin-left: 1vw;
+        z-index: 2; }
+  .corWihte .work__contentView__imageList {
+    position: relative;
+    display: flex;
+    margin: 0 -12% -30.6vw;
+    padding: 13.5417vw 0 0; }
+    .corWihte .work__contentView__imageList:after {
+      content: "";
+      position: absolute;
+      left: -10%;
+      top: 23vw;
+      width: 150%;
+      height: 100%;
+      background: #DDEDEE;
+      transform: rotate(15deg);
+      z-index: -1; }
+    .corWihte .work__contentView__imageList > div {
+      position: relative;
+      flex: 1;
+      margin: 0 32px; }
+      .corWihte .work__contentView__imageList > div:nth-child(1) {
+        top: 60vw; }
+      .corWihte .work__contentView__imageList > div:nth-child(2) {
+        top: 3vw; }
+      .corWihte .work__contentView__imageList > div:nth-child(3) {
+        top: 20vw; }
+      .corWihte .work__contentView__imageList > div:nth-child(4) {
+        top: 38vw; }
+      .corWihte .work__contentView__imageList > div:nth-child(5) {
+        top: 54vw; }
+    .corWihte .work__contentView__imageList img {
+      width: 100%;
       display: block;
-      font-size: 18px;
-      font-weight: 700;
-      margin: 0.6250vw 0 1.8229vw; }
-    .corWihte .work__contentView__aquaLayout .contentType04 .imgType01 img {
-      width: 100%; }
-    .corWihte .work__contentView__aquaLayout .contentType04 .imgType02 img {
-      width: 100%; }
-
-.corWihte .work__contentView__nextProject {
-  position: relative;
-  display: flex;
-  height: 13.3417vw;
-  justify-content: center; }
-  .corWihte .work__contentView__nextProject .title {
-    position: absolute;
-    left: 3.1250vw;
-    top: 2.6042vw;
-    font-size: 1.3021vw;
-    font-weight: 700;
-    color: #fff;
-    z-index: 2; }
-  .corWihte .work__contentView__nextProject strong {
-    align-self: center;
-    font-size: 1.8750vw;
-    font-weight: 700;
-    color: #fff;
-    z-index: 2; }
-  .corWihte .work__contentView__nextProject .img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%; }
-    .corWihte .work__contentView__nextProject .img img {
-      width: 100%; }
-
-.corWihte .work__contentView .footer {
-  height: 15.6250vw;
-  background: #000;
-  padding: 9.7917vw 0 0 3.1250vw; }
-  .corWihte .work__contentView .footer span {
-    color: #fff; }
+      margin-bottom: 2.3958vw; }
+  .corWihte .work__contentView .footer {
+    position: relative;
+    z-index: 2;
+    height: 15.6250vw;
+    background: #000;
+    padding: 9.7917vw 0 0 3.1250vw; }
+    .corWihte .work__contentView .footer span {
+      color: #fff; }

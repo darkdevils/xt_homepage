@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../resources/css/style.css">
     <title>Title</title>
     <style>
-        html
+        html,body {overflow: initial;}
     </style>
 </head>
 <body>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="work__contentView">
-        <div class="work__contentView__visual"><img src="../resources/images/works/work_visual01.jpg" alt="Hanwha"></div>
+        <div class="work__contentView__visual" data-aos="fade"><img src="../resources/images/works/work_visual01.jpg" alt="Hanwha"></div>
         <div class="work__contentView__overview">
             <div class="leftText">
                 <div class="title"><span>OVERVIEW</span></div>
@@ -59,20 +59,20 @@
             </div>
             <div class="rightText">
                 <dl>
-                    <dt>최적화된 화면으로 사용성 제고</dt>
-                    <dd>
+                    <dt data-aos="fade-up">최적화된 화면으로 사용성 제고</dt>
+                    <dd data-aos="fade-up">
                         새로운 한화아쿠아플라넷 홈은 기존의 홈보다 사용자에게 보여지는
                         다양한 콘텐츠를 사용자가 선호하는 지역에 맞는 아쿠아플라넷에 맞춰
                         보다 편리하고 효율적이 정보를 전달하고자 하였습니다.
                     </dd>
-                    <dt>디자인 컨셉 및 방향성</dt>
-                    <dd>
+                    <dt data-aos="fade-up">디자인 컨셉 및 방향성</dt>
+                    <dd data-aos="fade-up">
                         한화 아쿠아플라넷이 제공해온 서비스와 브랜드 이미지, 풍성한 자체
                         콘텐츠를 효과적으로 보여주어 궁극적으로 영업 기여도를 증대시키는 것이
                         가장 큰 목표였습니다.
                     </dd>
-                    <dt>알고리즘 기반 사용자 편의성 </dt>
-                    <dd>
+                    <dt data-aos="fade-up">알고리즘 기반 사용자 편의성 </dt>
+                    <dd data-aos="fade-up">
                         우리는 한화아쿠아플라넷의 기본적인 관람 정보와 각 지역마다 위치한
                         아쿠아플레닛의 정보, 더 나아가 고객이 선호하는 지역 맞춤형 정보까지
                         더 나은 경험을 제공하기 위해 고민했습니다.
@@ -85,7 +85,7 @@
         <div class="work__contentView__mission">
             <div class="missionContent">
                 <span class="title">MISSION</span>
-                <div class="text">
+                <div class="text" data-aos="fade-up">
                     <strong>회원가입체계 개편</strong><br>
                     <strong>쉽고 빠른 결제수단 등록</strong><br>
                     <strong>알고리즘 기반, 사용자 맞춤형 콘텐츠 구성</strong><br>
@@ -100,7 +100,7 @@
         <div class="work__contentView__projectgoals">
             <span class="title">PROJECT GOALS</span>
             <ol>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="1000">
                     <strong class="num">01</strong>
                     <div>
                         <strong>보다 효율적인<br>사용자 맞춤형<br>디자인</strong>
@@ -112,7 +112,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <strong class="num">02</strong>
                     <div>
                         <strong>티켓과<br>추천정보를<br>한번에</strong>
@@ -124,7 +124,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="110">
                     <strong class="num">03</strong>
                     <div>
                         <strong>사용자에게 맞는<br>혜택 및 이벤트<br>제공</strong>
@@ -140,7 +140,7 @@
         <!-- //PROJECT GOALS -->
 
         <!-- CONCEPT -->
-        <div class="work__contentView__concept">
+        <div class="work__contentView__concept"  data-aos="fade-up">
             <div class="textContent">
                 <span class="title">CONCEPT</span>
                 <div>
@@ -200,7 +200,7 @@
         </div>
 
         <!-- 선호 지역의 상품보기 -->
-        <div class="work__contentView__product">
+        <div class="work__contentView__product"  data-aos="fade-up">
             <div class="productContent">
                 <div class="text">
                     <strong>선호 지역의 상품보기</strong><br>
@@ -228,7 +228,7 @@
         <!-- //선호 지역의 상품보기 -->
 
         <!-- AQUA PLANET PC LAYOUT -->
-        <div class="work__contentView__aquaLayout">
+        <div class="work__contentView__aquaLayout"  data-aos="fade-up">
             <div class="aquaContent">
                 <span class="title">AQUA PLANET PC LAYOUT</span>
                 <p>새로운 한화아쿠아플라넷의 홈에 사용되는 컬러는 신뢰를 느낄 수 있는 컬러와 지루한 집중에 활기를 넣어줍니다.<br>한글과 영문은 Noto Sans체를 사용함으로서 가독성을 높힙니다.</p>
@@ -309,61 +309,23 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="../resources/js/aos.js"></script>
-<script src="../resources/js/scrolloverflow.js"></script>
-<script src="../resources/js/fullpage.js"></script>
-<script src="../resources/js/swiper.js"></script>
 <script src="../resources/js/common.js"></script>
 <script>
     $(function(){
-        $('.work__contentView').parents('html,body').css({overflow: 'auto'});
-        $('.work__contentView').closest('body').addClass('corWihte');
         AOS.init({
-            duration: 1200,
-            offset: 120,
+            duration: 1000,
+            offset: 400,
         });
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-                mousewheelControl: true,
-            },
-        });
-        $(window).resize(function () {
-            $(".swiper-slide").css("width", $(window).width());
-        });
-        var slideIndex  = 1, sliding     = false;
-        var length = $("#section2 .slide").length;
-
-        $('#pagepiling').fullpage({
-            scrollingSpeed:500,
-            css3: true,
-            scrollOverflow: true,
-            onLeave: function(index, nextIndex, direction) {
-                if(index == 2 && !sliding) {
-                    if(direction == 'down' && slideIndex < length) {
-                        sliding = true;
-                        $.fn.fullpage.moveSlideRight();
-                        slideIndex++;
-                        return false;
-                    } else if(direction == 'up' && slideIndex > 1) {
-                        sliding = true;
-                        $.fn.fullpage.moveSlideLeft();
-                        slideIndex--;
-                        return false;
-                    }
-                } else if(sliding) {
-                    return false;
-                }
-            },
-            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-                sliding = false;
-            }
-        });
+        $('.work__contentView').parents('html,body').css({overflow: 'initial'});
+        $('.work__contentView').closest('body').addClass('corWihte');
 
         $('.btnTop').on('click',function(){
             $('html, body').animate({scrollTop: '0'}, 600);
         });
+
     });
+
+
 </script>
 </body>
 </html>
