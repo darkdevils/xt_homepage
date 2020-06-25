@@ -106,7 +106,7 @@
         color: #fff;
         font-size: 1.0417vw;
         transition: 0.72s ease-in-out;
-        transition-delay: 1.1;
+        transition-delay: 1.1s;
         opacity: 0;
       }
       @include transition(1s ease);
@@ -857,272 +857,38 @@
   }
 }
 
-.work {
-  &__content {
-    &__text {
-      padding: 11.0417vw 0 0 10.0521vw;
-      div {
-        margin-bottom: 1.0417vw;
-        &:last-child {
-          margin: 0;
-        }
-      }
-      span {
-        position: relative;
-        font-size: 2.0833vw;
-        font-weight: bold;
-        @include text-bar(#FFE232,#fff);
-        i {
-          position: relative;
-          font-style: normal;
-          z-index: -1;
-          &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            right: 100%;
-            border-top: 1px solid #000;
-            visibility: hidden;
-          }
-        }
-      }
-      &.aos-animate {
-        span {
-          &:before {
-            right: 0;
-            width: 0;
-            -webkit-transition: width 1.1s ease-in-out;
-            transition: width 1.1s ease-in-out;
-            transition-delay: 0.5s;
-          }
-          &:after {
-            -webkit-animation: typo01-after 1s ease-in-out;
-            animation-delay: 0.5s;
-          }
-          i {
-            &:after {
-              visibility: visible;
-              right: 0;
-              transition: all .5s 1.3s;
-            }
-          }
-        }
-      }
-    }
-    &__text2 {
-      margin: 0 0 4.0104vw 10.0521vw;
-      span {
-        display: inline-block;
-        font-family: 'NotoKrR', 'Malgun Gothic', '맑은 고딕', '돋움', dotum, sans-serif;
-        font-size: 4.1667vw;
-        color: #EBEBEB;
-        transform: rotate(180deg);
-        @include text-bar(#EBEBEB,#fff);
-      }
-      &.aos-animate {
-        span {
-          @include animateType(1.1s,1s,0.5s);
-        }
-      }
-    }
-    .video {
-      position: relative;
-      img {
-        width: 100%;
-      }
-    }
-    .projectList {
-      .xtText {
-        position: relative;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin: 9.3750vw 0 0;
-        text-align: center;
-        span {
-          position: relative;
-          margin: 10px 0;
-        }
-        .box {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 44px;
-          margin: 0;
-          opacity: 0;
-          transition: 10s ease;
-        }
-        &.aos-animate {
-          .box {
-            opacity: 1;
-          }
-        }
-      }
-      .projectList__unit {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        padding: 0 14.5833vw 4.1667vw;
-        .year {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          background: #fff;
-          display: block;
-          padding: 5px 36px;
-          margin: -27px 0 0 -50px;
-          transform: rotate(-90deg);
-          font-size: 0.8333px;
-          z-index: 2;
-          font-weight: 100;
-          @include text-bar(#EBEBEB,#fff);
-        }
-        &.aos-animate {
-          .year {
-            @include animateType(1.1s,1s,0.5s);
-          }
-        }
-        > div {
-          flex: 1;
-          width: 50%;
-          &:nth-child(1) {
-            margin-right: 4.1146vw;
-          }
-          &:nth-child(2) {
-            margin-left: 4.1146vw;
-          }
-        }
-        .img {
-          position: relative;
-          img {
-            width: 100%;
-          }
-          @include text-bar(#EBEBEB,#fff);
-        }
-        .info {
-          align-self: center;
-          .title {
-            position: relative;
-            font-size: 1.0417vw;
-            font-weight: 300;
-            @include text-bar(#EBEBEB,#fff);
-          }
-          .text {
-            margin: 1.0417vw 0 2.2396vw;
-            strong {
-              position: relative;
-              font-size: 2.0833vw;
-              font-weight: 500;
-              @include text-bar(#EBEBEB,#fff);
-            }
-          }
-          .link {
-            span {
-              position: relative;
-              font-size: 0.8333vw;
-              @include text-bar(#EBEBEB,#fff);
-            }
-          }
-        }
-        &--type2 {
-          .info {
-            padding: 0 0 0 5.3125vw;
-          }
-        }
-        &.aos-animate {
-          .img {
-            @include animateType(1.1s,1s,0.5s);
-          }
-          .info {
-            .title {
-              @include animateType(1.1s,1s,0.5s);
-            }
-            .text {
-              strong {
-                @include animateType(1.1s,1s,0.5s);
-              }
-            }
-            .link {
-              span {
-                @include animateType(1.1s, 1s, 0.5s);
-              }
-            }
-          }
-        }
-        &:after {
-          content: "";
-          position: absolute;
-          left: 50%;
-          width: 1px;
-          height: 100%;
-          background: #DCDCDC;
-        }
-        &:last-child {
-          padding-bottom: 0;
-          margin-bottom: 4.1667vw;
-        }
-      }
-    }
-    .btnMore {
-      text-align: center;
-      margin-bottom: 4.9479vw;
-    }
-    .textListType {
-      padding: 0 14.5833vw;
-      .section {
-        display: flex;
-        padding:  2.1875vw 0;
-        border-bottom: 1px solid #f3f3f3;
-        > div {
-          flex: 1;
-          text-align: left;
-          &.year {
-            flex: none;
-            width: 15%;
-          }
-          &.text {
-            text-align: right;
-          }
-          span {
-            display: block;
-            margin-bottom: 0.2604vw;
-            font-size: 16px;
-          }
-        }
-      }
-    }
-    .main-contact {
-      top: 0;
-    }
-  }
-}
 .contactContent {
-  position: relative;
-  padding: 11vw 0 0;
-  h1 {
-    margin-left: 14.4792vw;
-    span {
-      position: relative;
-      font-size: 5.2083vw;
-      font-weight: 700;
-      @include text-bar(#000,#fff);
+    position: relative;
+    padding: 11vw 0 0;
+    h1 {
+        margin-left: 14.4792vw;
+        span {
+            position: relative;
+            font-size: 5.2083vw;
+            font-weight: 700;
+            @include text-bar(#000,#000);
+            &:after,&:before {
+                top: 5px;
+                height: 5.7083vw;
+            }
+        }
+        &.aos-animate {
+            span {
+                @include animateType(1.1s,1s,0.5s);
+            }
+        }
     }
-    &.aos-animate {
-      span {
-        @include animateType(1.1s,1s,0.5s);
-      }
-    }
-  }
   .textWrap {
     margin-left: 14.4792vw;
     span {
       position: relative;
       font-size: 3.6458vw;
       font-weight: 300;
-      @include text-bar(#000,#fff);
+      @include text-bar(#000,#000);
+        &:after,&:before {
+            top: 5px;
+            height: 4.2083vw;
+        }
     }
     &.aos-animate {
       span {
@@ -1190,7 +956,10 @@
           position: relative;
           font-size: 2.0833vw;
           font-weight: 700;
-          @include text-bar(#000,#fff);
+          @include text-bar(#000,#000);
+            &:after,&:before {
+                height: 2.4833vw;
+            }
             i {
             position: relative;
             font-style: normal;
@@ -1244,7 +1013,6 @@
         transition: all .5s;
         background: url(../images/contact/contact_img01.png) no-repeat left bottom;
         background-size: contain;
-        opacity: 0;
       }
       &--career {
         background: url(../images/contact/contact_img02.png) no-repeat 20px bottom;

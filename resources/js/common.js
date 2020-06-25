@@ -59,8 +59,51 @@ $(function () {
   });
 
 
-
   // black Type
   $('.topBlack').closest('body').addClass('blackType');
+
+  // header pdf download
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var headerDown = $('header').outerHeight();
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+/*        if(st > 10 ) {
+            $('.pdf-down').fadeOut();
+        } else {
+            $('.pdf-down').fadeIn();
+        }*/
+        if (st > lastScrollTop && st > headerDown){
+            // Scroll Down
+            $('header').removeClass('down').addClass('up');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('header').removeClass('up').addClass('down');
+            }
+        }
+        lastScrollTop = st;
+    }
+
+    // scroll Top Button
+    $('.btnTop').on('click',function(){
+        $('html, body').animate({scrollTop: '0'}, 600);
+    });
 
 });

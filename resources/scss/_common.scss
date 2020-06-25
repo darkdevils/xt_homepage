@@ -64,6 +64,39 @@
   url(../fonts/NotoSansKR-Black.woff) format('woff');
 }
 
+
+@mixin text-bar($color,$beforeCor) {
+	&:before,&:after {
+		content: "";
+		top: 0;
+		bottom: 0;
+		display: inline-block;
+		position: absolute;
+	}
+	&:before {
+		//background: #00C691;
+		background: $beforeCor;
+		width: 100%;
+	}
+	&:after {
+		background: $color;
+	}
+}
+
+@mixin animateType($transtionTime,$animationTime,$delay) {
+	&:before {
+		right: 0;
+		width: 0;
+		-webkit-transition: width $transtionTime ease-in-out;
+		transition: width $transtionTime ease-in-out;
+		transition-delay: $delay;
+	}
+	&:after {
+		-webkit-animation: typo01-after $animationTime ease-in-out;
+		animation-delay: $delay;
+	}
+}
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button, span, em {
   margin: 0;
   padding: 0;
@@ -204,10 +237,18 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 .wrapper {
   .header {
+	  .up {
+		  opacity: 0;
+		  transition: .5s ease;
+	  }
+	  .down {
+		  opacity: 1;
+		  transition: .5s ease;
+	  }
     .xt-ci {
       position: fixed;
-      top: 60px;
-      left: 60px;
+      top: 3.1250vw;
+      left: 3.1250vw;
       width: 82px;
       height: 41px;
       z-index: 6;
@@ -221,7 +262,7 @@ h1, h2, h3, h4, h5, h6, strong {
       color: #fff;
       height: 42px;
       line-height: 42px;
-      margin-top: 60px;
+      margin-top: 15px;
       z-index: 6;
       -webkit-transform: translate(-50%, 0);
       transform: translate(-50%, 0);

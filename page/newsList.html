@@ -20,10 +20,10 @@
         <header>
             <div class="xt-ci">
                 <ul class="gnb-menu">
-                    <li class="gnb-menu01">Who we are</li>
-                    <li class="gnb-menu02">We make</li>
-                    <li class="gnb-menu03">XTSIEN Life</li>
-                    <li class="gnb-menu04">Contact XT</li>
+                  <li class="gnb-menu01"><span>Who we are</span></li>
+                  <li class="gnb-menu02"><span>We make</span></li>
+                  <li class="gnb-menu03"><span>XTSIEN Life</span></li>
+                  <li class="gnb-menu04"><span>Contact XT</span></li>
                 </ul>
             </div>
             <div class="pdf-down">Start a project x Download pdf</div>
@@ -59,28 +59,28 @@
     <div class="news-content">
         <div class="newslistWrap">
           <div class="news-list">
-              <div class="item" data-aos="fade-up" data-aos-delay="100">
+              <div class="item" data-aos="fade-up">
                   <a href="#">
                       <span class="news-img"><img src="../resources/images/temp/news_temp01.jpg"></span>
                       <p class="news-tit">한화리조트 모바일앱 그랜드 오픈</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
-              <div class="item" data-aos="fade-up" data-aos-delay="200">
+              <div class="item" data-aos="fade-up" data-aos-delay="150">
                   <a href="#">
                       <span class="news-img"><img src="../resources/images/temp/news_temp02.jpg"></span>
                       <p class="news-tit">2020년 코로나바이러스에 따른 재택근무 안내</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
-              <div class="item" data-aos="fade-up" data-aos-delay="5">
+              <div class="item" data-aos="fade-up" data-aos-delay="200">
                   <a href="#">
                       <span class="news-img"><img src="../resources/images/temp/news_temp03.jpg"></span>
                       <p class="news-tit">상반기 엑스티 결산 자료</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
-              <div class="item" data-aos="fade-up">
+              <div class="item" data-aos="fade-up" >
                   <a href="#">
                       <span class="news-img"><img src="../resources/images/temp/news_temp04.jpg"></span>
                       <p class="news-tit">공통 업무 매뉴얼 작성 및 공유</p>
@@ -163,48 +163,26 @@
 <script>
     $(function(){
         AOS.init({
-            /*duration: 1200,
-            offset: 120,*/
-            easing: 'ease-in-out-sine',
+            duration: 1200,
+            offset: 120,
         });
 
-        var slideIndex  = 1, sliding     = false;
-        var length = $("#section2 .slide").length;
-
-        $('#pagepiling').fullpage({
-            scrollingSpeed:500,
-            css3: true,
-            scrollOverflow: true,
-            onLeave: function(index, nextIndex, direction) {
-                if(index == 2 && !sliding) {
-                    if(direction == 'down' && slideIndex < length) {
-                        sliding = true;
-                        $.fn.fullpage.moveSlideRight();
-                        slideIndex++;
-                        return false;
-                    } else if(direction == 'up' && slideIndex > 1) {
-                        sliding = true;
-                        $.fn.fullpage.moveSlideLeft();
-                        slideIndex--;
-                        return false;
-                    }
-                } else if(sliding) {
-                    return false;
-                }
-            },
-            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-                sliding = false;
-            }
-        });
-        var $grid = $('.news-list').masonry({
+      /*  var $grid = $('.news-list').masonry({
             itemSelector: '.item',
             columnWidth: '.item',
             horizontalOrder: true,
             percentPosition: true,
-        });
+        });*/
 
-        var wd = $(".news-img").width();
-        $(".news-img").css({"width":wd, "height": "auto"});
+        $(window).resize(function(){
+            var wd = $(".item a").width();
+            console.log(wd);
+            $(".news-img").css({"width":wd, "height": "auto"});
+        });
+        var randomClass = ["colorOne","colorTwo","colorThree", "colorFour"];
+        $('.news-list .item').each(function(){
+           $(this).addClass(randomClass[~~(Math.random()*randomClass.length)]);
+        });
     });
 </script>
 </body>
