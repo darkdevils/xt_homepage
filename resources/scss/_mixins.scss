@@ -112,3 +112,15 @@
   -ms-user-select: $select; // IE10+
   user-select: $select;
 }
+
+@mixin bgArrowBefore ($top,$height){
+    content: "";
+    position: absolute;
+    top: $top;
+    left: 50%;
+    @include imageUrl(works/bg_arrow2,png);
+    background-position: bottom;
+    width: 9px;
+    height: $height;
+    margin-left: -4.5px;
+}
