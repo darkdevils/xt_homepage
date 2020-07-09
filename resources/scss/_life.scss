@@ -603,7 +603,8 @@
             position: relative;
             &:after {
               content: "";
-              background: url(../../resources/images/life/develover.svg) no-repeat;
+              /*background: url(../../resources/images/life/develover.svg) no-repeat;*/
+              @include imageUrl(life/develover,svg);
               background-size: contain;
               position: absolute;
               top: -4.3vw;
@@ -692,12 +693,20 @@
       text-align: center;
     }
     .main-contact {
-      margin-top: 13.9063vw;
-        &:before {
+        margin-top: 7.2917vw;
+        margin-bottom: 1.6146vw;
+        .videoWrap {
+            &:after {
+                @include imageUrl(common/xt-logo-green,svg);
+                background-size: cover;
+            }
+        }
+       /* &:before {
           background: url(../images/common/xt-logo-green.svg) no-repeat;
           background-size: cover;
-        }
+        }*/
       }
+
     }
   }
 
@@ -750,6 +759,8 @@
   }
 
 .btnBasics {
+    width: 180px;
+    height: 60px;
   --borderWidth: 2;
   --boxShadowDepth: 8;
   --buttonColor: #fff;
@@ -761,7 +772,7 @@
   /*box-shadow: calc(var(--boxShadowDepth) * 1px) calc(var(--boxShadowDepth) * 1px) 0 #888;*/
   color: var(--buttonColor);
   cursor: pointer;
-  font-size: 0.7292vw;
+  font-size: 14px;
   outline: transparent;
   padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
   position: relative;
@@ -880,6 +891,7 @@
     }
   .textWrap {
     margin-left: 14.4792vw;
+    margin-bottom: -3.3vw;
     span {
       position: relative;
       font-size: 3.6458vw;
@@ -919,14 +931,22 @@
   }
   .main-contact {
     width: 100%;
-    padding: 0 14.4792vw;
+      padding: 0 14.4792vw 0 12.5vw;
     top: -45px;
     left: 0;
     z-index: -1;
-    &:after {
-      width: calc(100% - 28.958564vw);
-      bottom: 0;
-      left: 14.479282vw;
+    > div {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            @include imageUrl(common/bg_bottom_logo,png);
+            width: 101%;
+            height: 100%;
+            background-size: cover;
+        }
     }
   }
   .linkSection {
@@ -958,7 +978,7 @@
           font-weight: 700;
           @include text-bar(#000,#000);
             &:after,&:before {
-                height: 2.4833vw;
+                height:2.6833vw;
             }
             i {
             position: relative;
@@ -1011,11 +1031,15 @@
       }
       &--project {
         transition: all .5s;
-        background: url(../images/contact/contact_img01.png) no-repeat left bottom;
+        /*background: url(../images/contact/contact_img01.png) no-repeat left bottom;*/
+        @include imageUrl(contact/contact_img01,png);
+        background-position: left bottom;
         background-size: contain;
       }
       &--career {
-        background: url(../images/contact/contact_img02.png) no-repeat 20px bottom;
+        /*background: url(../images/contact/contact_img02.png) no-repeat 20px bottom;*/
+        @include imageUrl(contact/contact_img02,png);
+        background-position: 20px bottom;
         background-size: contain;
       }
     }
@@ -1049,38 +1073,40 @@
 
 /* page type */
 .blackType {
-  .wrapper {
-    .header {
-      &.main {
-        .xt-ci {
-          width: auto;
-          min-width: 82px;
-          border: 3px solid #000;
-          background: url(../images/common/blacktype_topp_logo.png) no-repeat 0 0;
-          span {
-            display: none;
-            padding: 7px 14px 0 79px;
-            transition: .5s ease;
-          }
-        }
-        .pdf-down {
-          color: #000;
-        }
-      }
-      .hamburger {
-        a {
-          div {
-            &.side-open {
-              border-color: #000;
-              span {
-                color: #000;
-              }
+    .wrapper {
+        .header {
+            &.main {
+                .xt-ci {
+                    width: auto;
+                    min-width: 82px;
+                    border: 3px solid #000;
+                    /*background: url(../images/common/blacktype_topp_logo.png) no-repeat 0 0;*/
+                    @include imageUrl(common/blacktype_topp_logo,png);
+                    background-size: contain;
+                    span {
+                        display: none;
+                        padding: 7px 14px 0 79px;
+                        transition: .5s ease;
+                    }
+                }
+                .pdf-down {
+                    color: #000;
+                }
             }
-          }
+            .hamburger {
+                a {
+                    div {
+                        &.side-open {
+                            border-color: #000;
+                            span {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .viewContent {

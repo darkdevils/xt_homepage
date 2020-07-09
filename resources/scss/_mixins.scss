@@ -1,5 +1,9 @@
 
 
+@mixin imageUrl($imgUrl, $type) {
+    background: url("../images/" + $imgUrl +"." + $type) no-repeat;
+}
+
 // Transformations
 @mixin scale($ratio...) {
   -webkit-transform: scale($ratio);
@@ -123,4 +127,82 @@
     width: 9px;
     height: $height;
     margin-left: -4.5px;
+}
+
+@mixin dashedLine {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 2px dashed #ebebeb;
+    width: 2px;
+    height: 100%;
+}
+
+@mixin mediaSize($top,$height) {
+    top: $top;
+    height: $height;
+}
+
+@mixin headerBlaxk {
+    border: 3px solid #000;
+    @include imageUrl(main/logo-black,png);
+    /*background: url(../images/main/logo-black.png) no-repeat 0 0;*/
+    .gnb-menu {
+        li {
+            color: #000;
+        }
+    }
+}
+
+@mixin headerWhite {
+    .xt-ci {
+        border: 3px solid #fff;
+        @include imageUrl(main/logo-white,png);
+        //background: url(../images/main/logo-white.png) no-repeat 0 0;
+        svg {
+            path {
+                fill: #000;
+            }
+        }
+        .pdf-down {
+            color: #fff;
+        }
+    }
+}
+
+@mixin solid-line($width, $color) {
+    border: $width solid $color;
+}
+
+@mixin text-bar($color,$beforeCor) {
+    &:before,&:after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        position: absolute;
+    }
+    &:before {
+        //background: #00C691;
+        background: $beforeCor;
+        width: 100%;
+    }
+    &:after {
+        background: $color;
+    }
+}
+
+@mixin animateType($transtionTime,$animationTime,$delay) {
+    &:before {
+        right: 0;
+        width: 0;
+        -webkit-transition: width $transtionTime ease-in-out;
+        transition: width $transtionTime ease-in-out;
+        transition-delay: $delay;
+    }
+    &:after {
+        -webkit-animation: typo01-after $animationTime ease-in-out;
+        animation-delay: $delay;
+    }
 }
