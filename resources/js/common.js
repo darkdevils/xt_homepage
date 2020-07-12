@@ -81,7 +81,7 @@ $(function () {
 
     function hasScrolled() {
         var st = $(this).scrollTop();
-
+		console.log($(this));
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
 /*        if(st > 10 ) {

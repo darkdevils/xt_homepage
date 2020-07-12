@@ -49,7 +49,8 @@
             <div class="nav">
             <!-- sideMenu -->
                 <ul id="gnb">
-                    <li><a href="main.html">XT</a></li>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="intro.html">XT</a></li>
                     <li><a href="work.html">Works</a></li>
                     <li><a href="life.html">XTSIEN Life</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -298,12 +299,13 @@
             <!-- Contact XT -->
             <section class="main-section section" id="section5">
                 <div class="main-contact">
-                    <!--<video autoplay loop muted id="myVideo2">
-                        <source src="../resources/mov/flowers.mp4" type="video/mp4">
-                        &lt;!&ndash;<source src="../mov/flowers.webm" type="video/webm">&ndash;&gt;
-                    </video>-->
                     <div class="videoWrap">
-                        <img src="../resources/images/temp/temp_video.png" alt="">
+                        <!--<img src="../resources/images/temp/temp_video.png" alt="">-->
+                        <div class="videoBg"></div>
+                        <video id="myVideo2" autoplay loop muted>
+                            <source src="../resources/mov/web_bottom_video.mp4" type="video/mp4">
+                            <!--<source src="../mov/flowers.webm" type="video/webm">-->
+                        </video>
                         <div class="main-contact-txt">
                             <div class="contact-h"><span class="textTop">당신 다움을 함께 탐험할</span><br><span class="textBtm">엑스티가 당신을 기다리고 있어요</span></div>
                             <p class="contact-xt"><a href="#">Contact XT &gt;</a></p>
@@ -336,7 +338,9 @@
   </div>
 </a>
 <script>
-  $(function(){
+
+    $(function(){
+
     AOS.init({
       duration: 1200,
       offset: 120,
@@ -370,14 +374,15 @@
           return false;
         }
 
-
         // header 색상변경
           let $indexPlus = index + 1;
+          const video = document.querySelector("#myVideo2");
           if (direction == 'down') {
-              console.log(index+1);
+
               if($indexPlus == 2 || $indexPlus == 4) {
                   $(".header").removeClass("txt-bk").addClass("main");
               } else if ($indexPlus == 3 || $indexPlus == 5) {
+                  video.play();
                   $(".header").removeClass("main").addClass("txt-bk");
               }
           }
@@ -387,6 +392,7 @@
                   $(".header").removeClass("txt-bk").addClass("main");
               } else if ((index - 1) == 3 || $indexMinus == 5) {
                   $(".header").removeClass("main").addClass("txt-bk");
+
               }
           }
 
@@ -439,7 +445,6 @@
         $(this).removeClass('has-content');
       }
     });
-
   });
 </script>
 </body>

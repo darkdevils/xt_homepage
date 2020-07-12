@@ -47,7 +47,7 @@
 	            position: relative;
                 font-size: 5.2083vw;
                 font-weight: 700;
-	            @include text-bar(#000,#000);
+	            @include text-bar(#000,#fff);
 	            &:after,&:before {
 		            height: 5.2833vw;
 		            top: 0.8533vw;
@@ -58,7 +58,7 @@
 	                position: relative;
 	                font-size: 4.1667vw;
 	                font-weight: 300;
-	                @include text-bar(#000, #000);
+	                @include text-bar(#000, #fff);
 	                &:after, &:before {
 		                height: 5.0833vw;
 		                top: 0.8333vw;
@@ -224,8 +224,10 @@
     .our-service {
         padding: 12.7083vw 14.5833vw 0;
         .service-kind {
+            position: relative;
             display: flex;
             justify-content: space-between;
+            overflow: hidden;
             > div {
                 width: 21.8750vw;
                 .service-img {

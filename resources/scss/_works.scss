@@ -13,7 +13,7 @@
                 position: relative;
                 font-size: 2.0833vw;
                 font-weight: bold;
-                @include text-bar(#000,#000);
+                @include text-bar(#000,#fff);
                 i {
                     position: relative;
                     font-style: normal;
@@ -60,7 +60,7 @@
                 font-size: 4.1667vw;
                 color: #EBEBEB;
                 transform: rotate(180deg);
-                @include text-bar(#000,#000);
+                @include text-bar(#000,#fff);
             }
             &.aos-animate {
                 span {
@@ -115,12 +115,12 @@
                     background: #fff;
                     display: block;
                     padding: 5px 36px;
-                    margin: -27px 0 0 -50px;
+                    margin: -27px 0 0 -53px;
                     transform: rotate(-90deg);
                     font-size: 0.8333px;
                     z-index: 2;
                     font-weight: 100;
-                    @include text-bar(#000,#000);
+                    @include text-bar(#000,transparent);
                 }
                 &.aos-animate {
                     .year {
@@ -180,7 +180,7 @@
                         position: relative;
                         font-size: 1.0417vw;
                         font-weight: 300;
-                        @include text-bar(#000,#000);
+                        @include text-bar(#000,#fff);
                     }
                     .text {
                         margin: 1.0417vw 0 2.2396vw;
@@ -188,7 +188,10 @@
                             position: relative;
                             font-size: 2.0833vw;
                             font-weight: 500;
-                            @include text-bar(#000,#000);
+                            @include text-bar(#000,#fff);
+                            &:before,&:after {
+                                height: 28px;
+                            }
                         }
                     }
                     .link {

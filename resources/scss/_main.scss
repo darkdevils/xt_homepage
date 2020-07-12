@@ -612,13 +612,15 @@ $vw: 0.0521vw;
                         font-weight: 700;
                         line-height: 2;
                         margin: 1.8229vw 0 0.5208vw;
+                        transition: 1s ease;
+                        /*@include animateType(1.1s,1s,0.5s);*/
                         span {
                             color: #fff;
                             font-size: 2.6042vw;
                             font-weight: 700;
                         }
                         &:before {
-                            background: #FFE232;
+                            background: #00c691;
                         }
                         &:after {
                             background: #FFE232;
@@ -811,7 +813,7 @@ $vw: 0.0521vw;
                 font-weight: 500;
                 position: relative;
                 display: inline-block;
-                @include text-bar(#000,#000);
+                @include text-bar(#000,#d4d3d4);
                 &:before,&:after {
 			        height: 2.4833vw;
 		        }
@@ -828,7 +830,7 @@ $vw: 0.0521vw;
                 position: relative;
                 display: inline-block;
                 color: #707070;
-                @include text-bar(#000,#000);
+                @include text-bar(#000,#d4d3d4);
             }
         }
         .contact-btn {
@@ -839,7 +841,7 @@ $vw: 0.0521vw;
                 font-size: 1.0417vw;
                 font-weight: 700;
                 margin: 0 40px;
-                @include text-bar(#000,#000);
+                @include text-bar(#000,#d4d3d4);
                 span {
                     position: relative;
                     &:after {
@@ -922,6 +924,15 @@ body[class*=fp-viewing-1-] {
 .videoWrap {
     position: relative;
     margin: 0 10.4167vw;
+    .videoBg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity : 0.6;
+    }
     img {
         width: 99%;
     }
