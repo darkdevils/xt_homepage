@@ -4193,6 +4193,8 @@ h1, h2, h3, h4, h5, h6, strong {
         width: 53.8542vw; }
   .wrapper .container .main-content #section2 {
     background: #000; }
+    .wrapper .container .main-content #section2 .fp-scroller {
+      height: 100%; }
     .wrapper .container .main-content #section2.active [class*="we-are"].active h2 .bigText {
       opacity: 1; }
       .wrapper .container .main-content #section2.active [class*="we-are"].active h2 .bigText:before {
@@ -4231,10 +4233,31 @@ h1, h2, h3, h4, h5, h6, strong {
         display: block;
         right: 0;
         bottom: 0; }
+      .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation1, .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation2 {
+        position: absolute;
+        right: 0;
+        bottom: 0; }
+        .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation1 img, .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation2 img {
+          width: 100%; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt {
         /*background: url("../images/main/bg-we01.png") no-repeat right bottom;*/
-        background: url("../images/main/bg-we01.png") no-repeat;
-        background-position: right bottom; }
+        /*&:after {
+                                content: "";
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                @include imageUrl(main/section2_1_1,png);
+                                background-position: right bottom;
+                                background-size: contain;
+                                width: 42.1875vw;
+                                height: 46.0417vw;
+                            }*/ }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt .bgAnimation1 {
+          width: 42.1875vw;
+          height: 46.0417vw; }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt .bgAnimation2 {
+          width: 21.8056vw;
+          height: 21.5972vw; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt .smallText .bar:after {
           content: "";
           position: absolute;
@@ -4245,8 +4268,14 @@ h1, h2, h3, h4, h5, h6, strong {
           background: #2e3bee; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt {
         /*background: url("../images/main/bg-we02.png") no-repeat right bottom;*/
-        background: url("../images/main/bg-we02.png") no-repeat;
-        background-position: right bottom; }
+        /*@include imageUrl(main/bg-we02,png);
+                            background-position: right bottom;*/ }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt .bgAnimation1 {
+          width: 42.1875vw;
+          height: 46.0417vw; }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt .bgAnimation2 {
+          width: 21.8056vw;
+          height: 21.5972vw; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt .smallText .bar:after {
           content: "";
           position: absolute;

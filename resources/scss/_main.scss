@@ -179,6 +179,9 @@ $vw: 0.0521vw;
             }
             #section2 {
                 background: #000;
+                .fp-scroller {
+                    height: 100%;
+                }
                 &.active {
                     [class*="we-are"].active {
                         h2 {
@@ -213,11 +216,37 @@ $vw: 0.0521vw;
                         right: 0;
                         bottom: 0;
                     }
+                    .bgAnimation1,.bgAnimation2 {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        img {
+                            width: 100%;
+                        }
+                    }
+
                     &.we-are01 {
                         .weAre-txt {
                             /*background: url("../images/main/bg-we01.png") no-repeat right bottom;*/
-                            @include imageUrl(main/bg-we01,png);
-                            background-position: right bottom;
+                            /*&:after {
+                                content: "";
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                @include imageUrl(main/section2_1_1,png);
+                                background-position: right bottom;
+                                background-size: contain;
+                                width: 42.1875vw;
+                                height: 46.0417vw;
+                            }*/
+                            .bgAnimation1 {
+                                width: 42.1875vw;
+                                height: 46.0417vw;
+                            }
+                            .bgAnimation2 {
+                                width: 21.8056vw;
+                                height: 21.5972vw;
+                            }
                             .smallText {
                                 .bar {
                                     &:after {
@@ -236,8 +265,16 @@ $vw: 0.0521vw;
                     &.we-are02 {
                         .weAre-txt {
                             /*background: url("../images/main/bg-we02.png") no-repeat right bottom;*/
-                            @include imageUrl(main/bg-we02,png);
-                            background-position: right bottom;
+                            /*@include imageUrl(main/bg-we02,png);
+                            background-position: right bottom;*/
+                            .bgAnimation1 {
+                                width: 42.1875vw;
+                                height: 46.0417vw;
+                            }
+                            .bgAnimation2 {
+                                width: 21.8056vw;
+                                height: 21.5972vw;
+                            }
                             .smallText {
                                 .bar {
                                     &:after {
