@@ -153,14 +153,48 @@
       }
       &__content {
         width: 40.4vw;
-        .video-image {
-          width: 39vw;
-          height: 28.5vw;
-          overflow: hidden;
-          img {
-            width: 100%;
-          }
+		.video-image {
+			position: relative;
+			width: 39vw;
+			height: 28.5vw;
+			overflow: hidden;
+			z-index: 4;
+			img {
+				height: 100%;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 8vw;
+				@include imageUrl(life/bg_life,png);
+				background-size: contain;
+				width: 9.0104vw;
+				height: 7.6042vw;
+			}
         }
+		.yellowBox2 {
+			position: absolute;
+			right: -4.10vw;
+			bottom: -20.55vw;
+			width: 5.4167vw;
+			height: 20.5729vw;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 100%;
+				border-left: 5.4167vw solid #FFE232;
+				transition: 1s ease;
+			}
+			&.aos-animate {
+				&:after {
+					transition-delay: 1s;
+					bottom: 0;
+				}
+			}
+		}
       }
       &__text {
         padding: 13vw 0 0 5.3vw;
@@ -200,7 +234,7 @@
           background: #C7CBD9;
           z-index: 3;
           &.aos-animate {
-            opacity: 0.65 !important;
+            /*opacity: 0.65 !important;*/
           }
         }
 
@@ -218,14 +252,15 @@
     .xtlogo {
       position: relative;
       height: 20.5729vw;
-      padding: 8.4896vw 0 0 21.2500vw;
+      padding: 8.4896vw 0 0 23.55vw;
       .yellowBox {
         position: absolute;
         left: 39vw;
         top: -3px;
         background: #FFE232;
         width: 5.3125vw;
-        height: 20.7292vw;
+		height: 0;
+        /*height: 20.7292vw;*/
       }
       .logoImg {
         position: relative;
@@ -240,6 +275,10 @@
         position: absolute;
         right: 8.3333vw;
         bottom: 2.6042vw;
+	      img {
+		      width: 10.9375vw;
+		      height: 7.3438vw;
+	      }
         .text {
           position: relative;
           z-index: 2;
@@ -379,7 +418,18 @@
       display: flex;
       justify-content: center;
       .bigText {
-        margin-right: 13vw;
+		position: relative;
+		margin-right: 13vw;
+	    &:after {
+		  content: "";
+		    position: absolute;
+		    right: -2.2625vw;
+		    bottom: -0.5208vw;
+		    @include imageUrl(life/bg_phone,png);
+		    background-size: cover;
+		    width: 4.0104vw;
+		    height: 4.6875vw;
+	    }
         span {
           position: relative;
           line-height: 1.1em;
@@ -407,7 +457,7 @@
         span {
           position: relative;
           color: #fff;
-          font-size: 30px;
+          font-size: 1.5625vw;
           line-height: 1.8em;
           @include text-bar(#FFE232,#00C691);
         }
@@ -432,6 +482,7 @@
     .xtMember {
       width: 100%;
       overflow: hidden;
+      padding: 5vw 0 0;
       &__team {
         position: relative;
         height: 11.9792vw;
@@ -449,9 +500,10 @@
             }
           }
           .photo {
-            position: absolute;
-            left: 0;
-            top: 0;
+	          position: absolute;
+	          left: -42px;
+	          top: -82px;
+	          z-index: 2;
           }
         }
         .tit {
@@ -877,10 +929,10 @@
             position: relative;
             font-size: 5.2083vw;
             font-weight: 700;
-            @include text-bar(#000,#000);
+            @include text-bar(#000,#fff);
             &:after,&:before {
                 top: 5px;
-                height: 5.7083vw;
+                height: 5.7883vw;
             }
         }
         &.aos-animate {
@@ -896,7 +948,7 @@
       position: relative;
       font-size: 3.6458vw;
       font-weight: 300;
-      @include text-bar(#000,#000);
+      @include text-bar(#000,#fff);
         &:after,&:before {
             top: 5px;
             height: 4.2083vw;
@@ -976,7 +1028,7 @@
           position: relative;
           font-size: 2.0833vw;
           font-weight: 700;
-          @include text-bar(#000,#000);
+          @include text-bar(#000,#fff);
             &:after,&:before {
                 height:2.6833vw;
             }
@@ -1173,4 +1225,57 @@
   top: 0 !important;
   z-index: 2;
 
+}
+
+.xtMember__team {
+	a {
+		.img {
+			img {
+				display: none;
+			}
+		}
+		span {
+			opacity : 0;
+		}
+		&:hover {
+			position : relative;
+			&.hover {
+				span {
+					position: relative;
+					transition: .3s ease;
+					opacity: 1;
+					&:after {
+						content : '';
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 8.3333vw;
+						height: 12.7083vw;
+						@include imageUrl(life/ceo1,png);
+						background-size: cover;
+					}
+				}
+			}
+		}
+	}
+
+	[class*="active"] {
+		&:hover {
+			&:after {
+				content:"";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 160px;
+				height: 244px;
+			}
+		}
+	}
+	.ceo {
+		&.active1 {
+			&:hover {
+				@include imageUrl(life/ceo1,png);
+			}
+		}
+	}
 }

@@ -108,8 +108,10 @@
         justify-content: flex-start;
         margin-bottom: 6.7708vw;
         .who-img {
+	        position: relative;
             width: 25.1563vw;
-	        height: 100%;
+	        height: 29.1563vw;
+	        /*height: 100%;*/
 	        @include text-bar(#CFCFCF,#CFCFCF);
 	        &:after,&:before {
 		        z-index: 2;
@@ -120,6 +122,44 @@
             }
 	        &.aos-animate {
 		        @include animateType(1.1s,1s,0.5s);
+	        }
+	        video {
+		        object-fit: cover;
+		        position: absolute;
+		        top: -4vw;
+		        left: 0;
+		        width: 100%;
+		        height: 100%;
+		        opacity: .5;
+	        }
+	        .maskText {
+		        position: absolute;
+		        left: 0;
+		        top: 0;
+		        width: 25.1563vw;
+		        height: 25.1563vw;
+		        &:after {
+			        content: "";
+			        position: absolute;
+			        left: 0;
+			        top: 0;
+			        @include imageUrl(works/who-bg2,png);
+			        background-size: cover;
+			        background-position: center;
+			        width: 25.1563vw;
+			        height: 25.1563vw;
+		        }
+		        &:before {
+			        content : '';
+			        position: absolute;
+			        left: -7vw;
+			        top: 7vw;
+			        @include imageUrl(works/bg_mask,png);
+			        background-size: 32.1563vw 18.125vw;
+			        width: 32.1563vw;
+			        height: 20.125vw;
+			        z-index : 2;
+		        }
 	        }
         }
         .who-txt {
@@ -133,6 +173,9 @@
                     font-weight: 700;
                     line-height: 1.76em;
                     //@include text-bar(#FFE232,#fff);
+	                i {
+
+	                }
                 }
                 &.aos-animate {
                     span {
@@ -155,11 +198,49 @@
                     }
                 }
             }
+	        i {
+		        position: relative;
+		        font-style: normal;
+	        }
+	        .greenLine {
+		        &:after {
+			        content: "";
+			        position: absolute;
+			        left: 0;
+			        bottom: 0;
+			        height: 0.9896vw;
+			        width: 0;
+			        background: #0CE3AA;
+			        z-index : -1;
+			        transition: 3.2s ease;
+		        }
+	        }
+	        .yellowLine {
+		        &:after {
+			        content: "";
+			        position: absolute;
+			        left: 0;
+			        bottom: 0;
+			        height: 0.3646vw;
+			        width: 0;
+			        background: #FFE232;
+			        z-index : -1;
+			        transition: 3.2s ease;
+		        }
+	        }
+	        .aos-animate {
+		        .greenLine,.yellowLine {
+			        &:after {
+				        width: 100%;
+			        }
+		        }
+	        }
         }
     }
     .intro-slide {
-        padding-left: 14.5833vw;
+	    .intro-tit {padding-left: 14.5833vw;}
         .swiper-container {
+	        padding-left: 14.5833vw;
             .swiper-wrapper {
                 .swiper-slide {
                     &:nth-child(1) {
@@ -200,7 +281,9 @@
                     width: 19.7917vw;
                 }
                 .philosophy-img {
-                    padding-bottom: 1.9792vw;
+                    display: inline-block;
+	                padding-bottom: 30px;
+
                 }
                 .philosophy-tit {
                     display: block;

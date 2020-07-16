@@ -43,6 +43,7 @@
             </div>
             <div class="nav">
                 <ul id="gnb">
+                    <li><a href="main.html">Home</a></li>
                     <li><a href="main.html">XT</a></li>
                     <li><a href="work.html">Works</a></li>
                     <li><a href="life.html">XTSIEN Life</a></li>
@@ -75,13 +76,19 @@
         </div>
 
         <div class="who">
-            <div class="who-img" data-aos="fade-right"><img src="../resources/images/intro/who-bg.png"></div>
+            <div class="who-img" data-aos="fade-right" style="overflow: hidden">
+                <!--<img src="../resources/images/intro/who-bg.png">-->
+                <video id="myVideo3" autoplay loop muted>
+                    <source src="../resources/mov/web_bottom_video.mp4" type="video/mp4">
+                </video>
+                <div class="maskText"></div>
+            </div>
             <div class="who-txt">
                 <h2 class="intro-tit" data-aos="fade-right" data-aos-delay="250">Who we are. XT</h2>
                 <strong data-aos="fade-up">
                     <span>엑스티는 디자인 전문회사와 개발 전문회사가</span><br>
                     <span>2017년 12월 하나로 합병되면서 전략 수립과 디자인 그리고 개발까지</span><br>
-                    <span>모든 서비스를 만들어 낼 수 있는  풀 스펙 에이전시로 탄생했습니다.</span>
+                    <span>모든 서비스를 만들어 낼 수 있는  <i class="greenLine">풀 스펙 에이전시</i>로 탄생했습니다.</span>
                 </strong>
                 <div data-aos="fade-up">
                     <span>엑스티는 당신 ; 고객을 가장 잘 알고 싶어합니다</span><br>
@@ -90,7 +97,7 @@
                     <span>논리적인 UIUX 설계합니다</span>
                 </div>
                 <div data-aos="fade-up">
-                    <span>Growth of experience and Use your Craftsmanship</span><br>
+                    <span><i class="yellowLine">Growth of experience and Use your Craftsmanship</i></span><br>
                     <span>모든 새로운 것을 흥미로워 하는 우리는 그 어떤 순간에도 멈춰서지 않고 끝없는 경험의 성장으로</span><br>
                     <span>그 어떤 것에도 완성도 있는 성숙함의 장인정신을 담아냅니다</span>
                 </div>
@@ -286,8 +293,26 @@
             offset: 120,
         });
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            freeMode: true,
+            slidesPerView: 3.5,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                1000: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 10
+                }
+            },
         });
     });
 </script>

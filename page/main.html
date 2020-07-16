@@ -193,36 +193,19 @@
                 </div>
                 <div class="we-are03 slide">
                     <div class="weAre-txt">
-                        <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">​Mature X Craftsmanship
-                            5<span class="bar"></span></span></h2>
+                        <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">​Stable X Pleasure<span class="bar"></span></span></h2>
+                        <div class="bgAnimation1"><img src="../resources/images/main/section2_3_1.png" alt=""></div>
+                        <div class="bgAnimation2"><img src="../resources/images/main/section2_3_2.png" alt=""></div>
                         <div class="textAnimate">우리는 당신 ; 고객을 가장 잘 알고 싶습니다<br>
-                        열린사고로 미리 판단하지 않고<br>
-                        당신 ; 고객의 입장에서 생각하고 공감하며<br>
-                        가장 당신 ; 고객다운 모습을 집요하게 분석하고 ​<br>
-                        이성적인 분석을 바탕으로 창의적이면서도<br>
-                        논리적인 UIUX 설계합니다 </div>
+                            XT 가족 전부가 조화를 이루며<br>안정적인 성장계획을 이루어 나아가<br>행복한 미래가 그려간다.</div>
                         </div>
                 </div>
                 <div class="we-are04 slide">
                     <div class="weAre-txt">
-                        <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">Growth X Flexible <span class="bar"></span></span></h2>
-                        <div class="textAnimate">우리는 새로운 것에 유연합니다.<br>
-                        ​새로운 것을 유연하게 만나고 경험하여<br>
-                        많은 것을 알게 되고 자라지만<br>
-                        우리에 시선은 항상 새로운 곳을 향하여 있어<br>
-                        멈추지 않고 ​또 다시 지속적으로 탐구하고<br>
-                        그려 냅니다</div>
-                    </div>
-                </div>
-                <div class="we-are05 slide">
-                    <div class="weAre-txt">
-                        <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">Expert X Empathetic <span class="bar"></span></span></h2>
-                        <div class="textAnimate">우리는 당신 ; 고객을 가장 잘 알고 싶습니다<br>
-                        열린사고로 미리 판단하지 않고<br>
-                        당신 ; 고객의 입장에서 생각하고 공감하며<br>
-                        가장 당신 ; 고객다운 모습을 집요하게 분석하고 ​<br>
-                        이성적인 분석을 바탕으로 창의적이면서도<br>
-                        논리적인 UIUX 설계합니다 </div>
+                        <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">​Mature X Craftsmanship<span class="bar"></span></span></h2>
+                        <div class="bgAnimation1"><img src="../resources/images/main/section2_4_1.png" alt=""></div>
+                        <div class="bgAnimation2"><img src="../resources/images/main/section2_4_2.png" alt=""></div>
+                        <div class="textAnimate">XT는 책임감 있는 프로젝트 진행으로<br>고객의 신뢰를 쌓아가며<br>사랑받는 기업이 된다.</div>
                     </div>
                 </div>
                 <div class="number">
@@ -334,14 +317,18 @@
     </div>
 </div>
 
-<a href="#" class="btnTop">
+<!--<a href="#section1" data-menuanchor="firstPage" class="btnTop">
   <span class="t">T</span>
   <div>
     <span class="o">O</span>
     <span class="p">P</span>
   </div>
-</a>
+</a>-->
 <script>
+
+    setTimeout(function(){
+        $('.header').removeClass('txt-bk').addClass('main');
+    },7500);
 
     $(function(){
 
@@ -361,6 +348,7 @@
       css3: true,
       scrollOverflow: true,
       resize: false,
+      anchors: ['section1'],
       onLeave: function(index, nextIndex, direction) {
         if(index == 2 && !sliding) {
           if(direction == 'down' && slideIndex < length) {
@@ -381,6 +369,7 @@
         // header 색상변경
           let $indexPlus = index + 1;
           const video = document.querySelector("#myVideo2");
+          const video2 = document.querySelector("#myVideo");
           if (direction == 'down') {
 
               if($indexPlus == 2 || $indexPlus == 4) {
@@ -396,7 +385,9 @@
                   $(".header").removeClass("txt-bk").addClass("main");
               } else if ((index - 1) == 3 || $indexMinus == 5) {
                   $(".header").removeClass("main").addClass("txt-bk");
-
+              }
+              if($indexMinus == 1) {
+                  video2.play();
               }
           }
 
@@ -439,7 +430,6 @@
           horizontalOrder: true,
           percentPosition: true,
       });
-
 
     $('.input-group input').focusout(function () {
       var inputContent = $(this).val();

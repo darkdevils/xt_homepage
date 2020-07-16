@@ -103,7 +103,9 @@ $(function () {
 
     // scroll Top Button
     $('.btnTop').on('click',function(){
-        $('html, body').animate({scrollTop: '0'}, 600);
+        $('#pagepiling').css({
+            transform: "translate3d(0px, 0px, 0px)"
+        })
     });
 
 });

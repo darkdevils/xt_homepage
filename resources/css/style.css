@@ -4047,6 +4047,18 @@ h1, h2, h3, h4, h5, h6, strong {
     .btnTop div span {
       margin: 0 2px; }
 
+.viedeoContact {
+  position: relative; }
+  .viedeoContact:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.4; }
+
 @-webkit-keyframes typo01-after {
   0% {
     left: 0;
@@ -4195,6 +4207,12 @@ h1, h2, h3, h4, h5, h6, strong {
     background: #000; }
     .wrapper .container .main-content #section2 .fp-scroller {
       height: 100%; }
+    .wrapper .container .main-content #section2 .we-are01 .bgAnimation1, .wrapper .container .main-content #section2 .we-are02 .bgAnimation1, .wrapper .container .main-content #section2 .we-are03 .bgAnimation1, .wrapper .container .main-content #section2 .we-are04 .bgAnimation1 {
+      transform: translate(0, 100%);
+      opacity: 0; }
+    .wrapper .container .main-content #section2 .we-are01 .bgAnimation2, .wrapper .container .main-content #section2 .we-are02 .bgAnimation2, .wrapper .container .main-content #section2 .we-are03 .bgAnimation2, .wrapper .container .main-content #section2 .we-are04 .bgAnimation2 {
+      transform: translate(0, 100%);
+      opacity: 0; }
     .wrapper .container .main-content #section2.active [class*="we-are"].active h2 .bigText {
       opacity: 1; }
       .wrapper .container .main-content #section2.active [class*="we-are"].active h2 .bigText:before {
@@ -4226,6 +4244,12 @@ h1, h2, h3, h4, h5, h6, strong {
     .wrapper .container .main-content #section2.active [class*="we-are"].active .textAnimate {
       opacity: 1;
       transform: translate(0, -50px); }
+    .wrapper .container .main-content #section2.active .we-are01.active .bgAnimation1, .wrapper .container .main-content #section2.active .we-are02.active .bgAnimation1, .wrapper .container .main-content #section2.active .we-are03.active .bgAnimation1, .wrapper .container .main-content #section2.active .we-are04.active .bgAnimation1 {
+      transform: translate(0, 0);
+      opacity: 1; }
+    .wrapper .container .main-content #section2.active .we-are01.active .bgAnimation2, .wrapper .container .main-content #section2.active .we-are02.active .bgAnimation2, .wrapper .container .main-content #section2.active .we-are03.active .bgAnimation2, .wrapper .container .main-content #section2.active .we-are04.active .bgAnimation2 {
+      transform: translate(0, 0);
+      opacity: 1; }
     .wrapper .container .main-content #section2 [class^="we-are"] {
       position: relative; }
       .wrapper .container .main-content #section2 [class^="we-are"]:after {
@@ -4236,7 +4260,8 @@ h1, h2, h3, h4, h5, h6, strong {
       .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation1, .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation2 {
         position: absolute;
         right: 0;
-        bottom: 0; }
+        bottom: 0;
+        transition: 2s ease; }
         .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation1 img, .wrapper .container .main-content #section2 [class^="we-are"] .bgAnimation2 img {
           width: 100%; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt {
@@ -4286,8 +4311,16 @@ h1, h2, h3, h4, h5, h6, strong {
           background: #00c691; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt {
         /*background: url("../images/main/bg-we01.png") no-repeat right bottom;*/
-        background: url("../images/main/bg-we01.png") no-repeat;
-        background-position: right bottom; }
+        /*!*@include imageUrl(main/bg-we01,png);*!
+                            background-position: right bottom;*/ }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt .bgAnimation1 {
+          width: 46.9792vw;
+          height: 39.9479vw;
+          right: 160px; }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt .bgAnimation2 {
+          width: 17.1875vw;
+          height: 20vw;
+          bottom: 65px; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt .smallText .bar:after {
           content: "";
           position: absolute;
@@ -4295,11 +4328,19 @@ h1, h2, h3, h4, h5, h6, strong {
           top: 0;
           width: 100%;
           height: 3px;
-          background: #00c691; }
+          background: #6B00E6; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt {
         /*background: url("../images/main/bg-we02.png") no-repeat right bottom;*/
-        background: url("../images/main/bg-we02.png") no-repeat;
-        background-position: right bottom; }
+        /*@include imageUrl(main/bg-we02,png);
+                            background-position: right bottom;*/ }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt .bgAnimation1 {
+          width: 43.6979vw;
+          height: 43.6979vw;
+          right: 160px; }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt .bgAnimation2 {
+          width: 16.7188vw;
+          height: 8.5938vw;
+          bottom: 65px; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt .smallText .bar:after {
           content: "";
           position: absolute;
@@ -4307,11 +4348,16 @@ h1, h2, h3, h4, h5, h6, strong {
           top: 0;
           width: 100%;
           height: 3px;
-          background: #00c691; }
+          background: #FFE232; }
       .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt {
         /*background: url("../images/main/bg-we01.png") no-repeat right bottom;*/
-        background: url("../images/main/bg-we01.png") no-repeat;
-        background-position: right bottom; }
+        /*!*@include imageUrl(main/bg-we01,png);*!
+                            background-position: right bottom;*/ }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt .bgAnimation1 {
+          right: 80px; }
+        .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt .bgAnimation2 {
+          right: 60px;
+          bottom: 115px; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt .smallText .bar:after {
           content: "";
           position: absolute;
@@ -4339,7 +4385,8 @@ h1, h2, h3, h4, h5, h6, strong {
           padding-left: 6.5104vw;
           display: block;
           text-align: left;
-          line-height: 1; }
+          line-height: 1;
+          z-index: 2; }
           .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 .bigText {
             position: relative;
             display: inline-block;
@@ -4728,7 +4775,7 @@ h1, h2, h3, h4, h5, h6, strong {
     top: 0;
     left: 0;
     text-align: center;
-    z-index: 1; }
+    z-index: 3; }
     .main-contact .main-contact-txt .contact-h {
       padding-top: 14%; }
       .main-contact .main-contact-txt .contact-h span {
@@ -4883,19 +4930,21 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     background: url("../images/common/bg_bottom_logo.png") no-repeat;
     width: 101%;
     height: 100%;
-    background-size: cover; }
+    background-size: cover;
+    z-index: 2; }
   .videoWrap:before {
     content: "";
-    width: 100%;
+    width: 95.8%;
     height: 8px;
     display: block;
     position: absolute;
-    bottom: 1.8vw;
-    left: 0;
+    bottom: 3.2vw;
+    left: 3.3vw;
     background: linear-gradient(137deg, #00C691, #2e3bee, #00C691, #2e3bee);
     background-size: 200% 100%;
     -webkit-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite; }
+    animation: AnimationName 4s ease infinite;
+    z-index: 2; }
   .videoWrap -webkit-keyframes AnimationName 0% {
     background-position: 0% 50%; }
   .videoWrap -webkit-keyframes AnimationName 50% {
@@ -5020,8 +5069,10 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     justify-content: flex-start;
     margin-bottom: 6.7708vw; }
     .xt-intro .who .who-img {
+      position: relative;
       width: 25.1563vw;
-      height: 100%; }
+      height: 29.1563vw;
+      /*height: 100%;*/ }
       .xt-intro .who .who-img:before, .xt-intro .who .who-img:after {
         content: "";
         top: 0;
@@ -5047,6 +5098,40 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       .xt-intro .who .who-img.aos-animate:after {
         -webkit-animation: typo01-after 1s ease-in-out;
         animation-delay: 0.5s; }
+      .xt-intro .who .who-img video {
+        object-fit: cover;
+        position: absolute;
+        top: -4vw;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .5; }
+      .xt-intro .who .who-img .maskText {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25.1563vw;
+        height: 25.1563vw; }
+        .xt-intro .who .who-img .maskText:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: url("../images/works/who-bg2.png") no-repeat;
+          background-size: cover;
+          background-position: center;
+          width: 25.1563vw;
+          height: 25.1563vw; }
+        .xt-intro .who .who-img .maskText:before {
+          content: '';
+          position: absolute;
+          left: -7vw;
+          top: 7vw;
+          background: url("../images/works/bg_mask.png") no-repeat;
+          background-size: 32.1563vw 18.125vw;
+          width: 32.1563vw;
+          height: 20.125vw;
+          z-index: 2; }
     .xt-intro .who .who-txt {
       padding: 10.6771vw 0 0 8.2292vw; }
       .xt-intro .who .who-txt strong {
@@ -5064,7 +5149,34 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
           font-size: 1.1458vw;
           font-weight: 500;
           line-height: 2.27em; }
-  .xt-intro .intro-slide {
+      .xt-intro .who .who-txt i {
+        position: relative;
+        font-style: normal; }
+      .xt-intro .who .who-txt .greenLine:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0.9896vw;
+        width: 0;
+        background: #0CE3AA;
+        z-index: -1;
+        transition: 3.2s ease; }
+      .xt-intro .who .who-txt .yellowLine:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0.3646vw;
+        width: 0;
+        background: #FFE232;
+        z-index: -1;
+        transition: 3.2s ease; }
+      .xt-intro .who .who-txt .aos-animate .greenLine:after, .xt-intro .who .who-txt .aos-animate .yellowLine:after {
+        width: 100%; }
+  .xt-intro .intro-slide .intro-tit {
+    padding-left: 14.5833vw; }
+  .xt-intro .intro-slide .swiper-container {
     padding-left: 14.5833vw; }
     .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
       width: 28.1250vw; }
@@ -5072,36 +5184,37 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       width: 25.3125vw; }
     .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
       width: 26.0417vw; }
-    .xt-intro .intro-slide.history {
-      margin-bottom: 12.5000vw; }
-      .xt-intro .intro-slide.history .swiper-slide:nth-child(4) {
-        width: 8.3333vw; }
-      .xt-intro .intro-slide.history .swiper-slide strong {
-        display: block;
-        font-size: 6.2500vw;
-        font-weight: 500;
-        line-height: 1em;
-        padding-bottom: 1.5625vw; }
-      .xt-intro .intro-slide.history .swiper-slide p {
-        font-size: 0.8333vw;
-        line-height: 1.875em; }
-    .xt-intro .intro-slide.philosophy .swiper-slide:nth-child(4) {
-      width: 19.7917vw; }
-    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-img {
-      padding-bottom: 1.9792vw; }
-    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit {
+  .xt-intro .intro-slide.history {
+    margin-bottom: 12.5000vw; }
+    .xt-intro .intro-slide.history .swiper-slide:nth-child(4) {
+      width: 8.3333vw; }
+    .xt-intro .intro-slide.history .swiper-slide strong {
       display: block;
-      font-size: 1.6667vw;
-      font-weight: 700;
-      padding-bottom: 0.5208vw; }
-      .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit span {
-        display: block;
-        font-size: 0.8333vw;
-        color: #ccc;
-        font-weight: 400; }
-    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-txt {
-      font-size: 0.7292vw;
-      line-height: 1.85em; }
+      font-size: 6.2500vw;
+      font-weight: 500;
+      line-height: 1em;
+      padding-bottom: 1.5625vw; }
+    .xt-intro .intro-slide.history .swiper-slide p {
+      font-size: 0.8333vw;
+      line-height: 1.875em; }
+  .xt-intro .intro-slide.philosophy .swiper-slide:nth-child(4) {
+    width: 19.7917vw; }
+  .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-img {
+    display: inline-block;
+    padding-bottom: 30px; }
+  .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit {
+    display: block;
+    font-size: 1.6667vw;
+    font-weight: 700;
+    padding-bottom: 0.5208vw; }
+    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit span {
+      display: block;
+      font-size: 0.8333vw;
+      color: #ccc;
+      font-weight: 400; }
+  .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-txt {
+    font-size: 0.7292vw;
+    line-height: 1.85em; }
   .xt-intro .our-service {
     padding: 12.7083vw 14.5833vw 0; }
     .xt-intro .our-service .service-kind {
@@ -5319,11 +5432,39 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     .life__content .videoPhoto__content {
       width: 40.4vw; }
       .life__content .videoPhoto__content .video-image {
+        position: relative;
         width: 39vw;
         height: 28.5vw;
-        overflow: hidden; }
+        overflow: hidden;
+        z-index: 4; }
         .life__content .videoPhoto__content .video-image img {
-          width: 100%; }
+          height: 100%; }
+        .life__content .videoPhoto__content .video-image:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 8vw;
+          background: url("../images/life/bg_life.png") no-repeat;
+          background-size: contain;
+          width: 9.0104vw;
+          height: 7.6042vw; }
+      .life__content .videoPhoto__content .yellowBox2 {
+        position: absolute;
+        right: -4.10vw;
+        bottom: -20.55vw;
+        width: 5.4167vw;
+        height: 20.5729vw; }
+        .life__content .videoPhoto__content .yellowBox2:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 100%;
+          border-left: 5.4167vw solid #FFE232;
+          transition: 1s ease; }
+        .life__content .videoPhoto__content .yellowBox2.aos-animate:after {
+          transition-delay: 1s;
+          bottom: 0; }
     .life__content .videoPhoto__text {
       padding: 13vw 0 0 5.3vw;
       text-align: right; }
@@ -5363,7 +5504,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
         background: #C7CBD9;
         z-index: 3; }
         .life__content .videoPhoto__content .videoPhoto__animateBox.aos-animate {
-          opacity: 0.65 !important; }
+          /*opacity: 0.65 !important;*/ }
       .life__content .videoPhoto__content .yellowBox {
         position: absolute;
         left: 39vw;
@@ -5374,14 +5515,15 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
   .life__content .xtlogo {
     position: relative;
     height: 20.5729vw;
-    padding: 8.4896vw 0 0 21.2500vw; }
+    padding: 8.4896vw 0 0 23.55vw; }
     .life__content .xtlogo .yellowBox {
       position: absolute;
       left: 39vw;
       top: -3px;
       background: #FFE232;
       width: 5.3125vw;
-      height: 20.7292vw; }
+      height: 0;
+      /*height: 20.7292vw;*/ }
     .life__content .xtlogo .logoImg {
       position: relative;
       width: 25.1042vw;
@@ -5393,6 +5535,9 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       position: absolute;
       right: 8.3333vw;
       bottom: 2.6042vw; }
+      .life__content .xtlogo .textMask img {
+        width: 10.9375vw;
+        height: 7.3438vw; }
       .life__content .xtlogo .textMask .text {
         position: relative;
         z-index: 2;
@@ -5495,7 +5640,17 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     display: flex;
     justify-content: center; }
     .life__content .xtText .bigText {
+      position: relative;
       margin-right: 13vw; }
+      .life__content .xtText .bigText:after {
+        content: "";
+        position: absolute;
+        right: -2.2625vw;
+        bottom: -0.5208vw;
+        background: url("../images/life/bg_phone.png") no-repeat;
+        background-size: cover;
+        width: 4.0104vw;
+        height: 4.6875vw; }
       .life__content .xtText .bigText span {
         position: relative;
         line-height: 1.1em;
@@ -5524,7 +5679,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     .life__content .xtText .text span {
       position: relative;
       color: #fff;
-      font-size: 30px;
+      font-size: 1.5625vw;
       line-height: 1.8em; }
       .life__content .xtText .text span:before, .life__content .xtText .text span:after {
         content: "";
@@ -5548,7 +5703,8 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       animation-delay: 0.5s; }
   .life__content .xtMember {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 5vw 0 0; }
     .life__content .xtMember__team {
       position: relative;
       height: 11.9792vw;
@@ -5565,8 +5721,9 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
             color: #fff; }
         .life__content .xtMember__team .name .photo {
           position: absolute;
-          left: 0;
-          top: 0; }
+          left: -42px;
+          top: -82px;
+          z-index: 2; }
       .life__content .xtMember__team .tit {
         position: relative;
         font-size: 8.5vw;
@@ -5900,13 +6057,13 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
         display: inline-block;
         position: absolute; }
       .contactContent h1 span:before {
-        background: #000;
+        background: #fff;
         width: 100%; }
       .contactContent h1 span:after {
         background: #000; }
       .contactContent h1 span:after, .contactContent h1 span:before {
         top: 5px;
-        height: 5.7083vw; }
+        height: 5.7883vw; }
     .contactContent h1.aos-animate span:before {
       right: 0;
       width: 0;
@@ -5930,7 +6087,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
         display: inline-block;
         position: absolute; }
       .contactContent .textWrap span:before {
-        background: #000;
+        background: #fff;
         width: 100%; }
       .contactContent .textWrap span:after {
         background: #000; }
@@ -6037,7 +6194,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
             display: inline-block;
             position: absolute; }
           .contactContent .linkSection .box .text span:before {
-            background: #000;
+            background: #fff;
             width: 100%; }
           .contactContent .linkSection .box .text span:after {
             background: #000; }
@@ -6204,6 +6361,39 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
   height: 274px !important;
   top: 0 !important;
   z-index: 2; }
+
+.xtMember__team a .img img {
+  display: none; }
+
+.xtMember__team a span {
+  opacity: 0; }
+
+.xtMember__team a:hover {
+  position: relative; }
+  .xtMember__team a:hover.hover span {
+    position: relative;
+    transition: .3s ease;
+    opacity: 1; }
+    .xtMember__team a:hover.hover span:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8.3333vw;
+      height: 12.7083vw;
+      background: url("../images/life/ceo1.png") no-repeat;
+      background-size: cover; }
+
+.xtMember__team [class*="active"]:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 244px; }
+
+.xtMember__team .ceo.active1:hover {
+  background: url("../images/life/ceo1.png") no-repeat; }
 
 .news-content {
   margin-top: 240px; }
@@ -6587,7 +6777,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
         .work__content .projectList .projectList__unit .info .text strong:after {
           background: #000; }
         .work__content .projectList .projectList__unit .info .text strong:before, .work__content .projectList .projectList__unit .info .text strong:after {
-          height: 28px; }
+          height: 2.6833vw; }
     .work__content .projectList .projectList__unit .info .link span {
       position: relative;
       font-size: 0.8333vw; }

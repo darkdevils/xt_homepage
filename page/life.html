@@ -43,6 +43,7 @@
       </div>
       <div class="nav">
         <ul id="gnb">
+          <li><a href="main.html">Home</a></li>
           <li><a href="main.html">XT</a></li>
           <li><a href="work.html">Works</a></li>
           <li><a href="life.html">XTSIEN Life</a></li>
@@ -78,9 +79,10 @@
     <!-- 동영상 및 사진 -->
     <div class="videoPhoto">
       <div class="videoPhoto__content">
-        <div class="video-image" data-aos="fade" data-aos-delay="1300"><img src="../resources/images/temp/photo.png" alt=""></div>
+        <div class="video-image" data-aos="fade" data-aos-delay="1300"><img src="../resources/images/life/life_img1.png" alt=""></div>
         <div class="videoPhoto__animateBox" data-aos="fade-right"></div>
         <div class="yellowBox" data-aos="fade" data-aos-delay="1000"></div>
+        <div class="yellowBox2" data-aos="fade" data-aos-delay="1000"></div>
       </div>
       <div class="videoPhoto__text" data-aos="fade" data-aos-offset="500">
         <span>우리는 즐거워서 오래 다니고 싶은 회사를 지향합니다</span><br>
@@ -132,13 +134,12 @@
     <!-- XT Member -->
     <div class="xtMember">
       <div class="xtMember__team textRight" data-aos="fade-left">
-        <span class="name" data-fx="15">
-          <a href="#" class="" data-img="../resources/images/common/photo01.png">김현수 대표</a>
-          <!--<div class="photo"><img src="../resources/images/common/photo01.png" alt="CEO 김현수 대표"></div>-->
+        <span class="name">
+          <a href="#" class="ceo hover">김현수 대표<span class="photo"></span></a>
         </span>
         <strong class="tit">CEO</strong>
-        <span class="name" data-fx="22">
-          <a href="#" data-img="../resources/images/common/photo01.png">송의택 이사</a>
+        <span class="name">
+          <a href="#" class="cto hover">송의택 이사</a>
         </span>
         <strong class="tit">CTO</strong>
       </div>
@@ -149,7 +150,7 @@
              <div class="xtMember__team__memberList" data-fx="4">
                 <a href="#" data-img="../resources/images/common/photo01.png" class="planner__position1">윤성배 팀장</a>
                 <a href="#" data-img="../resources/images/common/photo01.png" class="planner__position2">최성민 대리</a>
-                <a href="#" data-img="../resources/images/common/photo01.png" class="planner__position3">황수현 사원</a>
+                <a href="#" data-img="../resources/images/common/photo01.png" class="planner__position3">이새봄 사원</a>
               </div>
           </span>
         </strong>
@@ -159,10 +160,10 @@
           <span class="tit">
             DESIGNER
           <span class="xtMember__team__memberList" data-fx="11">
-            <a href="#" data-img="../resources/images/common/photo01.png">우광수 실장</a>
-            <a href="#">정종운 차창</a>
-            <a href="#">최홍 사원</a>
-            <a href="#">성혜연 사원</a>
+            <a href="#" class="designCaptain over">우광수 실장</a>
+            <a href="#" class="design01 over">최홍 사원</a>
+            <a href="#" class="design02 over">성혜연 사원</a>
+            <a href="#" class="design03 over">박세나</a>
           </span>
           </span>
         </strong>
@@ -274,10 +275,10 @@
 <script src="../resources/js/fullpage.js"></script>
 <script src="../resources/js/swiper.js"></script>
 
-<script src="../resources/js/charming.min.js"></script>
-<script src="../resources/js/imagesloaded.pkgd.min.js"></script>
+<!--<script src="../resources/js/charming.min.js"></script>
+<script src="../resources/js/imagesloaded.pkgd.min.js"></script>-->
 <script src="../resources/js/TweenMax.min.js"></script>
-<script src="../resources/js/demo.js"></script>
+<!--<script src="../resources/js/demo.js"></script>-->
 
 <script src="../resources/js/common.js"></script>
 <script>
@@ -298,7 +299,6 @@
       }
     });
     $(window).resize(function () {
-      console.log('111111');
       $(".swiper-slide").css("width", $(window).width());
     });
 
@@ -312,12 +312,26 @@
       });
     });
 
-    $(".xtMember__team a").on('mouseenter',function(){
-      $(this).closest('.xtMember__team').css({"z-index": 2});
-    });
+      $(".xtMember__team a").on('mouseenter',function(){
+          var _this = $(".xtMember__team a");
+
+      });
+
     $(".xtMember__team a").on('mouseleave',function(){
       $(this).closest('.xtMember__team').css({"z-index": 1});
     });
+
+
+
+
+
+    // Random Images
+    var images = ['life_img1.png','life_img2.png','life_img3.png','life_img4.png','life_img5.png','life_img6.png','life_img7.png','life_img8.png',]
+    var size = images.length;
+    var x = Math.floor(size*Math.random())
+    document.querySelector('.video-image img').src = '../resources/images/life/'+ images[x];
+      
+
   });
 </script>
 </body>

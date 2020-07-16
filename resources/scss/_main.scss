@@ -182,6 +182,16 @@ $vw: 0.0521vw;
                 .fp-scroller {
                     height: 100%;
                 }
+	            .we-are01,.we-are02,.we-are03,.we-are04 {
+		            .bgAnimation1 {
+			            transform: translate(0,100%);
+			            opacity: 0;
+		            }
+		            .bgAnimation2 {
+			            transform: translate(0,100%);
+			            opacity: 0;
+		            }
+	            }
                 &.active {
                     [class*="we-are"].active {
                         h2 {
@@ -207,6 +217,16 @@ $vw: 0.0521vw;
                             transform: translate(0,-50px);
                         }
                     }
+	                .we-are01.active,.we-are02.active,.we-are03.active,.we-are04.active {
+		                .bgAnimation1 {
+			                transform: translate(0,0);
+			                opacity: 1;
+		                }
+		                .bgAnimation2 {
+			                transform: translate(0,0);
+			                opacity: 1;
+		                }
+	                }
                 }
                 [class^="we-are"] {
                     position: relative;
@@ -220,6 +240,7 @@ $vw: 0.0521vw;
                         position: absolute;
                         right: 0;
                         bottom: 0;
+	                    transition: 2s ease;
                         img {
                             width: 100%;
                         }
@@ -293,8 +314,18 @@ $vw: 0.0521vw;
                     &.we-are03 {
                         .weAre-txt {
                             /*background: url("../images/main/bg-we01.png") no-repeat right bottom;*/
-                            @include imageUrl(main/bg-we01,png);
-                            background-position: right bottom;
+                            /*!*@include imageUrl(main/bg-we01,png);*!
+                            background-position: right bottom;*/
+	                        .bgAnimation1 {
+		                        width: 46.9792vw;
+		                        height: 39.9479vw;
+		                        right: 160px;
+	                        }
+	                        .bgAnimation2 {
+		                        width: 17.1875vw;
+		                        height: 20vw;
+		                        bottom: 65px;
+	                        }
                             .smallText {
                                 .bar {
                                     &:after {
@@ -304,7 +335,7 @@ $vw: 0.0521vw;
                                         top: 0;
                                         width: 100%;
                                         height: 3px;
-                                        background: #00c691;
+                                        background: #6B00E6;
                                     }
                                 }
                             }
@@ -313,8 +344,18 @@ $vw: 0.0521vw;
                     &.we-are04 {
                         .weAre-txt {
                             /*background: url("../images/main/bg-we02.png") no-repeat right bottom;*/
-                            @include imageUrl(main/bg-we02,png);
-                            background-position: right bottom;
+                            /*@include imageUrl(main/bg-we02,png);
+                            background-position: right bottom;*/
+	                        .bgAnimation1 {
+		                        width: 43.6979vw;
+		                        height: 43.6979vw;
+		                        right: 160px;
+	                        }
+	                        .bgAnimation2 {
+		                        width: 16.7188vw;
+		                        height: 8.5938vw;
+		                        bottom: 65px;
+	                        }
                             .smallText {
                                 .bar {
                                     &:after {
@@ -324,7 +365,7 @@ $vw: 0.0521vw;
                                         top: 0;
                                         width: 100%;
                                         height: 3px;
-                                        background: #00c691;
+                                        background: #FFE232;
                                     }
                                 }
                             }
@@ -333,8 +374,15 @@ $vw: 0.0521vw;
                     &.we-are05 {
                         .weAre-txt {
                             /*background: url("../images/main/bg-we01.png") no-repeat right bottom;*/
-                            @include imageUrl(main/bg-we01,png);
-                            background-position: right bottom;
+                            /*!*@include imageUrl(main/bg-we01,png);*!
+                            background-position: right bottom;*/
+	                        .bgAnimation1 {
+		                        right: 80px;
+	                        }
+	                        .bgAnimation2 {
+		                        right: 60px;
+		                        bottom: 115px;
+	                        }
                             .smallText {
                                 .bar {
                                     &:after {
@@ -384,6 +432,7 @@ $vw: 0.0521vw;
                             display: block;
                             text-align: left;
                             line-height: 1;
+	                        z-index: 2;
                             .bigText {
                                 position: relative;
                                 display: inline-block;
@@ -842,7 +891,7 @@ $vw: 0.0521vw;
         top: 0;
         left: 0;
         text-align: center;
-        z-index: 1;
+        z-index: 3;
         .contact-h {
             padding-top: 14%;
             span {
@@ -982,19 +1031,21 @@ body[class*=fp-viewing-1-] {
         width: 101%;
         height: 100%;
         background-size: cover;
+	    z-index : 2;
     }
     &:before {
         content: "";
-        width: 100%;
+        width: 95.8%;
         height: 8px;
         display: block;
         position: absolute;
-        bottom: 1.8vw;
-        left: 0;
+        bottom: 3.2vw;
+        left: 3.3vw;
         background: linear-gradient(137deg, #00C691, #2e3bee, #00C691, #2e3bee);
         background-size: 200% 100%;
         -webkit-animation: AnimationName 4s ease infinite;
         animation: AnimationName 4s ease infinite;
+	    z-index : 2;
     }
     -webkit-keyframes AnimationName {
         0%{background-position:0% 50%}
