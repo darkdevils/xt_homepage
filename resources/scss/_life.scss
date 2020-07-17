@@ -682,14 +682,28 @@
     .xtMemberLiefPhoto {
       margin-top: 8.5vw;
       &__text {
+		position: relative;
         color: #fff;
         display: flex;
         justify-content: left;
         padding: 0 0 0 15.6792vw;
         .title {
+		  position: relative;
           font-size: 4vw;
           line-height: 1em;
           margin-right: 5.5vw;
+		  z-index : 2;
+	        &:after {
+		        content: "";
+		        position: absolute;
+		        right: -3.5063vw;
+		        top: 0.5vw;
+		        @include imageUrl(life/bg_life2,png);
+		        background-size: contain;
+		        width: 14.0625vw;
+		        height: 11vw;
+		        z-index : -1;
+	        }
         }
         > div {
           strong {
@@ -1251,8 +1265,8 @@
 						top: 0;
 						width: 8.3333vw;
 						height: 12.7083vw;
-						@include imageUrl(life/ceo1,png);
-						background-size: cover;
+						//@include imageUrl(life/ceo1,png);
+
 					}
 				}
 			}
@@ -1261,7 +1275,7 @@
 
 	[class*="active"] {
 		&:hover {
-			&:after {
+			span:after {
 				content:"";
 				position: absolute;
 				left: 0;
@@ -1272,10 +1286,49 @@
 		}
 	}
 	.ceo {
-		&.active1 {
-			&:hover {
-				@include imageUrl(life/ceo1,png);
+		&:hover {
+			span:after {
+				/*@include imageUrl(life/ceo1,png);*/
+				animation: overImage 5s .5s infinite;
+
 			}
 		}
+	}
+	.multiplication {
+		position: relative;
+		top: -4vw;
+		display: inline-block;
+		width: 3.6458vw;
+		height: 3.6458vw;
+		margin: 0 3vw;
+	}
+	.cto {
+		&.active1 {
+			&:hover {
+				@include imageUrl(life/cto1,png);
+			}
+		}
+	}
+	.planner__position1 {
+		&.active1 {
+			&:hover {
+				@include imageUrl(life/cto1,png);
+			}
+		}
+	}
+}
+
+@keyframes overImage {
+	0% {
+		@include imageUrl(life/ceo1,png);
+		background-size: cover;
+	}
+	50% {
+		@include imageUrl(life/ceo2,png);
+		background-size: cover;
+	}
+	100% {
+		@include imageUrl(life/ceo3,png);
+		background-size: cover;
 	}
 }

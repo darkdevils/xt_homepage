@@ -3659,6 +3659,19 @@ h1, h2, h3, h4, h5, h6, strong {
   z-index: 6;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
+  .wrapper .header .pdf-down a {
+    position: relative; }
+    .wrapper .header .pdf-down a:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: .5s ease; }
+    .wrapper .header .pdf-down a:hover:after {
+      width: 100%; }
 
 .wrapper .header .hamburger {
   z-index: 9999; }
@@ -3780,6 +3793,19 @@ h1, h2, h3, h4, h5, h6, strong {
     .wrapper .header .nav.on .profile-down {
       opacity: 1;
       transition: opacity .4s ease .4s; }
+      .wrapper .header .nav.on .profile-down a {
+        position: relative; }
+        .wrapper .header .nav.on .profile-down a:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -3px;
+          width: 0;
+          height: 2px;
+          background: #000;
+          transition: .5s ease; }
+        .wrapper .header .nav.on .profile-down a:hover:after {
+          width: 100%; }
   .wrapper .header .nav .pop-contact {
     display: none;
     padding: 6.5521vw 5.9896vw 0; }
@@ -3933,6 +3959,9 @@ h1, h2, h3, h4, h5, h6, strong {
     .wrapper .header .nav .profile-down a {
       color: #000; }
 
+.wrapper .header.main .pdf-down a {
+  color: #fff; }
+
 /* button */
 .btnBlack {
   --borderWidth: 2;
@@ -4007,7 +4036,7 @@ h1, h2, h3, h4, h5, h6, strong {
       --clip: inset(0 100% 0 0); }
 
 .footer {
-  padding: 0 0 3.6458vw 3.1250vw; }
+  padding: 0 0 1.6458vw 3.1250vw; }
   .footer .copy {
     font-size: 14px;
     font-weight: 100; }
@@ -4208,6 +4237,8 @@ h1, h2, h3, h4, h5, h6, strong {
     .wrapper .container .main-content #section2 .fp-scroller {
       height: 100%; }
     .wrapper .container .main-content #section2 .we-are01 .bgAnimation1, .wrapper .container .main-content #section2 .we-are02 .bgAnimation1, .wrapper .container .main-content #section2 .we-are03 .bgAnimation1, .wrapper .container .main-content #section2 .we-are04 .bgAnimation1 {
+      display: -webkit-box;
+      -webkit-box-align: end;
       transform: translate(0, 100%);
       opacity: 0; }
     .wrapper .container .main-content #section2 .we-are01 .bgAnimation2, .wrapper .container .main-content #section2 .we-are02 .bgAnimation2, .wrapper .container .main-content #section2 .we-are03 .bgAnimation2, .wrapper .container .main-content #section2 .we-are04 .bgAnimation2 {
@@ -4278,10 +4309,12 @@ h1, h2, h3, h4, h5, h6, strong {
                                 height: 46.0417vw;
                             }*/ }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt .bgAnimation1 {
-          width: 42.1875vw;
+          width: 38.1875vw;
           height: 46.0417vw; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt .bgAnimation2 {
-          width: 21.8056vw;
+          display: -webkit-box;
+          -webkit-box-align: end;
+          width: 16.8056vw;
           height: 21.5972vw; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt .smallText .bar:after {
           content: "";
@@ -4296,11 +4329,12 @@ h1, h2, h3, h4, h5, h6, strong {
         /*@include imageUrl(main/bg-we02,png);
                             background-position: right bottom;*/ }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt .bgAnimation1 {
-          width: 42.1875vw;
+          width: 39.1875vw;
           height: 46.0417vw; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt .bgAnimation2 {
-          width: 21.8056vw;
-          height: 21.5972vw; }
+          width: 15.8056vw;
+          height: 15.5972vw;
+          right: 3vw; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt .smallText .bar:after {
           content: "";
           position: absolute;
@@ -4314,12 +4348,12 @@ h1, h2, h3, h4, h5, h6, strong {
         /*!*@include imageUrl(main/bg-we01,png);*!
                             background-position: right bottom;*/ }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt .bgAnimation1 {
-          width: 46.9792vw;
+          width: 40.9792vw;
           height: 39.9479vw;
           right: 160px; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt .bgAnimation2 {
-          width: 17.1875vw;
-          height: 20vw;
+          width: 14.1875vw;
+          height: 15vw;
           bottom: 65px; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt .smallText .bar:after {
           content: "";
@@ -4334,13 +4368,14 @@ h1, h2, h3, h4, h5, h6, strong {
         /*@include imageUrl(main/bg-we02,png);
                             background-position: right bottom;*/ }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt .bgAnimation1 {
-          width: 43.6979vw;
+          width: 38.6979vw;
           height: 43.6979vw;
           right: 160px; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt .bgAnimation2 {
-          width: 16.7188vw;
+          width: 14.7188vw;
           height: 8.5938vw;
-          bottom: 65px; }
+          bottom: 65px;
+          right: 3vw; }
         .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt .smallText .bar:after {
           content: "";
           position: absolute;
@@ -4761,7 +4796,7 @@ h1, h2, h3, h4, h5, h6, strong {
   left: 0;
   width: 100%;
   height: auto;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   overflow: hidden; }
   .main-contact video {
     width: 100%; }
@@ -4961,7 +4996,8 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     background-position: 0% 50%; } }
 
 .xt-intro {
-  padding: 12.5000vw 0 0; }
+  padding: 12.5000vw 0 0;
+  overflow: hidden; }
   .xt-intro .intro-tit {
     font-size: 0.9375vw;
     padding-bottom: 2.6042vw; }
@@ -5174,47 +5210,49 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
         transition: 3.2s ease; }
       .xt-intro .who .who-txt .aos-animate .greenLine:after, .xt-intro .who .who-txt .aos-animate .yellowLine:after {
         width: 100%; }
-  .xt-intro .intro-slide .intro-tit {
-    padding-left: 14.5833vw; }
-  .xt-intro .intro-slide .swiper-container {
-    padding-left: 14.5833vw; }
-    .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
-      width: 28.1250vw; }
-    .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
-      width: 25.3125vw; }
-    .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
-      width: 26.0417vw; }
-  .xt-intro .intro-slide.history {
-    margin-bottom: 12.5000vw; }
-    .xt-intro .intro-slide.history .swiper-slide:nth-child(4) {
-      width: 8.3333vw; }
-    .xt-intro .intro-slide.history .swiper-slide strong {
+  .xt-intro .intro-slide {
+    position: relative; }
+    .xt-intro .intro-slide .intro-tit {
+      padding-left: 15.5833vw; }
+    .xt-intro .intro-slide .swiper-container {
+      padding-left: 15.5833vw; }
+      .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
+        width: 28.1250vw; }
+      .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
+        width: 25.3125vw; }
+      .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
+        width: 26.0417vw; }
+    .xt-intro .intro-slide.history {
+      margin-bottom: 12.5000vw; }
+      .xt-intro .intro-slide.history .swiper-slide:nth-child(4) {
+        width: 8.3333vw; }
+      .xt-intro .intro-slide.history .swiper-slide strong {
+        display: block;
+        font-size: 6.2500vw;
+        font-weight: 500;
+        line-height: 1em;
+        padding-bottom: 1.5625vw; }
+      .xt-intro .intro-slide.history .swiper-slide p {
+        font-size: 0.8333vw;
+        line-height: 1.875em; }
+    .xt-intro .intro-slide.philosophy .swiper-slide:nth-child(4) {
+      width: 19.7917vw; }
+    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-img {
+      display: inline-block;
+      padding-bottom: 30px; }
+    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit {
       display: block;
-      font-size: 6.2500vw;
-      font-weight: 500;
-      line-height: 1em;
-      padding-bottom: 1.5625vw; }
-    .xt-intro .intro-slide.history .swiper-slide p {
-      font-size: 0.8333vw;
-      line-height: 1.875em; }
-  .xt-intro .intro-slide.philosophy .swiper-slide:nth-child(4) {
-    width: 19.7917vw; }
-  .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-img {
-    display: inline-block;
-    padding-bottom: 30px; }
-  .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit {
-    display: block;
-    font-size: 1.6667vw;
-    font-weight: 700;
-    padding-bottom: 0.5208vw; }
-    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit span {
-      display: block;
-      font-size: 0.8333vw;
-      color: #ccc;
-      font-weight: 400; }
-  .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-txt {
-    font-size: 0.7292vw;
-    line-height: 1.85em; }
+      font-size: 1.6667vw;
+      font-weight: 700;
+      padding-bottom: 0.5208vw; }
+      .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-tit span {
+        display: block;
+        font-size: 0.8333vw;
+        color: #ccc;
+        font-weight: 400; }
+    .xt-intro .intro-slide.philosophy .swiper-slide .philosophy-txt {
+      font-size: 0.7292vw;
+      line-height: 1.85em; }
   .xt-intro .our-service {
     padding: 12.7083vw 14.5833vw 0; }
     .xt-intro .our-service .service-kind {
@@ -5855,14 +5893,27 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
   .life__content .xtMemberLiefPhoto {
     margin-top: 8.5vw; }
     .life__content .xtMemberLiefPhoto__text {
+      position: relative;
       color: #fff;
       display: flex;
       justify-content: left;
       padding: 0 0 0 15.6792vw; }
       .life__content .xtMemberLiefPhoto__text .title {
+        position: relative;
         font-size: 4vw;
         line-height: 1em;
-        margin-right: 5.5vw; }
+        margin-right: 5.5vw;
+        z-index: 2; }
+        .life__content .xtMemberLiefPhoto__text .title:after {
+          content: "";
+          position: absolute;
+          right: -3.5063vw;
+          top: 0.5vw;
+          background: url("../images/life/bg_life2.png") no-repeat;
+          background-size: contain;
+          width: 14.0625vw;
+          height: 11vw;
+          z-index: -1; }
       .life__content .xtMemberLiefPhoto__text > div strong {
         color: #fff;
         font-size: 2vw; }
@@ -6380,11 +6431,9 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       left: 0;
       top: 0;
       width: 8.3333vw;
-      height: 12.7083vw;
-      background: url("../images/life/ceo1.png") no-repeat;
-      background-size: cover; }
+      height: 12.7083vw; }
 
-.xtMember__team [class*="active"]:hover:after {
+.xtMember__team [class*="active"]:hover span:after {
   content: "";
   position: absolute;
   left: 0;
@@ -6392,8 +6441,34 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
   width: 160px;
   height: 244px; }
 
-.xtMember__team .ceo.active1:hover {
-  background: url("../images/life/ceo1.png") no-repeat; }
+.xtMember__team .ceo:hover span:after {
+  /*@include imageUrl(life/ceo1,png);*/
+  animation: overImage 5s .5s infinite; }
+
+.xtMember__team .multiplication {
+  position: relative;
+  top: -4vw;
+  display: inline-block;
+  width: 3.6458vw;
+  height: 3.6458vw;
+  margin: 0 3vw; }
+
+.xtMember__team .cto.active1:hover {
+  background: url("../images/life/cto1.png") no-repeat; }
+
+.xtMember__team .planner__position1.active1:hover {
+  background: url("../images/life/cto1.png") no-repeat; }
+
+@keyframes overImage {
+  0% {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  50% {
+    background: url("../images/life/ceo2.png") no-repeat;
+    background-size: cover; }
+  100% {
+    background: url("../images/life/ceo3.png") no-repeat;
+    background-size: cover; } }
 
 .news-content {
   margin-top: 240px; }

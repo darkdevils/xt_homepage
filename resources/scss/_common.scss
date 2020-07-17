@@ -284,6 +284,9 @@ h1, h2, h3, h4, h5, h6, strong {
             z-index: 6;
             -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+	        a {
+		        @include lineAnimate;
+	        }
         }
         .hamburger {
             z-index: 9999;
@@ -432,6 +435,9 @@ h1, h2, h3, h4, h5, h6, strong {
                 .profile-down {
                     opacity: 1;
                     transition: opacity .4s ease .4s;
+	                a {
+		                @include lineAnimate;
+	                }
                 }
             }
             .pop-contact {
@@ -615,6 +621,13 @@ h1, h2, h3, h4, h5, h6, strong {
                 }
             }
         }
+	    &.main {
+		    .pdf-down {
+			    a {
+				    color: #fff;
+			    }
+		    }
+	    }
     }
 }
 
@@ -706,7 +719,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 .footer {
-    padding: 0 0 3.6458vw 3.1250vw;
+    padding: 0 0 1.6458vw 3.1250vw;
     .copy {
         font-size: 14px;
         font-weight: 100;

@@ -6,13 +6,15 @@ $(function () {
 
   function sideMenuOpen() {
     $(".nav, .hamburger a").addClass("on");
-    $('#mask').fadeIn(1000);
-    $('#mask').fadeTo("slow",0.8);
+      $("body").append("<div id='mask'></div>");
+      $('#mask').fadeIn(1000);
+      $('#mask').fadeTo("slow",0.8);
   }
   function sideMenuClose() {
     $(".nav, .hamburger a").removeClass("on");
     $('#mask').fadeOut();
     $('#mask').fadeTo("fast",1);
+    $("#mask").remove();
   }
   $('#mask').click(function () {
     sideMenuClose();
@@ -89,13 +91,13 @@ $(function () {
         } else {
             $('.pdf-down').fadeIn();
         }*/
-        if (st > lastScrollTop && st > headerDown){
+        if (st > 0){
             // Scroll Down
-            $('header').removeClass('down').addClass('up');
+            $('.pdf-down').removeClass('down').addClass('up');
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('header').removeClass('up').addClass('down');
+                $('.pdf-down').removeClass('up').addClass('down');
             }
         }
         lastScrollTop = st;

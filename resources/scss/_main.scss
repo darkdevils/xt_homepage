@@ -184,6 +184,8 @@ $vw: 0.0521vw;
                 }
 	            .we-are01,.we-are02,.we-are03,.we-are04 {
 		            .bgAnimation1 {
+			            display: -webkit-box;
+			            -webkit-box-align: end;
 			            transform: translate(0,100%);
 			            opacity: 0;
 		            }
@@ -261,11 +263,13 @@ $vw: 0.0521vw;
                                 height: 46.0417vw;
                             }*/
                             .bgAnimation1 {
-                                width: 42.1875vw;
+                                width: 38.1875vw;
                                 height: 46.0417vw;
                             }
                             .bgAnimation2 {
-                                width: 21.8056vw;
+	                            display: -webkit-box;
+	                            -webkit-box-align: end;
+                                width: 16.8056vw;
                                 height: 21.5972vw;
                             }
                             .smallText {
@@ -289,12 +293,13 @@ $vw: 0.0521vw;
                             /*@include imageUrl(main/bg-we02,png);
                             background-position: right bottom;*/
                             .bgAnimation1 {
-                                width: 42.1875vw;
+                                width: 39.1875vw;
                                 height: 46.0417vw;
                             }
                             .bgAnimation2 {
-                                width: 21.8056vw;
-                                height: 21.5972vw;
+                                width: 15.8056vw;
+                                height: 15.5972vw;
+	                            right: 3vw;
                             }
                             .smallText {
                                 .bar {
@@ -317,13 +322,13 @@ $vw: 0.0521vw;
                             /*!*@include imageUrl(main/bg-we01,png);*!
                             background-position: right bottom;*/
 	                        .bgAnimation1 {
-		                        width: 46.9792vw;
+		                        width: 40.9792vw;
 		                        height: 39.9479vw;
 		                        right: 160px;
 	                        }
 	                        .bgAnimation2 {
-		                        width: 17.1875vw;
-		                        height: 20vw;
+		                        width: 14.1875vw;
+		                        height: 15vw;
 		                        bottom: 65px;
 	                        }
                             .smallText {
@@ -347,14 +352,15 @@ $vw: 0.0521vw;
                             /*@include imageUrl(main/bg-we02,png);
                             background-position: right bottom;*/
 	                        .bgAnimation1 {
-		                        width: 43.6979vw;
+		                        width: 38.6979vw;
 		                        height: 43.6979vw;
 		                        right: 160px;
 	                        }
 	                        .bgAnimation2 {
-		                        width: 16.7188vw;
+		                        width: 14.7188vw;
 		                        height: 8.5938vw;
 		                        bottom: 65px;
+		                        right: 3vw;
 	                        }
                             .smallText {
                                 .bar {
@@ -875,7 +881,7 @@ $vw: 0.0521vw;
     left: 0;
     width: 100%;
     height: auto;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     overflow: hidden;
     video {
         width: 100%;

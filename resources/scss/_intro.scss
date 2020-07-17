@@ -31,6 +31,7 @@
 
 .xt-intro {
     padding: 12.5000vw 0 0;
+	overflow: hidden;
     .intro-tit {
         font-size: 0.9375vw;
         padding-bottom: 2.6042vw;
@@ -238,9 +239,10 @@
         }
     }
     .intro-slide {
-	    .intro-tit {padding-left: 14.5833vw;}
+	    position: relative;
+	    .intro-tit {padding-left: 15.5833vw;}
         .swiper-container {
-	        padding-left: 14.5833vw;
+	        padding-left: 15.5833vw;
             .swiper-wrapper {
                 .swiper-slide {
                     &:nth-child(1) {
