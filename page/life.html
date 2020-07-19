@@ -138,13 +138,13 @@
     <!-- XT Member -->
     <div class="xtMember">
       <div class="xtMember__team textRight" data-aos="fade-left">
-        <span class="name">
-          <a href="#" class="ceo hover">김현수 대표<span class="photo"></span></a>
+        <span class="name ceo">
+          <a href="#none">김현수 대표<span class="photo"></span></a>
         </span>
         <strong class="tit">CEO</strong>
         <span class="multiplication" data-aos="fade"><img src="../resources/images/life/bg_multiplication.png" alt=""></span>
-        <span class="name">
-          <a href="#" class="cto hover">송의택 이사</a>
+        <span class="name cto">
+          <a href="#none">송의택 이사<span class="photo"></span></a>
         </span>
         <strong class="tit">CTO</strong>
       </div>
@@ -153,9 +153,9 @@
           <span class="tit">
             PLANNER
              <div class="xtMember__team__memberList" data-fx="4">
-                <a href="#" data-img="../resources/images/common/photo01.png" class="planner__position1">윤성배 팀장</a>
-                <a href="#" data-img="../resources/images/common/photo01.png" class="planner__position2">최성민 대리</a>
-                <a href="#" data-img="../resources/images/common/photo01.png" class="planner__position3">이새봄 사원</a>
+                <span class="planner__position1"><a href="#none" data-img="../resources/images/common/photo01.png">윤성배 팀장<span class="photo"></span></a></span>
+                <span class="planner__position2"><a href="#none" data-img="../resources/images/common/photo01.png">최성민 대리<span class="photo"></span></a></span>
+                <span class="planner__position3"><a href="#none" data-img="../resources/images/common/photo01.png">이새봄 사원<span class="photo"></span></a></span>
               </div>
           </span>
         </strong>
@@ -165,10 +165,10 @@
           <span class="tit">
             DESIGNER
           <span class="xtMember__team__memberList" data-fx="11">
-            <a href="#" class="designCaptain over">우광수 실장</a>
-            <a href="#" class="design01 over">최홍 사원</a>
-            <a href="#" class="design02 over">성혜연 사원</a>
-            <a href="#" class="design03 over">박세나</a>
+            <span class="designCaptain"><a href="#none">우광수 실장<span class="photo"></span></a></span>
+            <span class="design01"><a href="#none">최홍 사원<span class="photo"></span></a></span>
+            <span class="design02"><a href="#none">성혜연 사원<span class="photo"></span></a></span>
+            <span class="design03"><a href="#none">박세나 사원<span class="photo"></span></a></span>
           </span>
           </span>
         </strong>
@@ -178,8 +178,8 @@
           <span class="tit">
             PUBLISHER
             <span class="xtMember__team__memberList">
-              <a href="#" class="publisher1">김정환 차장</a>
-              <a href="#" class="publisher2_1">신민정 과장</a>
+              <span class="publisher1"><a href="#none">김정환 차장<span class="photo"></span></a></span>
+              <span class="publisher2"><a href="#none">신민정 과장<span class="photo"></span></a></span>
             </span>
           </span>
         </strong>
@@ -189,15 +189,15 @@
           <span class="tit">
             DEVELOVER
             <span class="xtMember__team__memberList list1">
-              <a href="#" class="develover1">홍원기 차장</a>
-              <a href="#" class="develover2">강인호 과장</a>
-              <a href="#" class="develover3">김종인 대리</a>
-              <a href="#" class="develover4">최광일 대리</a>
+              <span class="develover1"><a href="#none" class="develover1">홍원기 차장<span class="photo"></span></a></span>
+              <span class="develover2"><a href="#none" class="develover2">강인호 과장<span class="photo"></span></a></span>
+              <span class="develover3"><a href="#none" class="develover3">김종인 대리<span class="photo"></span></a></span>
+              <span class="develover4"><a href="#none" class="develover4">최광일 대리<span class="photo"></span></a></span>
             </span>
             <span class="xtMember__team__memberList list2">
-              <a href="#" class="develover5">고세진 대리</a>
-              <a href="#" class="develover6">정대원 대리</a>
-              <a href="#" class="develover7">이건희 사원</a>
+              <span class="develover5"><a href="#none" class="develover5">고세진 대리<span class="photo"></span></a></span>
+              <span class="develover6"><a href="#none" class="develover6">정대원 대리<span class="photo"></span></a></span>
+              <span class="develover7"><a href="#none" class="develover7">이건희 사원<span class="photo"></span></a></span>
             </span>
           </span>
         </strong>
@@ -338,6 +338,24 @@
     var x = Math.floor(size*Math.random())
     document.querySelector('.video-image img').src = '../resources/images/life/'+ images[x];
 
+    var test;
+    var num = 0;
+
+
+    $('.xtMember__team a').mouseenter(function(){
+      test = setInterval(function(){
+        num++;
+        if(num > 3) {
+          num = 1;
+        }
+        $(".xtMember__team a").attr("class", "hover"+num);
+      },1000);
+      return false;
+    });
+
+    $('.xtMember__team a').mouseleave(function(){
+      clearInterval(test);
+    });
   });
 </script>
 </body>
