@@ -5742,7 +5742,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
   .life__content .xtMember {
     width: 100%;
     overflow: hidden;
-    padding: 5vw 0 0; }
+    padding: 5vw 0; }
     .life__content .xtMember__team {
       position: relative;
       height: 11.9792vw;
@@ -5757,11 +5757,11 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
           color: #fff; }
           .life__content .xtMember__team .name a span {
             color: #fff; }
-        .life__content .xtMember__team .name .photo {
-          position: absolute;
-          left: -42px;
-          top: -82px;
-          z-index: 2; }
+      .life__content .xtMember__team .photo {
+        position: absolute;
+        left: -2.1875vw;
+        top: -5.2708vw;
+        z-index: 2; }
       .life__content .xtMember__team .tit {
         position: relative;
         font-size: 8.5vw;
@@ -5891,7 +5891,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       .life__content .xtMember__team.textLeft {
         text-align: left; }
   .life__content .xtMemberLiefPhoto {
-    margin-top: 8.5vw; }
+    margin-top: 3.5vw; }
     .life__content .xtMemberLiefPhoto__text {
       position: relative;
       color: #fff;
@@ -5936,14 +5936,14 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
             filter: gray;
             transform: scale(1);
             /* filter : 이미지에 필터효과를 적용한다 blur(px) :
-              이미지를 흐리게 한다 brightness(%) :
-              이미지의 밝기를 변경한다 contrast(%) :
-              이미지의 대비를 변경한다 drop-shadow(x-offset y-offset blur color) :
-              이미지에 그림자를 추가한다 grayscale(%) :
-              이미지에 흑백효과를 적용한다 hue-rotate(deg) :
-              이미지에 색상환의 각도를 지정 invert(%) :
-              이미지 반전 opacity(%) :
-              이미지에 투명도 적용 */
+                        이미지를 흐리게 한다 brightness(%) :
+                        이미지의 밝기를 변경한다 contrast(%) :
+                        이미지의 대비를 변경한다 drop-shadow(x-offset y-offset blur color) :
+                        이미지에 그림자를 추가한다 grayscale(%) :
+                        이미지에 흑백효과를 적용한다 hue-rotate(deg) :
+                        이미지에 색상환의 각도를 지정 invert(%) :
+                        이미지 반전 opacity(%) :
+                        이미지에 투명도 적용 */
             transition: .7s ease; }
             .life__content .xtMemberLiefPhoto ul li > div img:hover {
               -webkit-filter: grayscale(0%);
@@ -6413,62 +6413,190 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
   top: 0 !important;
   z-index: 2; }
 
-.xtMember__team a .img img {
-  display: none; }
-
-.xtMember__team a span {
-  opacity: 0; }
-
-.xtMember__team a:hover {
-  position: relative; }
-  .xtMember__team a:hover.hover span {
-    position: relative;
-    transition: .3s ease;
-    opacity: 1; }
-    .xtMember__team a:hover.hover span:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
+.xtMember__team {
+  /* 김현수 대표 */
+  /* 송의택 이사 */
+  /* 기획팀 */ }
+  .xtMember__team a .img img {
+    display: none; }
+  .xtMember__team a span {
+    opacity: 0;
+    transition: .5s ease; }
+  .xtMember__team a:hover {
+    position: relative; }
+    .xtMember__team a:hover span {
+      opacity: 1;
       width: 8.3333vw;
       height: 12.7083vw; }
-
-.xtMember__team [class*="active"]:hover span:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 160px;
-  height: 244px; }
-
-.xtMember__team .ceo:hover span:after {
-  /*@include imageUrl(life/ceo1,png);*/
-  animation: overImage 5s .5s infinite; }
-
-.xtMember__team .multiplication {
-  position: relative;
-  top: -4vw;
-  display: inline-block;
-  width: 3.6458vw;
-  height: 3.6458vw;
-  margin: 0 3vw; }
-
-.xtMember__team .cto.active1:hover {
-  background: url("../images/life/cto1.png") no-repeat; }
-
-.xtMember__team .planner__position1.active1:hover {
-  background: url("../images/life/cto1.png") no-repeat; }
-
-@keyframes overImage {
-  0% {
+  .xtMember__team .multiplication {
+    position: relative;
+    top: -4vw;
+    display: inline-block;
+    width: 3.6458vw;
+    height: 3.6458vw;
+    margin: 0 3vw; }
+  .xtMember__team .ceo a.hover1 span {
     background: url("../images/life/ceo1.png") no-repeat;
     background-size: cover; }
-  50% {
+  .xtMember__team .ceo a.hover2 span {
     background: url("../images/life/ceo2.png") no-repeat;
     background-size: cover; }
-  100% {
+  .xtMember__team .ceo a.hover3 span {
     background: url("../images/life/ceo3.png") no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+  .xtMember__team .cto a.hover1 span {
+    background: url("../images/life/cto1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .cto a.hover2 span {
+    background: url("../images/life/cto2.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .cto a.hover3 span {
+    background: url("../images/life/cto3.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position1 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position1 a.hover2 span {
+    background: url("../images/life/ceo2.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position1 a.hover3 span {
+    background: url("../images/life/ceo3.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position2 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position2 a.hover2 span {
+    background: url("../images/life/ceo2.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position2 a.hover3 span {
+    background: url("../images/life/ceo3.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position3 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position3 a.hover2 span {
+    background: url("../images/life/ceo2.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .planner__position3 a.hover3 span {
+    background: url("../images/life/ceo3.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .designCaptain a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .designCaptain a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .designCaptain a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design01 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design01 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design01 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design02 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design02 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design02 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design03 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design03 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .design03 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .publisher1 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .publisher1 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .publisher1 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .publisher2 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .publisher2 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .publisher2 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover1 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover1 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover1 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover2 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover2 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover2 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover3 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover3 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover3 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover4 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover4 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover4 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover5 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover5 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover5 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover6 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover6 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover6 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover7 a.hover1 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover7 a.hover2 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
+  .xtMember__team .develover7 a.hover3 span {
+    background: url("../images/life/ceo1.png") no-repeat;
+    background-size: cover; }
 
 .news-content {
   margin-top: 240px; }
