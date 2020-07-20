@@ -3961,6 +3961,8 @@ h1, h2, h3, h4, h5, h6, strong {
 
 .wrapper .header.main .pdf-down a {
   color: #fff; }
+  .wrapper .header.main .pdf-down a:after {
+    background: #fff; }
 
 /* button */
 .btnBlack {
@@ -5788,7 +5790,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
         -webkit-animation: typo01-after 1s ease-in-out;
         animation-delay: 0.5s; }
       .life__content .xtMember__team.aos-animate .xtMember__team__memberList {
-        transition: .5s ease;
+        transition: .1s ease;
         transition-delay: 1.5s; }
       .life__content .xtMember__team.aos-animate.planner .xtMember__team__memberList {
         transform: translate(0, 0); }
@@ -5810,7 +5812,8 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       .life__content .xtMember__team.aos-animate.publisher .xtMember__team__memberList {
         transform: translate(0, 0); }
       .life__content .xtMember__team.aos-animate.develover .xtMember__team__memberList {
-        transform: translate(0, 0); }
+        transform: translate(0, 0);
+        mix-blend-mode: normal; }
       .life__content .xtMember__team.aos-animate.develover strong:after {
         transform: translate(0, 0);
         transition: .5s ease;
@@ -6416,7 +6419,26 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
 .xtMember__team {
   /* 김현수 대표 */
   /* 송의택 이사 */
-  /* 기획팀 */ }
+  /* 기획팀 */
+  /* 윤성배 팀장 */
+  /*  최성민 대리 */
+  /* 이새봄 사원 */
+  /* 디자인팀 */
+  /* 우광수 실장 */
+  /*  최홍 사원 */
+  /*  성혜연 사원 */
+  /*  박세나 사원 */
+  /* 퍼블리셔 팀 */
+  /* 김정환 차장 */
+  /* 신민정 과장 */
+  /* 개발팀 */
+  /* 홍원기 차장 */
+  /* 강인호 과장 */
+  /* 김종인 대리 */
+  /* 최광일 대리 */
+  /* 고세진 대리 */
+  /* 정대원 대리 */
+  /* 이건희 사원 */ }
   .xtMember__team a .img img {
     display: none; }
   .xtMember__team a span {
@@ -6454,148 +6476,156 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     background: url("../images/life/cto3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position1 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/planner__position1_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position1 a.hover2 span {
-    background: url("../images/life/ceo2.png") no-repeat;
+    background: url("../images/life/planner__position1_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position1 a.hover3 span {
-    background: url("../images/life/ceo3.png") no-repeat;
+    background: url("../images/life/planner__position1_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position2 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/planner__position2_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position2 a.hover2 span {
-    background: url("../images/life/ceo2.png") no-repeat;
+    background: url("../images/life/planner__position2_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position2 a.hover3 span {
-    background: url("../images/life/ceo3.png") no-repeat;
+    background: url("../images/life/planner__position2_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position3 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/planner__position3_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position3 a.hover2 span {
-    background: url("../images/life/ceo2.png") no-repeat;
+    background: url("../images/life/planner__position3_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .planner__position3 a.hover3 span {
-    background: url("../images/life/ceo3.png") no-repeat;
+    background: url("../images/life/planner__position3_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .designCaptain a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design_captain1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .designCaptain a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design_captain2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .designCaptain a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design_captain3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .design01 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design01_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .design01 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design01_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .design01 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design01_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .design02 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design02_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .design02 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design02_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .design02 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/design02_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .design03 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
+    /*@include imageUrl(life/,png);
+                    background-size: cover;*/ }
   .xtMember__team .design03 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
+    /*@include imageUrl(life/,png);
+                    background-size: cover;*/ }
   .xtMember__team .design03 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
-  .xtMember__team .publisher1 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
-  .xtMember__team .publisher1 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
-  .xtMember__team .publisher1 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
-  .xtMember__team .publisher2 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
-  .xtMember__team .publisher2 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
-  .xtMember__team .publisher2 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
-    background-size: cover; }
+    /*@include imageUrl(life/,png);
+                    background-size: cover;*/ }
+  .xtMember__team .publisher1 a {
+    /*&.hover3 {
+                span {
+                    @include imageUrl(life/ceo1,png);
+                    background-size: cover;
+                }
+            }*/ }
+    .xtMember__team .publisher1 a.hover1 span {
+      background: url("../images/life/publisher1_1.png") no-repeat;
+      background-size: cover; }
+    .xtMember__team .publisher1 a.hover2 span {
+      background: url("../images/life/publisher1_2.png") no-repeat;
+      background-size: cover; }
+  .xtMember__team .publisher2 a {
+    /*&.hover3 {
+                span {
+                    @include imageUrl(life/ceo1,png);
+                    background-size: cover;
+                }
+            }*/ }
+    .xtMember__team .publisher2 a.hover1 span {
+      background: url("../images/life/publisher2_1.png") no-repeat;
+      background-size: cover; }
+    .xtMember__team .publisher2 a.hover2 span {
+      background: url("../images/life/publisher2_2.png") no-repeat;
+      background-size: cover; }
   .xtMember__team .develover1 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover1_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover1 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover1_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover1 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover1_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover2 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover2_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover2 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover2_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover2 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover2_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover3 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover3_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover3 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover3_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover3 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover3_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover4 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover4_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover4 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover4_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover4 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover4_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover5 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover5_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover5 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover5_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover5 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover5_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover6 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover6_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover6 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover6_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover6 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover6_3.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover7 a.hover1 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover7_1.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover7 a.hover2 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover7_2.png") no-repeat;
     background-size: cover; }
   .xtMember__team .develover7 a.hover3 span {
-    background: url("../images/life/ceo1.png") no-repeat;
+    background: url("../images/life/develover7_3.png") no-repeat;
     background-size: cover; }
 
 .news-content {

@@ -152,10 +152,10 @@
         <strong>
           <span class="tit">
             PLANNER
-             <div class="xtMember__team__memberList" data-fx="4">
-                <span class="planner__position1"><a href="#none" data-img="../resources/images/common/photo01.png">윤성배 팀장<span class="photo"></span></a></span>
-                <span class="planner__position2"><a href="#none" data-img="../resources/images/common/photo01.png">최성민 대리<span class="photo"></span></a></span>
-                <span class="planner__position3"><a href="#none" data-img="../resources/images/common/photo01.png">이새봄 사원<span class="photo"></span></a></span>
+             <div class="xtMember__team__memberList">
+                <span class="planner__position1"><a href="#none">윤성배 팀장<span class="photo"></span></a></span>
+                <span class="planner__position2"><a href="#none">최성민 대리<span class="photo"></span></a></span>
+                <span class="planner__position3"><a href="#none">이새봄 사원<span class="photo"></span></a></span>
               </div>
           </span>
         </strong>
@@ -164,7 +164,7 @@
         <strong>
           <span class="tit">
             DESIGNER
-          <span class="xtMember__team__memberList" data-fx="11">
+          <span class="xtMember__team__memberList">
             <span class="designCaptain"><a href="#none">우광수 실장<span class="photo"></span></a></span>
             <span class="design01"><a href="#none">최홍 사원<span class="photo"></span></a></span>
             <span class="design02"><a href="#none">성혜연 사원<span class="photo"></span></a></span>
@@ -341,17 +341,24 @@
     var test;
     var num = 0;
 
+    function mouseOver(imageNum) {
+        $('.xtMember__team a').mouseenter(function(){
+            test = setInterval(function(){
+                num++;
+                if(num > imageNum) {
+                    num = 1;
+                }
+                $(".xtMember__team a").attr("class", "hover"+num);
+            },1000);
+            return false;
+        });
+    }
 
-    $('.xtMember__team a').mouseenter(function(){
-      test = setInterval(function(){
-        num++;
-        if(num > 3) {
-          num = 1;
-        }
-        $(".xtMember__team a").attr("class", "hover"+num);
-      },1000);
-      return false;
-    });
+    if($('.xtMember__team').hasClass('publisher')) {
+        mouseOver(2);
+    } else {
+        mouseOver(3);
+    }
 
     $('.xtMember__team a').mouseleave(function(){
       clearInterval(test);
