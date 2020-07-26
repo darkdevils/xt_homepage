@@ -4064,7 +4064,9 @@ h1, h2, h3, h4, h5, h6, strong {
   bottom: 3.6458vw;
   width: 42px;
   height: 42px;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  transition: .5s ease;
+  z-index: 2; }
   .btnTop span {
     text-align: center;
     font-size: 13px; }
@@ -4077,6 +4079,10 @@ h1, h2, h3, h4, h5, h6, strong {
     justify-content: center; }
     .btnTop div span {
       margin: 0 2px; }
+  .btnTop.colorWhite {
+    border-color: #fff; }
+    .btnTop.colorWhite span {
+      color: #fff; }
 
 .viedeoContact {
   position: relative; }
@@ -4284,7 +4290,7 @@ h1, h2, h3, h4, h5, h6, strong {
       transform: translate(0, 0);
       opacity: 1; }
     .wrapper .container .main-content #section2 [class^="we-are"] {
-      position: relative; }
+      position: absolute; }
       .wrapper .container .main-content #section2 [class^="we-are"]:after {
         content: "";
         display: block;
@@ -4997,6 +5003,10 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
   100% {
     background-position: 0% 50%; } }
 
+.fp-viewing-0 .wrapper .header.main .xt-ci {
+  border-color: #fff;
+  background: url("../images/main/logo-white.png") no-repeat; }
+
 .xt-intro {
   padding: 12.5000vw 0 0;
   overflow: hidden; }
@@ -5218,12 +5228,15 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       padding-left: 15.5833vw; }
     .xt-intro .intro-slide .swiper-container {
       padding-left: 15.5833vw; }
-      .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
-        width: 28.1250vw; }
-      .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
-        width: 25.3125vw; }
-      .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
-        width: 26.0417vw; }
+      .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide {
+        width: 25%; }
+        .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
+          /*width: 28.1250vw;*/
+          width: 28%; }
+        .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
+          /*width: 25.3125vw;*/ }
+        .xt-intro .intro-slide .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
+          /*width: 26.0417vw;*/ }
     .xt-intro .intro-slide.history {
       margin-bottom: 12.5000vw; }
       .xt-intro .intro-slide.history .swiper-slide:nth-child(4) {
@@ -5655,6 +5668,17 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
       opacity: 0; }
       .life__content .swiperArea .swiper-container img {
         width: 100%; }
+      .life__content .swiperArea .swiper-container .textWrap {
+        position: absolute;
+        left: 40px;
+        bottom: 20px; }
+        .life__content .swiperArea .swiper-container .textWrap > * {
+          color: #fff;
+          font-weight: 700; }
+        .life__content .swiperArea .swiper-container .textWrap .date {
+          font-size: 1.5625vw; }
+        .life__content .swiperArea .swiper-container .textWrap .txt {
+          font-size: 2.6042vw; }
     .life__content .swiperArea .swiper-pagination {
       position: absolute;
       right: 16vw;
@@ -6443,7 +6467,7 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     display: none; }
   .xtMember__team a span {
     opacity: 0;
-    transition: .5s ease; }
+    transition: .2s ease; }
   .xtMember__team a:hover {
     position: relative; }
     .xtMember__team a:hover span {
@@ -6457,6 +6481,8 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     width: 3.6458vw;
     height: 3.6458vw;
     margin: 0 3vw; }
+    .xtMember__team .multiplication img {
+      width: 100%; }
   .xtMember__team .ceo a.hover1 span {
     background: url("../images/life/ceo1.png") no-repeat;
     background-size: cover; }

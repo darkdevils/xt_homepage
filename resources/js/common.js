@@ -72,6 +72,14 @@ $(function () {
 
     $(window).scroll(function(event){
         didScroll = true;
+        var scrollTop = $(this).scrollTop();
+        var innerHeight = $(this).innerHeight();
+        var scrollHeight = $(document).height() - 100;
+        if (scrollTop + innerHeight >= scrollHeight) {
+            $(".btnTop").addClass('colorWhite');
+        } else {
+            $(".btnTop").removeClass('colorWhite');
+        }
     });
 
     setInterval(function() {

@@ -245,16 +245,17 @@
 	        padding-left: 15.5833vw;
             .swiper-wrapper {
                 .swiper-slide {
+	                width: 25%;
                     &:nth-child(1) {
-                        width: 28.1250vw;
+                        /*width: 28.1250vw;*/
+	                    width: 28%;
                     }
                     &:nth-child(2) {
-                        width: 25.3125vw;
+                        /*width: 25.3125vw;*/
                     }
                     &:nth-child(3) {
-                        width: 26.0417vw;
+                        /*width: 26.0417vw;*/
                     }
-
                 }
             }
         }

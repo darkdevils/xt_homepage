@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="header txt-bk">
+    <div class="header main">
         <div class="skip-navi">
             <a href="#container">본문 바로가기</a>
             <a href="#gnb">메뉴 바로가기 test</a>
@@ -170,12 +170,12 @@
                         <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span><span class="smallText">Expert X Empathetic <span class="bar"></span></span></h2>
                         <div class="bgAnimation1"><img src="../resources/images/main/section2_1_1.png" alt=""></div>
                         <div class="bgAnimation2"><img src="../resources/images/main/section2_1_2.png" alt=""></div>
-                        <div class="textAnimate">우리는 당신 ; 고객을 가장 잘 알고 싶습니다<br>
-                        열린사고로 미리 판단하지 않고<br>
-                        당신 ; 고객의 입장에서 생각하고 공감하며<br>
-                        가장 당신 ; 고객다운 모습을 집요하게 분석하고 ​<br>
-                        이성적인 분석을 바탕으로 창의적이면서도<br>
-                        논리적인 UIUX 설계합니다 </div>
+                        <div class="textAnimate">
+                            엑스티는 당신 ; 고객을 가장 잘 알고 싶습니다.<br>
+                            당신 ; 고객의 입장에서 생각하고 공감하며,<br>
+                            가장 당신 ; 고객다운 모습을 집요하게 분석하여 ​<br>
+                            논리적인 UI/UX를 설계합니다.
+                        </div>
                     <!--<div class="img1"><img src="../resources/images/main/section2_1_1.png" alt=""></div>
                     <div class="img2"><img src="../resources/images/main/section2_1_2.png" alt=""></div>-->
                     </div>
@@ -185,12 +185,13 @@
                         <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">Growth X Flexible <span class="bar"></span></span></h2>
                         <div class="bgAnimation1"><img src="../resources/images/main/section2_2_1.png" alt=""></div>
                         <div class="bgAnimation2"><img src="../resources/images/main/section2_2_2.png" alt=""></div>
-                        <div class="textAnimate">우리는 새로운 것에 유연합니다.<br>
-                        ​새로운 것을 유연하게 만나고 경험하여<br>
-                        많은 것을 알게 되고 자라지만<br>
-                        우리에 시선은 항상 새로운 곳을 향하여 있어<br>
-                        멈추지 않고 ​또 다시 지속적으로 탐구하고<br>
-                        그려 냅니다</div>
+                        <div class="textAnimate">
+                            엑스티는 새로운 것에 유연합니다.<br>
+                            트랜드에 민감하게 반응하며<br>
+                            시선은 항상 새로운 곳을 향하여 있어<br>
+                            멈추지 않고 또 다시 지속적으로 탐구하고<br>
+                            그려 냅니다.
+                        </div>
                     </div>
                 </div>
                 <div class="we-are03 slide">
@@ -198,16 +199,25 @@
                         <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">​Stable X Pleasure<span class="bar"></span></span></h2>
                         <div class="bgAnimation1"><img src="../resources/images/main/section2_3_1.png" alt=""></div>
                         <div class="bgAnimation2"><img src="../resources/images/main/section2_3_2.png" alt=""></div>
-                        <div class="textAnimate">우리는 당신 ; 고객을 가장 잘 알고 싶습니다<br>
-                            XT 가족 전부가 조화를 이루며<br>안정적인 성장계획을 이루어 나아가<br>행복한 미래가 그려간다.</div>
+                        <div class="textAnimate">
+                            엑스티는 함께하는 모든 사람들이<br>
+                            조화를 이루며 안정적인 감정과 미래를 그려볼 수 있는<br>
+                            환경을 만들고 있습니다.<br>
+                            이렇게 한 걸음 씩 자라고 있습니다.
                         </div>
+                    </div>
                 </div>
                 <div class="we-are04 slide">
                     <div class="weAre-txt">
                         <h2><span class="bigText">GROWING</span><br><span class="bigText">XT</span> <span class="smallText">​Mature X Craftsmanship<span class="bar"></span></span></h2>
                         <div class="bgAnimation1"><img src="../resources/images/main/section2_4_1.png" alt=""></div>
                         <div class="bgAnimation2"><img src="../resources/images/main/section2_4_2.png" alt=""></div>
-                        <div class="textAnimate">XT는 책임감 있는 프로젝트 진행으로<br>고객의 신뢰를 쌓아가며<br>사랑받는 기업이 된다.</div>
+                        <div class="textAnimate">
+                            엑스티는 고객의 입장과 비즈니스를<br>
+                            먼저 이해하는 태도부터 시작합니다.<br>
+                            단순히 그려내는 것이 아니라 명확한 목표와<br>
+                            전략으로 누구나 인정할 만한 결과물을 만들어 냅니다.
+                        </div>
                     </div>
                 </div>
                 <div class="number">
@@ -327,9 +337,9 @@
 </a>-->
 <script>
 
-    setTimeout(function(){
+    /*setTimeout(function(){
         $('.header').removeClass('txt-bk').addClass('main');
-    },7500);
+    },7500);*/
 
     $(function(){
 
@@ -345,27 +355,34 @@
     $("#section2 .totalNum").text(length);
 
     $('#pagepiling').fullpage({
-      scrollingSpeed:500,
-      css3: true,
-      scrollOverflow: true,
-      resize: false,
-      anchors: ['section1'],
-      onLeave: function(index, nextIndex, direction) {
-        if(index == 2 && !sliding) {
-          if(direction == 'down' && slideIndex < length) {
-            sliding = true;
-            $.fn.fullpage.moveSlideRight();
-            slideIndex++;
-            return false;
-          } else if(direction == 'up' && slideIndex > 1) {
-            sliding = true;
-            $.fn.fullpage.moveSlideLeft();
-            slideIndex--;
-            return false;
-          }
-        } else if(sliding) {
-          return false;
-        }
+        scrollingSpeed:700,
+        css3: true,
+        scrollOverflow: true,
+        resize: false,
+        /*anchors: ['section1'],*/
+        continuousHorizontal:true,
+        onLeave: function(index, nextIndex, direction) {
+            if(index == 2 && !sliding) {
+                if(direction == 'down' && slideIndex < length) {
+                    sliding = false;
+                    $.fn.fullpage.moveSlideRight();
+                    $(this).find('.fp-slidesContainer').css({
+                        transform: "translate3d(0, 0, 0)"
+                    });
+                    slideIndex++;
+                    return false;
+                } else if(direction == 'up' && slideIndex > 1) {
+                    sliding = false;
+                    $.fn.fullpage.moveSlideLeft();
+                    $(this).find('.fp-slidesContainer').css({
+                        transform: "translate3d(0, 0, 0)"
+                    });
+                    slideIndex--;
+                    return false;
+                }
+            } else if(sliding) {
+                return false;
+            }
 
         // header 색상변경
           let $indexPlus = index + 1;

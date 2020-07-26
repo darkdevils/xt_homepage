@@ -231,7 +231,7 @@ $vw: 0.0521vw;
 	                }
                 }
                 [class^="we-are"] {
-                    position: relative;
+                    position: absolute;
                     &:after {
                         content: "";
                         display: block;
@@ -994,7 +994,9 @@ body[class*=fp-viewing-1-] {
     .wrapper .header .xt-ci {
         @include headerBlaxk;
     }
+
 }
+
 .fp-viewing-2 {
   .wrapper .header.txt-bk .xt-ci {
     width: 160px;
@@ -1081,4 +1083,11 @@ body[class*=fp-viewing-1-] {
   &:after {
     background: $color;
   }
+}
+
+.fp-viewing-0 .wrapper .header {
+	&.main .xt-ci {
+		border-color: #fff;
+		@include imageUrl(main/logo-white,png);
+	}
 }
