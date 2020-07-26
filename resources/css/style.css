@@ -4096,6 +4096,33 @@ h1, h2, h3, h4, h5, h6, strong {
     background: #fff;
     opacity: 0.4; }
 
+.layerBtnclose {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  border: 3px solid #000;
+  width: 42px;
+  height: 42px;
+  z-index: 11; }
+  .layerBtnclose:after, .layerBtnclose:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    width: 20px;
+    height: 3px;
+    margin: 4px auto; }
+  .layerBtnclose:after {
+    transform: translateY(12px) rotate(225deg);
+    left: 7px;
+    top: 0; }
+  .layerBtnclose:before {
+    transform: translateY(5px) rotate(-225deg);
+    left: 7px;
+    top: 7px; }
+  .layerBtnclose .blind {
+    display: none; }
+
 @-webkit-keyframes typo01-after {
   0% {
     left: 0;
@@ -6408,7 +6435,19 @@ body[class*=fp-viewing-1-] .wrapper .header .xt-ci {
     .viewContent__visualImage img {
       width: 100%; }
   .viewContent__content {
-    padding: 0 14.4792vw 3.1250vw; }
+    padding: 3.1250vw 14.4792vw; }
+    .viewContent__content h1 {
+      font-size: 32px; }
+    .viewContent__content h2 {
+      font-size: 24px; }
+    .viewContent__content h3 {
+      font-size: 19px; }
+    .viewContent__content h4 {
+      font-size: 16px; }
+    .viewContent__content h5 {
+      font-size: 13px; }
+    .viewContent__content h6 {
+      font-size: 11px; }
     .viewContent__content .numTitle {
       display: block;
       font-size: 1.5625vw;
